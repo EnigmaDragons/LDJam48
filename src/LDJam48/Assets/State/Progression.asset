@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcaa047c270d4d05ab4dc875c2423d6b, type: 3}
   m_Name: Progression
   m_EditorClassIdentifier: 
+  gameState: {fileID: 11400000, guid: 564bc3db6d1a6d2429d3d2b4d07a7993, type: 2}
   cutscene: {fileID: 11400000, guid: 20e85298acd4be44dbf2d6d42125b95b, type: 2}
   navigator: {fileID: 11400000, guid: c3cd3edfa3cf5c94fbbf792f8728cebb, type: 2}

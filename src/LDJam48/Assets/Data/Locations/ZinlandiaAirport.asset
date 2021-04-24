@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb490e3e955a4ec693b795d6db6f38a4, type: 3}
+  m_Name: ZinlandiaAirport
+  m_EditorClassIdentifier: 
+  obj: {fileID: 4766878235682075795, guid: 51b37d9cbc6a9f34fb5d7e8fc41a88f3, type: 3}
+  conversations:
+  - {fileID: 11400000, guid: 37ad0f8d53f5e6849a0f47e760c998a8, type: 2}
+  onFinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 87fb47d552cb06946b48a6dfceeab9a0, type: 2}
+        m_TargetAssemblyTypeName: Progression, EnigmaDragons.Game
+        m_MethodName: BeginCutscene
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 81789155dae746441bb83e9188a0ab66,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: Cutscene, EnigmaDragons.Game
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

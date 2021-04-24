@@ -7,6 +7,15 @@ public sealed class CurrentGameState : ScriptableObject
     [SerializeField] private GameState gameState;
     [SerializeField] private CurrentConversation conversation;
     [SerializeField] private PlayerState player;
+    [SerializeField] private Location currentLocation;
+    [SerializeField] private int locationConversationIndex;
+
+    public Location CurrentLocation => currentLocation;
+    public void SetLocation(Location l)
+    {
+        locationConversationIndex = 0;
+        currentLocation = l;
+    }
 
     public void Init() => gameState = new GameState();
     public void Init(GameState initialState) => gameState = initialState;

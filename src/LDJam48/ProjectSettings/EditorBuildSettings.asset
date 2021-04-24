@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/IntegratorOnly/CutscenePlayer.unity
     guid: c6ef3c922a11ec94fb230da5cd14eb65
   - enabled: 1
+    path: Assets/Scenes/IntegratorOnly/LocationScene.unity
+    guid: a5ce651222640d14eaf4134ff1a0ad3d
+  - enabled: 1
     path: Assets/Scenes/Silas/FirstLocation.unity
     guid: c52df47e4b656814aa5d12bd4adfa871
   m_configObjects: {}

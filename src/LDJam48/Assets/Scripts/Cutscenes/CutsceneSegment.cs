@@ -6,7 +6,7 @@ public class CutsceneSegment
 {
     [SerializeField] private GameObject artBackground;
     [SerializeField] private string storyText;
-    [SerializeField] private Color textColor = Color.black;
+    [SerializeField] private Color textColor = new Color(0, 0, 0);
 
     public GameObject ArtBackground => artBackground;
     public string StoryText => storyText;
