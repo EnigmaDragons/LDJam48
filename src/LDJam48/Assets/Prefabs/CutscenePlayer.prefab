@@ -285,6 +285,10 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 0.07
     FloatVariable: {fileID: 0}
+  autoAdvanceDelay:
+    UseConstant: 1
+    ConstantValue: 0.8
+    FloatVariable: {fileID: 0}
   isRevealing: 0
 --- !u!1 &6098409110573772364
 GameObject:
@@ -418,6 +422,7 @@ GameObject:
   - component: {fileID: 6616779777767270820}
   - component: {fileID: 8190798203504576738}
   - component: {fileID: 1026193064865315094}
+  - component: {fileID: 2313598704764679267}
   m_Layer: 0
   m_Name: CutscenePlayer
   m_TagString: Untagged
@@ -481,3 +486,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parent: {fileID: 6098409109165557640}
   text: {fileID: 6098409109340605778}
+--- !u!114 &2313598704764679267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7121223778613747800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a74e480335d841319d0d7c23bec2841f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cutscene: {fileID: 11400000, guid: 20e85298acd4be44dbf2d6d42125b95b, type: 2}

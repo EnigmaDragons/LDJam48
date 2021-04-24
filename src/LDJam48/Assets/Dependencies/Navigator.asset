@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18bf676420f14852b52346b75ef90ea6, type: 3}
   m_Name: Navigator
   m_EditorClassIdentifier: 
-  loggingEnabled: 0
+  loggingEnabled: 1
