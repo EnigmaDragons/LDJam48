@@ -9,7 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da87653c3a49e8e4686d766d3736fb9b, type: 3}
-  m_Name: Tourist
+  m_Script: {fileID: 11500000, guid: e8249138620646b59f0e5500ebe20276, type: 3}
+  m_Name: Henchman
   m_EditorClassIdentifier: 
-  name: 
+  CharacterName: Mr Trilby The Cane Man
+  Prefab: {fileID: 0}
+  startTags: []
+  learnedTags: []
+  maxSus: 10
+  suspicion: 0
