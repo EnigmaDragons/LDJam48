@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 
 [CreateAssetMenu]
-public class Character : ScriptableObject
+public class Character : ScriptableObject, IEqualityComparer<Character>
 {
     public string CharacterName;
     public GameObject Prefab;
@@ -56,7 +56,21 @@ public class Character : ScriptableObject
     {
         return learnedTags.ToArray();
     }
-    
-    
-    
+
+    public bool Equals(Character x, Character y)
+    {
+        if (ReferenceEquals(x, y)) return true;
+        if (ReferenceEquals(x, null)) return false;
+        if (ReferenceEquals(y, null)) return false;
+        if (x.GetType() != y.GetType()) return false;
+        return x.CharacterName == y.CharacterName && x.maxSus == y.maxSus;
+    }
+
+    public int GetHashCode(Character obj)
+    {
+        unchecked
+        {
+            return ((obj.CharacterName != null ? obj.CharacterName.GetHashCode() : 0) * 397) ^ obj.maxSus;
+        }
+    }
 }

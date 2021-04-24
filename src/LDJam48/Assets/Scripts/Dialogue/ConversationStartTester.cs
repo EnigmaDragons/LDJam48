@@ -1,3 +1,4 @@
+using Dialogue.Messages;
 using UnityEngine;
 
 public class ConversationStartTester : MonoBehaviour
@@ -9,7 +10,13 @@ public class ConversationStartTester : MonoBehaviour
         if (conversation == null) 
             return;
         
-        Message.Publish(new StartConversation(conversation));
+        StartConversation();
         conversation = null;
+    }
+
+    private void StartConversation()
+    {
+        Message.Publish( new SpawnCharacters(conversation.NonPlayerCharacters));
+        Message.Publish(new StartConversation(conversation));
     }
 }
