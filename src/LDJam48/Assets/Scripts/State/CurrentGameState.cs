@@ -5,6 +5,8 @@ using UnityEngine;
 public sealed class CurrentGameState : ScriptableObject
 {
     [SerializeField] private GameState gameState;
+    [SerializeField] private CurrentConversation conversation;
+    [SerializeField] private PlayerState player;
 
     public void Init() => gameState = new GameState();
     public void Init(GameState initialState) => gameState = initialState;

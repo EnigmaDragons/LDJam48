@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using System.Runtime.Serialization;
 using Tags;
 using UnityEngine;
 
@@ -11,4 +12,11 @@ public class DialogueOption
 
     public string Text => text;
     public TagObject[] Tags => tags.ToArray();
+
+    public void Select()
+    {
+        Message.Publish(new HideStatements());
+        Message.Publish(new DialogueOptionSelected(this,
+            (Character) FormatterServices.GetUninitializedObject(typeof(Character))));
+    }
 }

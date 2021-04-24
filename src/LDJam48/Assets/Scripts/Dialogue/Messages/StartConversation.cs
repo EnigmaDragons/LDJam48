@@ -1,6 +1,6 @@
 public class StartConversation
 {
-    public LinearConversation Conversation { get; }
+    public Conversation Conversation { get; }
 
-    public StartConversation(LinearConversation c) => Conversation = c;
+    public StartConversation(Conversation c) => Conversation = c;
 }
