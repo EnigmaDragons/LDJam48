@@ -1,21 +1,21 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Dialogue.Messages;
 using UnityEngine;
 
-public class NPCSpawner : OnMessage<StartConversation>
+public class NPCSpawner : MonoBehaviour
 {
     [SerializeField] private Transform[] spawnPositions;
     private List<Character> _charactersOnScene = new List<Character>();
     private Dictionary<Character, CharacterManager> _managers = new Dictionary<Character, CharacterManager>();
-    protected override void Execute(StartConversation msg)
-    {
-        foreach (var character in msg.Conversation.NonPlayerCharacters)
-        {
-            SpawnCharacter(character);
-        }
-    }
 
+    private void Awake()
+    {
+        _charactersOnScene = new List<Character>();
+        _managers = new Dictionary<Character, CharacterManager>();
+    }
+    
     public CharacterManager GetCharacterManager(Character character)
     {
         if (!_charactersOnScene.Contains(character)) return null;

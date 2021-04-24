@@ -10,22 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40b3369c6e0b478e910c4e672df48d79, type: 3}
-  m_Name: TestConversation
+  m_Name: 2NPCTest
   m_EditorClassIdentifier: 
   nonPlayerCharacters:
+  - {fileID: 11400000, guid: 287c526762abb8f44aa4ddadde2db4de, type: 2}
   - {fileID: 11400000, guid: 9484b95d1d23aa6438310f16509ff87a, type: 2}
+  onFinished:
+    m_PersistentCalls:
+      m_Calls: []
   sequence:
   - speakingCharacter: {fileID: 11400000, guid: 287c526762abb8f44aa4ddadde2db4de,
       type: 2}
-    statement: Welcome to our humble country of Zinlandia!
+    statement: First Character Speaking
+    options: []
+  - speakingCharacter: {fileID: 11400000, guid: 9484b95d1d23aa6438310f16509ff87a,
+      type: 2}
+    statement: 2nd Character speking
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 287c526762abb8f44aa4ddadde2db4de,
       type: 2}
-    statement: Where are you from?
-    options: []
-  - speakingCharacter: {fileID: 11400000, guid: 287c526762abb8f44aa4ddadde2db4de,
-      type: 2}
-    statement: 
+    statement: where are you coming from?
     options:
     - text: I'm from America
       tags: []
