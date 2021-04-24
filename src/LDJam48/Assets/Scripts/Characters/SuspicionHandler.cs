@@ -11,14 +11,15 @@ public class SuspicionHandler : OnMessage<DialogueOptionSelected>
     protected override void Execute(DialogueOptionSelected msg)
     {
         var chars = conversation.Current.NonPlayerCharacters;
+        var totalPenalty = 0;
         print(chars.Length);
         foreach (var character in chars)
         {
-            GivePenalty(msg, character);
+            totalPenalty += GivePenalty(msg, character);
             SaveTags(msg, character);   
         }
         
-        Message.Publish(new Finished<DialogueOptionSelected>{ Message = msg });
+        Message.Publish(new DialogueOptionResolved(msg.Selection, totalPenalty));
     }
     
     private void SaveTags(DialogueOptionSelected msg, Character character)
@@ -40,19 +41,23 @@ public class SuspicionHandler : OnMessage<DialogueOptionSelected>
         character.LearnTags(toLearn);
     }
     
-    private void GivePenalty(DialogueOptionSelected msg, Character character)
+    private int GivePenalty(DialogueOptionSelected msg, Character character)
     {
         var dialog = msg.Selection;
 
+        var totalSuspicion = 0;
         foreach (var dialogTag in dialog.Tags)
         {
             foreach (var characterTag in character.GetLearnedTags())
             {
                 var penalty = dialogTag.GetConflictPenalty(characterTag);
+                totalSuspicion += penalty;
                 character.AddSuspicion(dialogTag.GetConflictPenalty(characterTag));
                 //make sure that we add suspicion only once per dialog option 
                 if(penalty > 0) break;
             }
         }
+
+        return totalSuspicion;
     }
 }

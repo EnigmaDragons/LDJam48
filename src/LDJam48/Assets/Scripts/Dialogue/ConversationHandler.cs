@@ -1,6 +1,7 @@
+using System.Linq;
 using UnityEngine;
 
-public class ConversationHandler : OnMessage<StartConversation, AdvanceConversation, Finished<DialogueOptionSelected>>
+public class ConversationHandler : OnMessage<StartConversation, AdvanceConversation, DialogueOptionResolved>
 {
     [SerializeField] private CurrentConversation conversation;
     
@@ -11,11 +12,12 @@ public class ConversationHandler : OnMessage<StartConversation, AdvanceConversat
     }
 
     protected override void Execute(AdvanceConversation msg) => StartNext();
-    protected override void Execute(Finished<DialogueOptionSelected> msg)
+    protected override void Execute(DialogueOptionResolved msg)
     {
-        conversation.Queue(msg.Message.Selection.Followups);
+        var gainedSuspicion = msg.PlayerSuspicionChange > 0;
+        conversation.Queue(msg.Selected.Followups.Where(x => x.OnlyShowIfCharacterLikedAnswer != gainedSuspicion).ToArray());
         StartNext();
     }
-
+    
     private void StartNext() => conversation.ExecuteNext();
 }
