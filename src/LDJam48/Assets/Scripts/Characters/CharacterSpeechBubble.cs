@@ -13,8 +13,13 @@ public class CharacterSpeechBubble : MonoBehaviour
         scenePositions.Register(character, speechBubble);
     }
 
-    public void Speak(DialogueOption option)
+    public void Speak(string option)
     {
-        speechBubble.Display(option.Text);    
+        speechBubble.Display(option, Proceed);
+    }
+
+    private void Proceed()
+    {
+        Message.Publish(new AdvanceConversation());
     }
 }

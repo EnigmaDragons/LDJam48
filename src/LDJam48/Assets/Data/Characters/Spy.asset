@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: Spy
   m_EditorClassIdentifier: 
   CharacterName: Clever Spy
-  Prefab: {fileID: 0}
+  Prefab: {fileID: 1483828345482842763, guid: b9b1a42282c8b8f42b4dc48ff0a305e2, type: 3}
+  startTags: []
+  learnedTags: []
+  maxSus: 0
+  suspicion: 0

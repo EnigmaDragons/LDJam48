@@ -16,7 +16,7 @@ public class ConversationStartTester : MonoBehaviour
 
     private void StartConversation()
     {
-        Message.Publish( new SpawnCharacters(conversation.NonPlayerCharacters));
+        Message.Publish( new SpawnCharacters(conversation.NonPlayerCharacters, conversation.PlayerCharacter));
         Message.Publish(new StartConversation(conversation));
     }
 }

@@ -6,7 +6,7 @@ public class CharacterManager : MonoBehaviour
 {
     [SerializeField] private CharacterSpeechBubble speechBubble;
     //TODO implement speak method
-    public void Speak(DialogueOption option)
+    public void Speak(string option)
     {
         speechBubble.Speak(option);
     }

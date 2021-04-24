@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b3369c6e0b478e910c4e672df48d79, type: 3}
   m_Name: EnterCountry
   m_EditorClassIdentifier: 
+  playerCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477, type: 2}
   nonPlayerCharacters:
   - {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c, type: 2}
   onFinished:

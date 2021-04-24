@@ -1,3 +1,4 @@
+using Dialogue.Messages;
 using UnityEngine;
 
 public class LocationStarter : MonoBehaviour
@@ -14,6 +15,10 @@ public class LocationStarter : MonoBehaviour
 
     private void Start()
     {
+        var convo = gameState.CurrentLocation.Conversations[0];
+        //Spawn first, dialogue next 
+        Message.Publish( new SpawnCharacters(convo.NonPlayerCharacters, convo.PlayerCharacter));
+        
         Message.Publish(new StartConversation(gameState.CurrentLocation.Conversations[0]));
     }
 }

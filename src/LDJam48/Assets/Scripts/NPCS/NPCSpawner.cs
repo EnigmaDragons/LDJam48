@@ -7,6 +7,7 @@ using UnityEngine;
 public class NPCSpawner : MonoBehaviour
 {
     [SerializeField] private Transform[] spawnPositions;
+    [SerializeField] private Transform playerSpawnPosition;
     private List<Character> _charactersOnScene = new List<Character>();
     private Dictionary<Character, CharacterManager> _managers = new Dictionary<Character, CharacterManager>();
 
@@ -37,6 +38,15 @@ public class NPCSpawner : MonoBehaviour
         _managers.Add(character, manager);
     }
 
+    public void SpawnPlayerCharacter(Character character)
+    {
+        var prefab = character.Prefab;
+        var inst = Instantiate(prefab, playerSpawnPosition);
+        var manager = inst.GetComponent<CharacterManager>();
+        _charactersOnScene.Add(character);
+        _managers.Add(character, manager);
+    }
+    
     //TODO make characters play exit animation before destroying them
     private void DestroyCharacter()
     {
