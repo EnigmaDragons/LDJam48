@@ -15,10 +15,11 @@ public class ConversationHandler : OnMessage<StartConversation, AdvanceConversat
 
     private void BeginSequence()
     {
-        if (conversation.Current.Sequence.Length > _sequenceIndex)
-            conversation.Current.Sequence[_sequenceIndex].Begin();
+        var c = conversation.Current;
+        if (c.Sequence.Length > _sequenceIndex)
+            c.Sequence[_sequenceIndex].Begin();
         else
-            Message.Publish(new ConversationFinished());
+            c.OnFinished.Invoke();
     }
 
     protected override void Execute(AdvanceConversation msg)
