@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78fefad2f75c44c3a2f87b87785bdf2c, type: 3}
   m_Name: CurrentGameState
   m_EditorClassIdentifier: 
+  conversation: {fileID: 11400000, guid: aae2fc7d62b853d4bbc983d3df10f489, type: 2}
+  player: {fileID: 11400000, guid: 1b658510dea93fc41aaf9362e30931eb, type: 2}
