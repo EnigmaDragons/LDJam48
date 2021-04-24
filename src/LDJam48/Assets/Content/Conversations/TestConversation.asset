@@ -21,3 +21,11 @@ MonoBehaviour:
       type: 2}
     statement: Where are you from?
     options: []
+  - speakingCharacter: {fileID: 11400000, guid: 287c526762abb8f44aa4ddadde2db4de,
+      type: 2}
+    statement: 
+    options:
+    - text: I'm from America
+      tags: []
+    - text: I am a parachute salesman from Mars
+      tags: []
