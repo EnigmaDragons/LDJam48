@@ -11,6 +11,6 @@ public class CutsceneSegmentPresenter : OnMessage<PlayCutsceneSegment>
         var segment = msg.Segment;
         parent.DestroyAllChildren();
         Instantiate(segment.ArtBackground, parent.transform);
-        text.Display(segment.StoryText, segment.TextColor, () => Message.Publish(new AdvanceCutscene()));
+        text.Display(segment.StoryText, segment.TextColor, true, () => Message.Publish(new AdvanceCutscene()));
     }
 }
