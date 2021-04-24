@@ -25,7 +25,14 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
         _defaultTextColor = textBox.color;
     }
 
-    public void Hide() => chatBox.gameObject.SetActive(false);
+    public void Hide()
+    {
+        if (!chatBox.gameObject.activeSelf)
+            return;
+        
+        Log.Info($"Hide Speech Bubble", this);
+        chatBox.gameObject.SetActive(false);
+    }
 
     public void Display(string text) => Display(text,  _defaultTextColor, false, () => { });
     public void Display(string text, Action onFinished) => Display(text, _defaultTextColor, false, onFinished);
@@ -35,12 +42,12 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
         if (isRevealing)
             return;
 
+        chatBox.gameObject.SetActive(true);
         textBox.color = textColor;
         _fullText = text;
         _onFinished = onFinished;
         _showAutoProceed = shouldAutoProceed;
         _proceeded = false;
-        gameObject.SetActive(true);
         StartCoroutine(BeginReveal());
     }
 

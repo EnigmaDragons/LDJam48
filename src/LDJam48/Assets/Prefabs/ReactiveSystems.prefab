@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1af9dfea43f4beb832b678bd3a5a80f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversation: {fileID: 11400000, guid: 37ad0f8d53f5e6849a0f47e760c998a8, type: 2}
+  conversation: {fileID: 0}
 --- !u!114 &1245016237289485867
 MonoBehaviour:
   m_ObjectHideFlags: 0

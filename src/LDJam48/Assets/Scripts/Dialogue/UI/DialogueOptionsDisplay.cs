@@ -9,6 +9,8 @@ public class DialogueOptionsDisplay : OnMessage<ShowDialogueOptions, DialogueOpt
     
     protected override void Execute(ShowDialogueOptions msg)
     {
+        Log.Info($"Show {msg.Options.Length} Dialogue Options");
+        Hide();
         msg.Options.ForEachArr(o => Instantiate(optionButtonPrototype, optionsParent.transform)
             .Initialized(o.Text, o.Select));
     }
