@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: TestCharacter
   m_EditorClassIdentifier: 
   CharacterName: Belikov Stepanovich
-  Prefab: {fileID: 3401661812759143411, guid: 5404e22e9f62c664d8c982955cb2f930, type: 3}
+  Prefab: {fileID: 484870677808986334, guid: 5c67b1309d96938489eddaace71c982b, type: 3}
+  startTags: []
+  learnedTags: []
+  maxSus: 0
+  suspicion: 0

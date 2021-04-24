@@ -18,7 +18,7 @@ public class SuspicionHandler : OnMessage<DialogueOptionSelected>
             SaveTags(msg, character);   
         }
         
-        Message.Publish(new Finished<DialogueOptionSelected>());
+        Message.Publish(new Finished<DialogueOptionSelected>{ Message = msg });
     }
     
     private void SaveTags(DialogueOptionSelected msg, Character character)
@@ -48,9 +48,10 @@ public class SuspicionHandler : OnMessage<DialogueOptionSelected>
         {
             foreach (var characterTag in character.GetLearnedTags())
             {
+                var penalty = dialogTag.GetConflictPenalty(characterTag);
                 character.AddSuspicion(dialogTag.GetConflictPenalty(characterTag));
                 //make sure that we add suspicion only once per dialog option 
-                break;
+                if(penalty > 0) break;
             }
         }
     }

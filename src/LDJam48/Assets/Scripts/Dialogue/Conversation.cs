@@ -7,6 +7,7 @@ using UnityEngine.Events;
 [CreateAssetMenu(fileName = "Conversation", menuName = "Dialogue/Conversation")]
 public class Conversation : ScriptableObject
 {
+    [SerializeField] private Character playerCharacter;
     [SerializeField] private Character[] nonPlayerCharacters;
     [SerializeField] private UnityEvent onFinished;
     [SerializeField] private DialogueData[] sequence;
@@ -14,6 +15,7 @@ public class Conversation : ScriptableObject
     public UnityEvent OnFinished => onFinished;
     public Character[] NonPlayerCharacters => nonPlayerCharacters;
     public DialogueData[] Sequence => sequence.ToArray();
+    public Character PlayerCharacter => playerCharacter;
 
     private void OnValidate()
     {
@@ -28,7 +30,7 @@ public class Conversation : ScriptableObject
         {
             if (chars.Contains(character))
             {
-                throw new Exception("all characters in conversation must be unique");
+                throw new Exception($"All characters in conversation {name} must be unique");
             }
             chars.Add(character);
         }

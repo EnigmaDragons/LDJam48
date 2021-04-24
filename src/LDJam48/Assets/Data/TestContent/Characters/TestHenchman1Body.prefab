@@ -53,6 +53,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: 9484b95d1d23aa6438310f16509ff87a, type: 2}
   speechBubble: {fileID: 1264177830301852785}
   scenePositions: {fileID: 11400000, guid: 1ad2a147bae6bef4d88efb6c8dfafaa8, type: 2}
+  conversation: {fileID: 11400000, guid: aae2fc7d62b853d4bbc983d3df10f489, type: 2}
 --- !u!1 &4972358733975628583
 GameObject:
   m_ObjectHideFlags: 0

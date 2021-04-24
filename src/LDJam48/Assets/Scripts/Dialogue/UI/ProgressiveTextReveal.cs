@@ -11,18 +11,18 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
     [SerializeField] private FloatReference secondsPerCharacter = new FloatReference(0.07f);
     [SerializeField] private FloatReference autoAdvanceDelay = new FloatReference(0.8f);
     [SerializeField, ReadOnly] private bool isRevealing;
+    [SerializeField, ReadOnly] private string fullText;
     
     private int _cursor;
     private Color _defaultTextColor;
     private bool _showAutoProceed = false;
     private bool _proceeded = false;
-    private string _fullText = "" ;
     private Action _onFinished = () => { };
 
     private void Awake()
     {
         chatBox.onClick.AddListener(Proceed);
-        _defaultTextColor = textBox.color;
+        _defaultTextColor = FullAlphaColor(textBox.color);
     }
 
     public void Hide()
@@ -43,8 +43,8 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
             return;
 
         chatBox.gameObject.SetActive(true);
-        textBox.color = textColor;
-        _fullText = text;
+        textBox.color = FullAlphaColor(textColor);
+        fullText = text;
         _onFinished = onFinished;
         _showAutoProceed = shouldAutoProceed;
         _proceeded = false;
@@ -67,7 +67,7 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
     
     public void ShowCompletely()
     {
-        textBox.text = _fullText;
+        textBox.text = fullText;
         isRevealing = false;
         if (_showAutoProceed)
             Proceed();
@@ -78,13 +78,15 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
         isRevealing = true;
         chatBox.gameObject.SetActive(true);
         _cursor = 1;
-        while (isRevealing && _cursor < _fullText.Length)
+        while (isRevealing && _cursor < fullText.Length)
         {
-            var shownText = _fullText.Substring(0, _cursor);
+            var shownText = fullText.Substring(0, _cursor);
             textBox.text = shownText;
             _cursor++;
             yield return new WaitForSeconds(secondsPerCharacter);
         }
         ShowCompletely();
     }
+    
+    private Color FullAlphaColor(Color c) => new Color(c.r, c.g, c.b, 1f);
 }

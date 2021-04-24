@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "CurrentConversation", menuName = "Dialogue/CurrentConversation")]
@@ -6,29 +8,42 @@ public class CurrentConversation : ScriptableObject
     [SerializeField] private Conversation conversation;
     [SerializeField] private int sequenceIndex;
 
+    private readonly Queue<FollowupDialogueData> _temporaryFollowups = new Queue<FollowupDialogueData>();
+    
     public Conversation Current => conversation;
     private DialogueData CurrentSequence => Current.Sequence[sequenceIndex];
     private bool HasSequence => Current.Sequence.Length > sequenceIndex;
-    public bool NextSequenceIsOptions => conversation.Sequence.Length > sequenceIndex + 1 && conversation.Sequence[sequenceIndex + 1].IsDialogueOptions;
+    public bool NextSequenceIsOptions => _temporaryFollowups.None() && conversation.Sequence.Length > sequenceIndex + 1 && conversation.Sequence[sequenceIndex + 1].IsDialogueOptions;
     
     public void Set(Conversation c)
     {
-        sequenceIndex = 0;
+        _temporaryFollowups.Clear();
+        sequenceIndex = -1;
         conversation = c;
     }
 
     public void ExecuteNext()
     {
-        if (HasSequence)
-            CurrentSequence.Begin();
+        if (_temporaryFollowups.Any()) 
+            _temporaryFollowups.Dequeue().Begin();
         else
-            Finish();
+        {
+            sequenceIndex++;
+            if (HasSequence)
+                CurrentSequence.Begin();
+            else
+                Finish();
+        }
     }
-    
-    public void AdvanceSequence() => sequenceIndex++;
+
     private void Finish()
     {
         conversation.OnFinished.Invoke();
         Message.Publish(new AdvanceLocation());
+    }
+
+    public void Queue(FollowupDialogueData[] selectionFollowups)
+    {
+        selectionFollowups.ForEachArr(s => _temporaryFollowups.Enqueue(s));
     }
 }

@@ -178,6 +178,7 @@ GameObject:
   - component: {fileID: 6098409109340605776}
   - component: {fileID: 6098409109340605777}
   - component: {fileID: 6098409109340605778}
+  - component: {fileID: 7556740250258760945}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -282,14 +283,42 @@ MonoBehaviour:
   chatBox: {fileID: 6098409110573772366}
   textBox: {fileID: 6098409108892675644}
   secondsPerCharacter:
-    UseConstant: 1
-    ConstantValue: 0.07
-    FloatVariable: {fileID: 0}
+    UseConstant: 0
+    ConstantValue: 0.08
+    FloatVariable: {fileID: 11400000, guid: 89ce51464d1f99d4cbcbb7a28cb5490a, type: 2}
   autoAdvanceDelay:
     UseConstant: 1
-    ConstantValue: 0.8
+    ConstantValue: 1.2
     FloatVariable: {fileID: 0}
   isRevealing: 0
+--- !u!114 &7556740250258760945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6098409109340605807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15d5ff66b7276842b4357acc6811c1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys: 200000000d000000
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6098409109340605778}
+        m_TargetAssemblyTypeName: ProgressiveTextReveal, EnigmaDragons.Game
+        m_MethodName: Proceed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6098409110573772364
 GameObject:
   m_ObjectHideFlags: 0

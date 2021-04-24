@@ -5,6 +5,7 @@ public class CharacterSpeechBubble : MonoBehaviour
     [SerializeField] private Character character;
     [SerializeField] private ProgressiveTextReveal speechBubble;
     [SerializeField] private ScenePositions scenePositions;
+    [SerializeField] private CurrentConversation conversation;
     
     private void Awake()
     {
@@ -13,8 +14,13 @@ public class CharacterSpeechBubble : MonoBehaviour
         scenePositions.Register(character, speechBubble);
     }
 
-    public void Speak(DialogueOption option)
+    public void Speak(string option)
     {
-        speechBubble.Display(option.Text);    
+        speechBubble.Display(option, conversation.NextSequenceIsOptions, Proceed);
+    }
+
+    private void Proceed()
+    {
+        Message.Publish(new AdvanceConversation());
     }
 }

@@ -2,11 +2,13 @@
 {
     public class SpawnCharacters
     {
-        public Character[] ToSpawn;
-
-        public SpawnCharacters(Character[] characters)
+        public Character[] NPCs;
+        public Character PlayerCharacter;
+        
+        public SpawnCharacters(Character[] characters, Character playerCharacter)
         {
-            ToSpawn = characters;
+            NPCs = characters;
+            PlayerCharacter = playerCharacter;
         }
     }
 }

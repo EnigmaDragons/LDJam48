@@ -301,14 +301,15 @@ MonoBehaviour:
   chatBox: {fileID: 6244348384472840160}
   textBox: {fileID: 8144940541529795277}
   secondsPerCharacter:
-    UseConstant: 1
+    UseConstant: 0
     ConstantValue: 0.07
-    FloatVariable: {fileID: 0}
+    FloatVariable: {fileID: 11400000, guid: 89ce51464d1f99d4cbcbb7a28cb5490a, type: 2}
   autoAdvanceDelay:
     UseConstant: 1
     ConstantValue: 0.2
     FloatVariable: {fileID: 0}
   isRevealing: 0
+  fullText: 
 --- !u!114 &6244348384472840160
 MonoBehaviour:
   m_ObjectHideFlags: 0
