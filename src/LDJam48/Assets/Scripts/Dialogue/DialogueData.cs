@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using UnityEngine;
 
 [Serializable]
@@ -12,5 +13,7 @@ public class DialogueData
     {
         if (!string.IsNullOrWhiteSpace(statement))
             Message.Publish(new ShowStatement(speakingCharacter, statement));
+        else if (options.Any())
+            Message.Publish(new ShowDialogueOptions(options));
     }
 }
