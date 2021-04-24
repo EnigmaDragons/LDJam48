@@ -12,6 +12,15 @@ public sealed class Navigator : ScriptableObject
     public void NavigateToLocation1() => NavigateTo("FirstLocation");
     public void NavigateToScene(string sceneName) => NavigateTo(sceneName);
 
+    public void ExitGame()
+    {     
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+    }
+
     private void NavigateTo(string sceneName)
     {
         if (loggingEnabled)
