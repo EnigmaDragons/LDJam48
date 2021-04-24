@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 26}
-  m_SizeDelta: {x: 136, y: 263.5}
+  m_AnchoredPosition: {x: 0, y: -108}
+  m_SizeDelta: {x: 243.45, y: 733.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &62883653914344693
 CanvasRenderer:
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 82df7e58cd1bf6944b882f3a3075b10c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: caf55beca5e43ab4aaeef59d7a20be0b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -130,6 +130,7 @@ MonoBehaviour:
   speechBubble: {fileID: 5315633708755848909}
   scenePositions: {fileID: 11400000, guid: 1ad2a147bae6bef4d88efb6c8dfafaa8, type: 2}
   conversation: {fileID: 11400000, guid: aae2fc7d62b853d4bbc983d3df10f489, type: 2}
+  speechBubbleIsToTheLeftOfTheCharacter: 1
 --- !u!114 &5130977835692260432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,16 +188,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2184088652181378669, guid: d41da6625dad7e040bc5f679eac60821,
         type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 400
-      objectReference: {fileID: 0}
-    - target: {fileID: 2184088652181378669, guid: d41da6625dad7e040bc5f679eac60821,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 2184088652181378669, guid: d41da6625dad7e040bc5f679eac60821,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -233,12 +224,12 @@ PrefabInstance:
     - target: {fileID: 2184088652181378669, guid: d41da6625dad7e040bc5f679eac60821,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -250
+      value: -316
       objectReference: {fileID: 0}
     - target: {fileID: 2184088652181378669, guid: d41da6625dad7e040bc5f679eac60821,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 167
+      value: 333
       objectReference: {fileID: 0}
     - target: {fileID: 2184088652181378669, guid: d41da6625dad7e040bc5f679eac60821,
         type: 3}
@@ -257,8 +248,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7194821048480485693, guid: d41da6625dad7e040bc5f679eac60821,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: -1
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7194821048480485693, guid: d41da6625dad7e040bc5f679eac60821,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7194821048480485693, guid: d41da6625dad7e040bc5f679eac60821,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8717382160425752236, guid: d41da6625dad7e040bc5f679eac60821,
         type: 3}
