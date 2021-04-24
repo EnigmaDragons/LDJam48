@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b3369c6e0b478e910c4e672df48d79, type: 3}
   m_Name: VolcanoHenchman
   m_EditorClassIdentifier: 
+  playerCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477, type: 2}
   nonPlayerCharacters:
   - {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65, type: 2}
   onFinished:
@@ -46,12 +47,14 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 30cd045069badd146abc133d2b352ae7, type: 2}
       - {fileID: 11400000, guid: 486e9efc3d6b28c4cab97a366c02e466, type: 2}
       - {fileID: 11400000, guid: a173269af9ceb4f4e8378d8406c97624, type: 2}
+      followups: []
     - text: "I\u2019m the Jello delivery guy, they ran out of the lime flavor I was
         told to bring it right in."
       tags:
       - {fileID: 11400000, guid: 20188d2f3017f0340b03731f6bcf1137, type: 2}
       - {fileID: 11400000, guid: 4a686078bcb00974895e62444b07026c, type: 2}
       - {fileID: 11400000, guid: b79b40da53159254f9c5e3287c7206aa, type: 2}
+      followups: []
     - text: There was an intruder in the Jello Prep Zone that I am trying to catch,
         same as you.
       tags:
@@ -59,11 +62,13 @@ MonoBehaviour:
       - {fileID: 11400000, guid: e6d7f8dbc2b7ab34b920cf2aa735aa88, type: 2}
       - {fileID: 11400000, guid: 486e9efc3d6b28c4cab97a366c02e466, type: 2}
       - {fileID: 11400000, guid: b79b40da53159254f9c5e3287c7206aa, type: 2}
+      followups: []
     - text: Something was wrong with the Jello mixer, I had to fix it.
       tags:
       - {fileID: 11400000, guid: 55a1a6b3d34246d49a2b695164e9e40a, type: 2}
       - {fileID: 11400000, guid: 486e9efc3d6b28c4cab97a366c02e466, type: 2}
       - {fileID: 11400000, guid: 79b983f8a62385b4ba6e40957745d0c9, type: 2}
+      followups: []
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: "Why don\u2019t I recognize you?"
@@ -76,14 +81,17 @@ MonoBehaviour:
         cause he made fun of the boss."
       tags:
       - {fileID: 11400000, guid: b79b40da53159254f9c5e3287c7206aa, type: 2}
+      followups: []
     - text: A faceless minion like me is hardly important enough to remember.
       tags:
       - {fileID: 11400000, guid: b79b40da53159254f9c5e3287c7206aa, type: 2}
+      followups: []
     - text: "The boss says he wants this plan done yesterday and so he hired a bunch
         of new people, I\u2019m a new hire."
       tags:
       - {fileID: 11400000, guid: 51542a304c81af2498fb4e23b3d12156, type: 2}
       - {fileID: 11400000, guid: 486e9efc3d6b28c4cab97a366c02e466, type: 2}
+      followups: []
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: What were you tampering with over there?
@@ -97,20 +105,24 @@ MonoBehaviour:
       tags:
       - {fileID: 11400000, guid: 8bf410ac14c0a8246ac36ae734b22a3a, type: 2}
       - {fileID: 11400000, guid: 49dbe33fa0b0f1346802b20895ccf72c, type: 2}
+      followups: []
     - text: "Fixing it, of course. No idea why it was so broken, hope you don\u2019t
         have a security breach."
       tags:
       - {fileID: 11400000, guid: 55a1a6b3d34246d49a2b695164e9e40a, type: 2}
       - {fileID: 11400000, guid: e6d7f8dbc2b7ab34b920cf2aa735aa88, type: 2}
+      followups: []
     - text: "The temperature was off, and I had to adjust the thermostat. With how
         hot it gets, it\u2019s like we are in the middle of a volcano or something."
       tags:
       - {fileID: 11400000, guid: 49dbe33fa0b0f1346802b20895ccf72c, type: 2}
       - {fileID: 11400000, guid: 486e9efc3d6b28c4cab97a366c02e466, type: 2}
+      followups: []
     - text: Just my phone, there was a rare Lava Pokenon I had to catch.
       tags:
       - {fileID: 11400000, guid: 49dbe33fa0b0f1346802b20895ccf72c, type: 2}
       - {fileID: 11400000, guid: 4a686078bcb00974895e62444b07026c, type: 2}
+      followups: []
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: Have you seen anyone suspicious recently?
@@ -122,12 +134,15 @@ MonoBehaviour:
     - text: Yes I saw someone dressed in full ninja garb sneaking around.
       tags:
       - {fileID: 11400000, guid: e6d7f8dbc2b7ab34b920cf2aa735aa88, type: 2}
+      followups: []
     - text: No, everything seems perfectly fine.
       tags:
       - {fileID: 11400000, guid: 49dbe33fa0b0f1346802b20895ccf72c, type: 2}
+      followups: []
     - text: Do I look like a hall monitor? I have got more important things to do.
       tags:
       - {fileID: 11400000, guid: 51542a304c81af2498fb4e23b3d12156, type: 2}
+      followups: []
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: What are you getting paid here?
@@ -139,9 +154,12 @@ MonoBehaviour:
     - text: YOUR GETTING PAID?!
       tags:
       - {fileID: 11400000, guid: b79b40da53159254f9c5e3287c7206aa, type: 2}
+      followups: []
     - text: I get the keys to a mansion in New Landago when we take it over.
       tags:
       - {fileID: 11400000, guid: a173269af9ceb4f4e8378d8406c97624, type: 2}
+      followups: []
     - text: 1 gold bar a week
       tags:
       - {fileID: 11400000, guid: 79b983f8a62385b4ba6e40957745d0c9, type: 2}
+      followups: []
