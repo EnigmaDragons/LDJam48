@@ -12,8 +12,8 @@ namespace Tags
         private class ConflictEntry
         {
             [SerializeField] private string name;
-            [SerializeField] private TagObject[] tags;
             [SerializeField] private int penalty;
+            [SerializeField] private TagObject[] tags;
 
             private HashSet<TagObject> _hashed = new HashSet<TagObject>();
 
