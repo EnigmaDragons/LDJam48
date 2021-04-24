@@ -6,7 +6,7 @@ namespace Tags
     public class TagObject : ScriptableObject
     {
         [SerializeField] private string name;
-        [SerializeField] private TagObject[] conflictingTags;
+        //[SerializeField] private TagObject[] conflictingTags;
 
 
         /// <summary>
@@ -15,14 +15,12 @@ namespace Tags
         /// <returns></returns>
         public bool Conflicts(TagObject otherTag)
         {
-            if (otherTag == this) return false;
+            return ConflictDatabase.Conflicts(this, otherTag);
+        }
 
-            foreach (var tag in conflictingTags)
-            {
-                if (tag == otherTag) return true;
-            }
-
-            return false;
+        public int GetConflictPenalty(TagObject otherTag)
+        {
+            return ConflictDatabase.GetPenalty(this, otherTag);
         }
         
         public string GetName()
