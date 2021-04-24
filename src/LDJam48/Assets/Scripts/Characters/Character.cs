@@ -14,6 +14,7 @@ public class Character : ScriptableObject, IEqualityComparer<Character>
     [SerializeField] private List<TagObject> learnedTags;
     [SerializeField] private int maxSus;
     [SerializeField] private int suspicion;
+    public Action ONSuspicionChange;
     
     private void OnValidate()
     {
@@ -23,11 +24,17 @@ public class Character : ScriptableObject, IEqualityComparer<Character>
     public void AddSuspicion(int amount)
     {
         suspicion += amount;
+        ONSuspicionChange?.Invoke();
     }
 
     public int GetSuspicion()
     {
         return suspicion;
+    }
+    
+    public int GetMaxSuspicion()
+    {
+        return maxSus;
     }
 
     public bool IsSus()
@@ -37,6 +44,7 @@ public class Character : ScriptableObject, IEqualityComparer<Character>
 
     public void Flush()
     {
+        ONSuspicionChange = () => {};
         learnedTags = new List<TagObject>();
         learnedTags = (startTags ?? new TagObject[0]).ToList();
         suspicion = 0;
