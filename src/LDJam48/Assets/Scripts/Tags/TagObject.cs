@@ -7,20 +7,6 @@ namespace Tags
     {
         [SerializeField] private string name;
 
-        /// <summary>
-        /// Checks if other tag conflicts with this one
-        /// </summary>
-        /// <returns></returns>
-        public bool Conflicts(TagObject otherTag)
-        {
-            return ConflictDatabase.Conflicts(this, otherTag);
-        }
-
-        public int GetConflictPenalty(TagObject otherTag)
-        {
-            return ConflictDatabase.GetPenalty(this, otherTag);
-        }
-        
         public string GetName()
         {
             return name;

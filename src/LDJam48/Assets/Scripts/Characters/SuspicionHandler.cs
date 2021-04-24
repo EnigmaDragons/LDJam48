@@ -7,6 +7,7 @@ using UnityEngine;
 public class SuspicionHandler : OnMessage<DialogueOptionSelected>
 {
     [SerializeField] private CurrentConversation conversation;
+    [SerializeField] private ConflictDatabase conflictDatabase;
     
     protected override void Execute(DialogueOptionSelected msg)
     {
@@ -32,7 +33,7 @@ public class SuspicionHandler : OnMessage<DialogueOptionSelected>
             var shouldLearn = true;
             foreach (var characterTag in character.GetLearnedTags())
             {
-                if(dialogTag.Conflicts(characterTag)) shouldLearn = false;
+                if(conflictDatabase.Conflicts(dialogTag, characterTag)) shouldLearn = false;
                 if(characterTag == dialogTag) shouldLearn = false;
             }
             if(shouldLearn) toLearn.Add(dialogTag);
@@ -50,9 +51,9 @@ public class SuspicionHandler : OnMessage<DialogueOptionSelected>
         {
             foreach (var characterTag in character.GetLearnedTags())
             {
-                var penalty = dialogTag.GetConflictPenalty(characterTag);
+                var penalty = conflictDatabase.GetPenalty(dialogTag, characterTag);
                 totalSuspicion += penalty;
-                character.AddSuspicion(dialogTag.GetConflictPenalty(characterTag));
+                character.AddSuspicion(conflictDatabase.GetPenalty(dialogTag, characterTag));
                 //make sure that we add suspicion only once per dialog option 
                 if(penalty > 0) break;
             }

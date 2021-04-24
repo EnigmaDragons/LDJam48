@@ -6,7 +6,8 @@ using UnityEngine;
 
 namespace Tags
 {
-    public class ConflictDatabase : ScriptableSingleton<ConflictDatabase>
+    [CreateAssetMenu(menuName = "Only Once/Conflict Database")]
+    public class ConflictDatabase : ScriptableObject
     {
         [Serializable]
         private class ConflictEntry
@@ -26,16 +27,15 @@ namespace Tags
 
             public int GetPenalty()
             {
-                return penalty;progr
+                return penalty;
             }
         }
 
         [SerializeField] private ConflictEntry[] conflicts;
 
-        public static bool Conflicts(TagObject tag1, TagObject tag2)
+        public bool Conflicts(TagObject tag1, TagObject tag2)
         {
-            var confs = instance.conflicts;
-            foreach (var conflict in confs)
+            foreach (var conflict in conflicts)
             {
                 if (conflict.TagConflicts(tag1, tag2)) return true;
             }
@@ -43,10 +43,9 @@ namespace Tags
             return false;
         }
 
-        public static int GetPenalty(TagObject tag1, TagObject tag2)
+        public int GetPenalty(TagObject tag1, TagObject tag2)
         {
-            var confs = instance.conflicts;
-            foreach (var conflict in confs)
+            foreach (var conflict in conflicts)
             {
                 if (conflict.TagConflicts(tag1,tag2)) return conflict.GetPenalty();
             }
