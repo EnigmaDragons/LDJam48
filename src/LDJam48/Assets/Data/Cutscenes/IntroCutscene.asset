@@ -13,20 +13,36 @@ MonoBehaviour:
   m_Name: IntroCutscene
   m_EditorClassIdentifier: 
   segments:
-  - artBackground: {fileID: 0}
+  - artBackground: {fileID: 4667574391697563776, guid: 626956314d2d09b44b887a7d0e7b3a36,
+      type: 3}
     storyText: You're a spy known as double 0 and a half.
-    textColor: {r: 0, g: 0, b: 0, a: 0}
-  - artBackground: {fileID: 0}
+    textColor: {r: 0, g: 0, b: 0, a: 1}
+  - artBackground: {fileID: 4667574391697563776, guid: 626956314d2d09b44b887a7d0e7b3a36,
+      type: 3}
     storyText: Every other weekend you save the world, and this is that other weekend.
-    textColor: {r: 0, g: 0, b: 0, a: 0}
-  - artBackground: {fileID: 0}
+    textColor: {r: 0, g: 0, b: 0, a: 1}
+  - artBackground: {fileID: 4667574391697563776, guid: 626956314d2d09b44b887a7d0e7b3a36,
+      type: 3}
     storyText: The evil organization S.U.S. (Sinister Ultra Syndicate) has recently
       bought a volcano island and is buying large quantites of jello packets.
-    textColor: {r: 0, g: 0, b: 0, a: 0}
-  - artBackground: {fileID: 0}
-    storyText: Your mission is to infiltrate their base, find out their plan, and
-      put a stop to it.
-    textColor: {r: 0, g: 0, b: 0, a: 0}
+    textColor: {r: 0, g: 0, b: 0, a: 1}
+  - artBackground: {fileID: 4667574391697563776, guid: 626956314d2d09b44b887a7d0e7b3a36,
+      type: 3}
+    storyText: Your mission is to infiltrate their base, find out their dastardly
+      scheme, and put a stop to it.
+    textColor: {r: 0, g: 0, b: 0, a: 1}
   onFinishedAction:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: c3cd3edfa3cf5c94fbbf792f8728cebb, type: 2}
+        m_TargetAssemblyTypeName: Navigator, EnigmaDragons.Game
+        m_MethodName: NavigateToLocation1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
