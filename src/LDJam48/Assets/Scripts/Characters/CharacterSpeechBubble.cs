@@ -12,4 +12,9 @@ public class CharacterSpeechBubble : MonoBehaviour
         speechBubble.Hide();
         scenePositions.Register(character, speechBubble);
     }
+
+    public void Speak()
+    {
+        
+    }
 }

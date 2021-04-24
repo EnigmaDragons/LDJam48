@@ -85,6 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5615735488513143019}
   - component: {fileID: 5008957089299368569}
+  - component: {fileID: 1969658237732620182}
   m_Layer: 0
   m_Name: SecurityGuard
   m_TagString: Untagged
@@ -128,6 +129,18 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c, type: 2}
   speechBubble: {fileID: 3134515869540745173}
   scenePositions: {fileID: 11400000, guid: 1ad2a147bae6bef4d88efb6c8dfafaa8, type: 2}
+--- !u!114 &1969658237732620182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697081042536614812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0282491a2f28df445ba345746b24d75b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5951347974341224474
 PrefabInstance:
   m_ObjectHideFlags: 0
