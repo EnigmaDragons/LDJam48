@@ -9,6 +9,8 @@ public class DialogueData
     [SerializeField] private string statement;
     [SerializeField] private DialogueOption[] options;
 
+    public bool IsDialogueOptions => string.IsNullOrWhiteSpace(statement) && options.Any();
+    
     public void Begin()
     {
         if (!string.IsNullOrWhiteSpace(statement))

@@ -5,33 +5,18 @@ public class ConversationHandler : OnMessage<StartConversation, AdvanceConversat
     
     [SerializeField] private CurrentConversation conversation;
     
-    private int _sequenceIndex = 0;
-
     protected override void Execute(StartConversation msg)
     {
         conversation.Set(msg.Conversation);
-        _sequenceIndex = 0;
-        BeginSequence();
+        conversation.ExecuteNext();
     }
 
-    private void BeginSequence()
-    {
-        var c = conversation.Current;
-        if (c.Sequence.Length > _sequenceIndex)
-            c.Sequence[_sequenceIndex].Begin();
-        else
-            c.OnFinished.Invoke();
-    }
+    protected override void Execute(AdvanceConversation msg) => StartNext();
+    protected override void Execute(Finished<DialogueOptionSelected> msg) => StartNext();
 
-    protected override void Execute(AdvanceConversation msg)
+    private void StartNext()
     {
-        _sequenceIndex++;
-        BeginSequence();
-    }
-
-    protected override void Execute(Finished<DialogueOptionSelected> msg)
-    {
-        _sequenceIndex++;
-        BeginSequence();
+        conversation.AdvanceSequence();
+        conversation.ExecuteNext();
     }
 }

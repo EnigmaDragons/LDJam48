@@ -29,6 +29,7 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
 
     public void Display(string text) => Display(text,  _defaultTextColor, false, () => { });
     public void Display(string text, Action onFinished) => Display(text, _defaultTextColor, false, onFinished);
+    public void Display(string text, bool shouldAutoProceed, Action onFinished) => Display(text, _defaultTextColor, shouldAutoProceed, onFinished);
     public void Display(string text, Color textColor, bool shouldAutoProceed, Action onFinished)
     {
         if (isRevealing)
@@ -39,6 +40,7 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
         _onFinished = onFinished;
         _showAutoProceed = shouldAutoProceed;
         _proceeded = false;
+        gameObject.SetActive(true);
         StartCoroutine(BeginReveal());
     }
 
