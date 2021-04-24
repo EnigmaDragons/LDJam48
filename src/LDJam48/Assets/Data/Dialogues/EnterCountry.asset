@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nonPlayerCharacters:
   - {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c, type: 2}
+  - {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c, type: 2}
   onFinished:
     m_PersistentCalls:
       m_Calls: []

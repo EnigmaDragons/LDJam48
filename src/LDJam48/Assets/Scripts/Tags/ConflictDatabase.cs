@@ -14,9 +14,10 @@ namespace Tags
             [SerializeField] private TagObject tag2;
             [SerializeField] private int penalty;
 
-            public bool TagConflicts(TagObject tag)
+            public bool TagConflicts(TagObject tg1, TagObject tg2)
             {
-                if (tag1 == tag || tag2 == tag) return true;
+                if (tag1 == tg1 && tag2 == tg2) return true;
+                if (tag1 == tg2 && tag2 == tg1) return true;
                 return false;
             }
 
@@ -33,7 +34,7 @@ namespace Tags
             var confs = instance.conflicts;
             foreach (var conflict in confs)
             {
-                if (conflict.TagConflicts(tag1) || conflict.TagConflicts(tag2)) return true;
+                if (conflict.TagConflicts(tag1, tag2)) return true;
             }
 
             return false;
@@ -44,7 +45,7 @@ namespace Tags
             var confs = instance.conflicts;
             foreach (var conflict in confs)
             {
-                if (conflict.TagConflicts(tag1) || conflict.TagConflicts(tag2)) return conflict.GetPenalty();
+                if (conflict.TagConflicts(tag1,tag2)) return conflict.GetPenalty();
             }
 
             return 0;
