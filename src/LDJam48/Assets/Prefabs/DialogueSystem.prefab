@@ -588,6 +588,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPCs
       objectReference: {fileID: 0}
+    - target: {fileID: 8068410872390498527, guid: 9db421749122d7443b805bcf512d507c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068410872769152431, guid: 9db421749122d7443b805bcf512d507c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068410872829265520, guid: 9db421749122d7443b805bcf512d507c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9db421749122d7443b805bcf512d507c, type: 3}
 --- !u!224 &7201747668334156506 stripped

@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 7715503430725985496}
   - component: {fileID: 5536391121902995485}
   - component: {fileID: 7632293859265913990}
+  - component: {fileID: 858273188031948372}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -223,6 +224,34 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &858273188031948372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7715503430725985498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15d5ff66b7276842b4357acc6811c1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys: 200000000d000000
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5536391121902995485}
+        m_TargetAssemblyTypeName: ProgressiveTextReveal, EnigmaDragons.Game
+        m_MethodName: Proceed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7715503431014796020
 GameObject:
   m_ObjectHideFlags: 0
