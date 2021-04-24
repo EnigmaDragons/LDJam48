@@ -8,7 +8,7 @@ public class DialogueData
     [SerializeField] private string statement;
     [SerializeField] private DialogueOption[] options;
 
-    public void Perform()
+    public void Begin()
     {
         if (!string.IsNullOrWhiteSpace(statement))
             Message.Publish(new ShowStatement(speakingCharacter, statement));
