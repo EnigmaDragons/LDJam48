@@ -12,3 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bffcd5b6bf6a1864cb81fc826cd41644, type: 3}
   m_Name: Conflict Database
   m_EditorClassIdentifier: 
+  conflicts:
+  - name: 
+    tag1: {fileID: 11400000, guid: 963b509ccb9cf354685ea434fc1f512e, type: 2}
+    tag2: {fileID: 11400000, guid: 42942f01fe877734292d60d326609594, type: 2}
+    penalty: 2
+  - name: 
+    tag1: {fileID: 11400000, guid: d34aa316c85e941469e2f778e88d4ec8, type: 2}
+    tag2: {fileID: 11400000, guid: 8b1e568adbc489a49b4cfe9f7e3b7c02, type: 2}
+    penalty: 2
+  - name: 
+    tag1: {fileID: 11400000, guid: 5612b4598b3a5c241969da9ebdd2b4ce, type: 2}
+    tag2: {fileID: 11400000, guid: de3063a3468317b4c8e947331e529c56, type: 2}
+    penalty: 2
+  - name: 
+    tag1: {fileID: 11400000, guid: 7d109b0b7fbdf3e468e3e186b157a281, type: 2}
+    tag2: {fileID: 11400000, guid: 6b78e6497f022ad4fa7bb394b476fd11, type: 2}
+    penalty: 2
+  - name: 
+    tag1: {fileID: 11400000, guid: 963b509ccb9cf354685ea434fc1f512e, type: 2}
+    tag2: {fileID: 11400000, guid: 7bc577093202eff478cf35e4c823014c, type: 2}
+    penalty: 2
+  - name: 
+    tag1: {fileID: 11400000, guid: 0546ebf45b35aa040b24c36e3ff51208, type: 2}
+    tag2: {fileID: 11400000, guid: 2e81008d397c9ca4fb392edf9af50d2f, type: 2}
+    penalty: 1
