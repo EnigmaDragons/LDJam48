@@ -10,7 +10,10 @@ public sealed class CurrentGameState : ScriptableObject
     [SerializeField] private Location currentLocation;
     [SerializeField] private int locationConversationIndex;
 
+    public int LocationConversationIndex => locationConversationIndex;
     public Location CurrentLocation => currentLocation;
+    public void AdvanceLocationConversation() => locationConversationIndex++;
+
     public void SetLocation(Location l)
     {
         locationConversationIndex = 0;

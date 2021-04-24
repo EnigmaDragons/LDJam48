@@ -13,7 +13,6 @@ public class IntroLoopAudioPlayer : ScriptableObject
 
     public void Init()
     {
-        
         if(debugLoggingEnabled)
             Log.Info("Init Introloop Player");    
         IntroloopPlayer.Instance.SetMixerGroup(mixer.FindMatchingGroups(volumeValueName)[0]);
@@ -24,14 +23,14 @@ public class IntroLoopAudioPlayer : ScriptableObject
     {
         if (currentClip != null && currentClip.name == clipToPlay.name) return;
         
-        Log.Info("Play Introloop Music");  
+        if(debugLoggingEnabled)
+            Log.Info("Play Introloop Music");  
+        
+        var volume = PlayerPrefs.GetFloat(volumeValueName, 0.5f);
+        var mixerVolume = (Mathf.Log10(volume) * 20) - reductionDb;
+        mixer.SetFloat(volumeValueName, mixerVolume);
         
         currentClip = clipToPlay;
         IntroloopPlayer.Instance.Play(clipToPlay);
-
-        var volume = PlayerPrefs.GetFloat(volumeValueName, 0.5f);
-        var mixerVolume = (Mathf.Log10(volume) * 20) - reductionDb;
-        Debug.Log($"Init - Set Audio Level for {volumeValueName} to {volume} ({mixerVolume}db)");
-        mixer.SetFloat(volumeValueName, mixerVolume);
     }
 }

@@ -26,6 +26,9 @@ public class CurrentConversation : ScriptableObject
     }
     
     public void AdvanceSequence() => sequenceIndex++;
-    private void Finish() => conversation.OnFinished.Invoke();
-
+    private void Finish()
+    {
+        conversation.OnFinished.Invoke();
+        Message.Publish(new AdvanceLocation());
+    }
 }

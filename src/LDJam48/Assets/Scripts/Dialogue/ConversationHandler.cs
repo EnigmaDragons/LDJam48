@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class ConversationHandler : OnMessage<StartConversation, AdvanceConversation, Finished<DialogueOptionSelected>>
 {
-    
     [SerializeField] private CurrentConversation conversation;
     
     protected override void Execute(StartConversation msg)
