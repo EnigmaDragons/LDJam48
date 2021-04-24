@@ -19,7 +19,7 @@ public static class CollectionExtensions
     public static T[] AsArray<T>(this T item) => new [] {item};
     public static TValue ValueOrDefault<TKey, TValue>(this IDictionary<TKey, TValue> d, TKey key, Func<TValue> getDefault) => d.TryGetValue(key, out var value) ? value : getDefault();
 
-    public static void ForEach<T>(this T[] arr, Action<T> action)
+    public static void ForEachArr<T>(this T[] arr, Action<T> action)
     {
         foreach (var t in arr)
             action(t);

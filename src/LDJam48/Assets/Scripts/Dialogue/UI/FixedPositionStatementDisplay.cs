@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FixedPositionStatementDisplay : OnMessage<ShowStatement>
+public class FixedPositionStatementDisplay : OnMessage<ShowStatement, HideStatements>
 {
     [SerializeField] private ProgressiveTextReveal text;
     
@@ -8,4 +8,6 @@ public class FixedPositionStatementDisplay : OnMessage<ShowStatement>
     {
         text.Display(msg.Statement, () => Message.Publish(new AdvanceConversation()));
     }
+
+    protected override void Execute(HideStatements msg) => text.Hide();
 }
