@@ -16,4 +16,5 @@ MonoBehaviour:
   Prefab: {fileID: 0}
   startTags: []
   learnedTags: []
+  maxSus: 100
   suspicion: 0
