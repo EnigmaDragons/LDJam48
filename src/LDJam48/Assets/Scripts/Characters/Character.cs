@@ -13,6 +13,7 @@ public class Character : ScriptableObject, IEqualityComparer<Character>
     [SerializeField] private TagObject[] startTags;
     [SerializeField] private List<TagObject> learnedTags;
     [SerializeField] private int maxSus;
+    [SerializeField] private int startingSus;
     [SerializeField] private int suspicion;
     public Action ONSuspicionChange;
     
@@ -47,7 +48,7 @@ public class Character : ScriptableObject, IEqualityComparer<Character>
         ONSuspicionChange = () => {};
         learnedTags = new List<TagObject>();
         learnedTags = (startTags ?? new TagObject[0]).ToList();
-        suspicion = 0;
+        suspicion = startingSus;
     }
 
     public void LearnTag(TagObject tag)
