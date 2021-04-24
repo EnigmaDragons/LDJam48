@@ -12,8 +12,9 @@ public class Character : ScriptableObject
     public GameObject Prefab;
     [SerializeField] private TagObject[] startTags;
     [SerializeField] private List<TagObject> learnedTags;
+    [SerializeField] private int maxSus;
     [SerializeField] private int suspicion;
-
+    
     private void OnValidate()
     {
         Flush();
@@ -27,6 +28,11 @@ public class Character : ScriptableObject
     public int GetSuspicion()
     {
         return suspicion;
+    }
+
+    public bool IsSus()
+    {
+        return suspicion >= maxSus;
     }
 
     public void Flush()
