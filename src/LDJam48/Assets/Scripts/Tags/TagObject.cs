@@ -6,8 +6,6 @@ namespace Tags
     public class TagObject : ScriptableObject
     {
         [SerializeField] private string name;
-        //[SerializeField] private TagObject[] conflictingTags;
-
 
         /// <summary>
         /// Checks if other tag conflicts with this one

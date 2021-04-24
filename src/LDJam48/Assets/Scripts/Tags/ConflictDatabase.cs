@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
@@ -10,15 +12,16 @@ namespace Tags
         private class ConflictEntry
         {
             [SerializeField] private string name;
-            [SerializeField] private TagObject tag1;
-            [SerializeField] private TagObject tag2;
+            [SerializeField] private TagObject[] tags;
             [SerializeField] private int penalty;
+
+            private HashSet<TagObject> _hashed = new HashSet<TagObject>();
 
             public bool TagConflicts(TagObject tg1, TagObject tg2)
             {
-                if (tag1 == tg1 && tag2 == tg2) return true;
-                if (tag1 == tg2 && tag2 == tg1) return true;
-                return false;
+                if (_hashed.None())
+                    _hashed = new HashSet<TagObject>(tags);
+                return _hashed.Contains(tg1) && _hashed.Contains(tg2);
             }
 
             public int GetPenalty()
@@ -50,8 +53,5 @@ namespace Tags
 
             return 0;
         }
-        
     }
-
-    
 }
