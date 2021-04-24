@@ -6,6 +6,6 @@ public class FixedPositionStatementDisplay : OnMessage<ShowStatement>
     
     protected override void Execute(ShowStatement msg)
     {
-        text.Display(msg.Statement);
+        text.Display(msg.Statement, () => Message.Publish(new AdvanceConversation()));
     }
 }
