@@ -28,7 +28,7 @@ public class Conversation : ScriptableObject
         {
             if (chars.Contains(character))
             {
-                throw new Exception("all characters in conversation must be unique");
+                throw new Exception($"All characters in conversation {name} must be unique");
             }
             chars.Add(character);
         }
