@@ -27,7 +27,7 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
 
     public void Hide()
     {
-        if (!chatBox.gameObject.activeSelf)
+        if (!chatBox.gameObject.activeSelf || isRevealing)
             return;
         
         Log.Info($"Hide Speech Bubble", this);

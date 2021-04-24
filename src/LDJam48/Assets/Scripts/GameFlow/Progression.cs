@@ -18,4 +18,6 @@ public class Progression : ScriptableObject
         gameState.SetLocation(l);
         navigator.NavigateToLocationScene();
     }
+
+    public void SkipCutscene() => Message.Publish(new SkipCutscene());
 }

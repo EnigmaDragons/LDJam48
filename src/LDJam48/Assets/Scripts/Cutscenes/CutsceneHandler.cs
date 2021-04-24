@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-public class CutsceneHandler : OnMessage<ShowCutscene, AdvanceCutscene>
+public class CutsceneHandler : OnMessage<ShowCutscene, AdvanceCutscene, SkipCutscene>
 {
     [SerializeField] private CurrentCutscene cutscene;
     
@@ -19,7 +19,10 @@ public class CutsceneHandler : OnMessage<ShowCutscene, AdvanceCutscene>
         _sequenceIndex++;
         BeginSegment();
     }
-    
+
+    protected override void Execute(SkipCutscene msg) 
+        => cutscene.Current.OnFinished.Invoke();
+
     private void BeginSegment()
     {
         var c = cutscene.Current;
