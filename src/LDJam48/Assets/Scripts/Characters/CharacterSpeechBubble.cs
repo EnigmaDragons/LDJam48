@@ -13,8 +13,8 @@ public class CharacterSpeechBubble : MonoBehaviour
         scenePositions.Register(character, speechBubble);
     }
 
-    public void Speak()
+    public void Speak(DialogueOption option)
     {
-        
+        speechBubble.Display(option.Text);    
     }
 }
