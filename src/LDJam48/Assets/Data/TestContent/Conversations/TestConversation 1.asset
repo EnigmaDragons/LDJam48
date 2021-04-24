@@ -12,25 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b3369c6e0b478e910c4e672df48d79, type: 3}
   m_Name: TestConversation 1
   m_EditorClassIdentifier: 
+  playerCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477, type: 2}
   nonPlayerCharacters:
-  - {fileID: 11400000, guid: 9484b95d1d23aa6438310f16509ff87a, type: 2}
+  - {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c, type: 2}
   onFinished:
     m_PersistentCalls:
       m_Calls: []
   sequence:
-  - speakingCharacter: {fileID: 11400000, guid: 287c526762abb8f44aa4ddadde2db4de,
+  - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
     statement: Welcome to our humble country of Zinlandia!
     options: []
-  - speakingCharacter: {fileID: 11400000, guid: 287c526762abb8f44aa4ddadde2db4de,
+  - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
     statement: Where are you from?
     options: []
-  - speakingCharacter: {fileID: 11400000, guid: 287c526762abb8f44aa4ddadde2db4de,
+  - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
     statement: 
     options:
     - text: I'm from America
       tags: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: Ah, America! I see.
     - text: I am a parachute salesman from Mars
       tags: []
+      followups: []

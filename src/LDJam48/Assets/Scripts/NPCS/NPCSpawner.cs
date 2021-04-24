@@ -35,7 +35,7 @@ public class NPCSpawner : MonoBehaviour
         var inst = Instantiate(prefab, spawnPositions[id]);
         var manager = inst.GetComponent<CharacterManager>();
         _charactersOnScene.Add(character);
-        _managers.Add(character, manager);
+        _managers[character] = manager;
     }
 
     public void SpawnPlayerCharacter(Character character)
@@ -44,7 +44,7 @@ public class NPCSpawner : MonoBehaviour
         var inst = Instantiate(prefab, playerSpawnPosition);
         var manager = inst.GetComponent<CharacterManager>();
         _charactersOnScene.Add(character);
-        _managers.Add(character, manager);
+        _managers[character] = manager;
     }
     
     //TODO make characters play exit animation before destroying them

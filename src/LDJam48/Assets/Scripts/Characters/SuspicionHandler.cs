@@ -18,7 +18,7 @@ public class SuspicionHandler : OnMessage<DialogueOptionSelected>
             SaveTags(msg, character);   
         }
         
-        Message.Publish(new Finished<DialogueOptionSelected>());
+        Message.Publish(new Finished<DialogueOptionSelected>{ Message = msg });
     }
     
     private void SaveTags(DialogueOptionSelected msg, Character character)

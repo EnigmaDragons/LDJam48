@@ -11,11 +11,11 @@ public class ConversationHandler : OnMessage<StartConversation, AdvanceConversat
     }
 
     protected override void Execute(AdvanceConversation msg) => StartNext();
-    protected override void Execute(Finished<DialogueOptionSelected> msg) => StartNext();
-
-    private void StartNext()
+    protected override void Execute(Finished<DialogueOptionSelected> msg)
     {
-        conversation.AdvanceSequence();
-        conversation.ExecuteNext();
+        conversation.Queue(msg.Message.Selection.Followups);
+        StartNext();
     }
+
+    private void StartNext() => conversation.ExecuteNext();
 }
