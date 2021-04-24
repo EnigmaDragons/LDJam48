@@ -22,6 +22,8 @@ public class CharacterSpeechBubble : MonoBehaviour
         speechBubble.Display(option, conversation.NextSequenceIsOptions, Proceed);
     }
 
+    public void Hide() => speechBubble.Hide();
+
     private void Proceed()
     {
         Message.Publish(new AdvanceConversation());

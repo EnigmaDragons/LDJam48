@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Dialogue.Messages;
 using UnityEngine;
 
@@ -23,7 +24,11 @@ public class NPCSpawner : MonoBehaviour
 
         return _managers[character];
     }
-    
+
+    public void HideAllSpeech()
+    {
+        _managers.ToList().ForEach(m => m.Value.HideSpeech());
+    }
     
     //TODO make characters play entrance animation instead of just spawning in
     public void SpawnCharacter(Character character)

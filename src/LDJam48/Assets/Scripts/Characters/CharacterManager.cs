@@ -11,4 +11,6 @@ public class CharacterManager : MonoBehaviour
     {
         speechBubble.Speak(option);
     }
+
+    public void HideSpeech() => speechBubble.Hide();
 }

@@ -73,6 +73,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversation: {fileID: 11400000, guid: aae2fc7d62b853d4bbc983d3df10f489, type: 2}
+  conflictDatabase: {fileID: 11400000, guid: 3e6dec2e8cd60914bbc785b386e325ad, type: 2}
 --- !u!114 &8593013913974506984
 MonoBehaviour:
   m_ObjectHideFlags: 0
