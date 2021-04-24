@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ConversationStartTester : MonoBehaviour
 {
-    [SerializeField] private LinearConversation conversation;
+    [SerializeField] private Conversation conversation;
 
     private void Update()
     {

@@ -1,20 +1,22 @@
+using UnityEngine;
 
 public class ConversationHandler : OnMessage<StartConversation, AdvanceConversation>
 {
-    private LinearConversation _current;
+    [SerializeField] private CurrentConversation conversation;
+    
     private int _sequenceIndex = 0;
 
     protected override void Execute(StartConversation msg)
     {
-        _current = msg.Conversation;
+        conversation.Set(msg.Conversation);
         _sequenceIndex = 0;
         BeginSequence();
     }
 
     private void BeginSequence()
     {
-        if (_current.Sequence.Length > _sequenceIndex)
-            _current.Sequence[_sequenceIndex].Begin();
+        if (conversation.Current.Sequence.Length > _sequenceIndex)
+            conversation.Current.Sequence[_sequenceIndex].Begin();
         else
             Message.Publish(new ConversationFinished());
     }
