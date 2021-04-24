@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPCspawner : OnMessage<StartConversation>
+public class NPCSpawner : OnMessage<StartConversation>
 {
     [SerializeField] private Transform[] spawnPositions;
     private List<Character> _charactersOnScene = new List<Character>();

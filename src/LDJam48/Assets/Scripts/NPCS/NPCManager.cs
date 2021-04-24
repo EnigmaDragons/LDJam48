@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NPCManager : MonoBehaviour
 {
-    [SerializeField] private NPCspawner spawner;
+    [SerializeField] private NPCSpawner spawner;
 
     public void CharacterSpeak(Character character, DialogueOption option)
     {
