@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25270905b38f4019b261f1515fa62dea, type: 3}
+  m_Name: VolcanoCutscene
+  m_EditorClassIdentifier: 
+  segments:
+  - artBackground: {fileID: 0}
+    storyText: You have breached lair to discover the villainous scheme.
+    textColor: {r: 0, g: 0, b: 0, a: 0}
+  - artBackground: {fileID: 0}
+    storyText: They are modifying jello packets so that when they dump them in the
+      volcano it will overflow and destroy the neighbouring country New Landago.
+    textColor: {r: 0, g: 0, b: 0, a: 0}
+  - artBackground: {fileID: 0}
+    storyText: Unless New Landago surrenders unconditionally to S.U.S.
+    textColor: {r: 0, g: 0, b: 0, a: 0}
+  onFinishedAction:
+    m_PersistentCalls:
+      m_Calls: []

@@ -85,6 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6857292762360495609}
   - component: {fileID: 4335934020854422269}
+  - component: {fileID: 5130977835692260432}
   m_Layer: 0
   m_Name: Spy
   m_TagString: Untagged
@@ -128,6 +129,19 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477, type: 2}
   speechBubble: {fileID: 5315633708755848909}
   scenePositions: {fileID: 11400000, guid: 1ad2a147bae6bef4d88efb6c8dfafaa8, type: 2}
+--- !u!114 &5130977835692260432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483828345482842763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0282491a2f28df445ba345746b24d75b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speechBubble: {fileID: 4335934020854422269}
 --- !u!1001 &3518307818126547202
 PrefabInstance:
   m_ObjectHideFlags: 0
