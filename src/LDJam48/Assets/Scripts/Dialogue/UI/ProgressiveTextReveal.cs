@@ -8,7 +8,7 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
 {
     [SerializeField] private Button chatBox;
     [SerializeField] private TextMeshProUGUI textBox;
-    [SerializeField] private FloatReference secondsPerCharacter;
+    [SerializeField] private FloatReference secondsPerCharacter = new FloatReference(0.07f);
     [SerializeField, ReadOnly] private bool isRevealing;
     
     private int _cursor;
