@@ -38,7 +38,7 @@ public class Character : ScriptableObject
     public void Flush()
     {
         learnedTags = new List<TagObject>();
-        learnedTags = startTags.ToList();
+        learnedTags = (startTags ?? new TagObject[0]).ToList();
         suspicion = 0;
     }
 

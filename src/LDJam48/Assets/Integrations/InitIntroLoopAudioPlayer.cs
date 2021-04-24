@@ -6,6 +6,6 @@ public class InitIntroLoopAudioPlayer : CrossSceneSingleInstance
     
     protected override string UniqueTag => "Music";
     
-    protected override void OnAwake() => player.Init();
+    private void Start() => player.Init();
 }
 
