@@ -13,27 +13,76 @@ MonoBehaviour:
   m_Name: Conflict Database
   m_EditorClassIdentifier: 
   conflicts:
-  - name: 
-    tag1: {fileID: 11400000, guid: 963b509ccb9cf354685ea434fc1f512e, type: 2}
-    tag2: {fileID: 11400000, guid: 42942f01fe877734292d60d326609594, type: 2}
-    penalty: 2
-  - name: 
-    tag1: {fileID: 11400000, guid: d34aa316c85e941469e2f778e88d4ec8, type: 2}
-    tag2: {fileID: 11400000, guid: 8b1e568adbc489a49b4cfe9f7e3b7c02, type: 2}
-    penalty: 2
-  - name: 
-    tag1: {fileID: 11400000, guid: 5612b4598b3a5c241969da9ebdd2b4ce, type: 2}
-    tag2: {fileID: 11400000, guid: de3063a3468317b4c8e947331e529c56, type: 2}
-    penalty: 2
-  - name: 
-    tag1: {fileID: 11400000, guid: 7d109b0b7fbdf3e468e3e186b157a281, type: 2}
-    tag2: {fileID: 11400000, guid: 6b78e6497f022ad4fa7bb394b476fd11, type: 2}
-    penalty: 2
-  - name: 
-    tag1: {fileID: 11400000, guid: 963b509ccb9cf354685ea434fc1f512e, type: 2}
-    tag2: {fileID: 11400000, guid: 7bc577093202eff478cf35e4c823014c, type: 2}
-    penalty: 2
-  - name: 
-    tag1: {fileID: 11400000, guid: 0546ebf45b35aa040b24c36e3ff51208, type: 2}
-    tag2: {fileID: 11400000, guid: 2e81008d397c9ca4fb392edf9af50d2f, type: 2}
+  - name: Emotion
+    tags:
+    - {fileID: 11400000, guid: 2e81008d397c9ca4fb392edf9af50d2f, type: 2}
+    - {fileID: 11400000, guid: 0546ebf45b35aa040b24c36e3ff51208, type: 2}
     penalty: 1
+  - name: Job
+    tags:
+    - {fileID: 11400000, guid: 6f5d520e54e7108458f15f75843869c4, type: 2}
+    - {fileID: 11400000, guid: 20188d2f3017f0340b03731f6bcf1137, type: 2}
+    - {fileID: 11400000, guid: 55a1a6b3d34246d49a2b695164e9e40a, type: 2}
+    - {fileID: 11400000, guid: 30cd045069badd146abc133d2b352ae7, type: 2}
+    - {fileID: 11400000, guid: d3831e72a8e8d5442bf817d11fe17dbf, type: 2}
+    - {fileID: 11400000, guid: d34aa316c85e941469e2f778e88d4ec8, type: 2}
+    penalty: 2
+  - name: Lair State
+    tags:
+    - {fileID: 11400000, guid: 49dbe33fa0b0f1346802b20895ccf72c, type: 2}
+    - {fileID: 11400000, guid: e6d7f8dbc2b7ab34b920cf2aa735aa88, type: 2}
+    penalty: 2
+  - name: Luggage
+    tags:
+    - {fileID: 11400000, guid: 8b1e568adbc489a49b4cfe9f7e3b7c02, type: 2}
+    - {fileID: 11400000, guid: 42942f01fe877734292d60d326609594, type: 2}
+    penalty: 2
+  - name: Physique
+    tags:
+    - {fileID: 11400000, guid: 7d109b0b7fbdf3e468e3e186b157a281, type: 2}
+    - {fileID: 11400000, guid: 6b78e6497f022ad4fa7bb394b476fd11, type: 2}
+    penalty: 2
+  - name: Residency
+    tags:
+    - {fileID: 11400000, guid: 963b509ccb9cf354685ea434fc1f512e, type: 2}
+    - {fileID: 11400000, guid: 7bc577093202eff478cf35e4c823014c, type: 2}
+    penalty: 2
+  - name: Value
+    tags:
+    - {fileID: 11400000, guid: b79b40da53159254f9c5e3287c7206aa, type: 2}
+    - {fileID: 11400000, guid: 79b983f8a62385b4ba6e40957745d0c9, type: 2}
+    - {fileID: 11400000, guid: a173269af9ceb4f4e8378d8406c97624, type: 2}
+    penalty: 2
+  - name: Wealth
+    tags:
+    - {fileID: 11400000, guid: 5612b4598b3a5c241969da9ebdd2b4ce, type: 2}
+    - {fileID: 11400000, guid: de3063a3468317b4c8e947331e529c56, type: 2}
+    penalty: 2
+  - name: Workplace
+    tags:
+    - {fileID: 11400000, guid: 4a686078bcb00974895e62444b07026c, type: 2}
+    - {fileID: 11400000, guid: 486e9efc3d6b28c4cab97a366c02e466, type: 2}
+    penalty: 2
+  - name: ---------------------------
+    tags: []
+    penalty: 0
+  - name: Native/Luggage
+    tags:
+    - {fileID: 11400000, guid: 963b509ccb9cf354685ea434fc1f512e, type: 2}
+    - {fileID: 11400000, guid: 42942f01fe877734292d60d326609594, type: 2}
+    penalty: 2
+  - name: Part Of Production Plan/Security Guard
+    tags:
+    - {fileID: 11400000, guid: 51542a304c81af2498fb4e23b3d12156, type: 2}
+    - {fileID: 11400000, guid: d3831e72a8e8d5442bf817d11fe17dbf, type: 2}
+    penalty: 2
+  - name: Technical/Security Guard
+    tags:
+    - {fileID: 11400000, guid: 8bf410ac14c0a8246ac36ae734b22a3a, type: 2}
+    - {fileID: 11400000, guid: d3831e72a8e8d5442bf817d11fe17dbf, type: 2}
+    penalty: 2
+  - name: Technical/Delivery
+    tags:
+    - {fileID: 11400000, guid: 8bf410ac14c0a8246ac36ae734b22a3a, type: 2}
+    - {fileID: 11400000, guid: 20188d2f3017f0340b03731f6bcf1137, type: 2}
+    penalty: 2
