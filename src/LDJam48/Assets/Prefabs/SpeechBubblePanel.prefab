@@ -299,6 +299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chatBox: {fileID: 6244348384472840160}
+  panelBg: {fileID: 8062632927155568852}
   textBox: {fileID: 8144940541529795277}
   secondsPerCharacter:
     UseConstant: 0

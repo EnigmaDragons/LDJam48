@@ -25,17 +25,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938444851707643625}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5615735488513143019}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 551.3717, y: 551.3717}
+  m_AnchoredPosition: {x: 28, y: -76}
+  m_SizeDelta: {x: 252.45, y: 702.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5122673387136059216
 CanvasRenderer:
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d0e76d5015ff3024cb30d96d71211a3b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3be3e52e389d1f440bc4b16cf0a06c62, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -132,6 +132,7 @@ MonoBehaviour:
   speechBubble: {fileID: 3134515869540745173}
   scenePositions: {fileID: 11400000, guid: 1ad2a147bae6bef4d88efb6c8dfafaa8, type: 2}
   conversation: {fileID: 11400000, guid: aae2fc7d62b853d4bbc983d3df10f489, type: 2}
+  speechBubbleIsToTheLeftOfTheCharacter: 0
 --- !u!114 &1969658237732620182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,8 +306,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 131, y: 295}
-  m_SizeDelta: {x: 288.5718, y: 47.1874}
+  m_AnchoredPosition: {x: -152, y: 207}
+  m_SizeDelta: {x: 30, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8105760090885274044
 MonoBehaviour:
@@ -351,7 +352,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 1986849515684125333}
   m_HandleRect: {fileID: 0}
-  m_Direction: 1
+  m_Direction: 2
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
@@ -524,12 +525,12 @@ PrefabInstance:
     - target: {fileID: 2184088652181378669, guid: d41da6625dad7e040bc5f679eac60821,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -331
+      value: 320
       objectReference: {fileID: 0}
     - target: {fileID: 2184088652181378669, guid: d41da6625dad7e040bc5f679eac60821,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 174
+      value: 283
       objectReference: {fileID: 0}
     - target: {fileID: 2184088652181378669, guid: d41da6625dad7e040bc5f679eac60821,
         type: 3}

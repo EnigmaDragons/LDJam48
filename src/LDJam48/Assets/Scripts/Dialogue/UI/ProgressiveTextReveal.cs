@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public sealed class ProgressiveTextReveal : MonoBehaviour
 {
     [SerializeField] private Button chatBox;
+    [SerializeField] private Image panelBg;
     [SerializeField] private TextMeshProUGUI textBox;
     [SerializeField] private FloatReference secondsPerCharacter = new FloatReference(0.07f);
     [SerializeField] private FloatReference autoAdvanceDelay = new FloatReference(0.8f);
@@ -71,6 +72,12 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
         isRevealing = false;
         if (_showAutoProceed)
             Proceed();
+    }
+
+    public void ReversePanelFacing()
+    {
+        if (panelBg != null)
+            panelBg.transform.Rotate(0, 180, 0);
     }
 
     private IEnumerator BeginReveal()

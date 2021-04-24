@@ -6,12 +6,15 @@ public class CharacterSpeechBubble : MonoBehaviour
     [SerializeField] private ProgressiveTextReveal speechBubble;
     [SerializeField] private ScenePositions scenePositions;
     [SerializeField] private CurrentConversation conversation;
+    [SerializeField] private bool speechBubbleIsToTheLeftOfTheCharacter = true;
     
     private void Awake()
     {
         Log.Info($"{character.CharacterName} speech bubble awake");
         speechBubble.Hide();
         scenePositions.Register(character, speechBubble);
+        if (!speechBubbleIsToTheLeftOfTheCharacter)
+            speechBubble.ReversePanelFacing();
     }
 
     public void Speak(string option)
