@@ -6,12 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Core/LogoScene.unity
+    path: Assets/Scenes/IntegratorOnly/LogoScene.unity
     guid: 4d447c612de2204429d99383fa1b2bea
   - enabled: 1
-    path: Assets/Scenes/Core/MainMenu.unity
+    path: Assets/Scenes/IntegratorOnly/MainMenu.unity
     guid: 3394728126b38844ab516e1a1dc340ce
   - enabled: 1
-    path: Assets/Scenes/Core/CreditsScene.unity
+    path: Assets/Scenes/IntegratorOnly/CreditsScene.unity
     guid: 514d334c5df4df64f87ea2cadf28e400
+  - enabled: 1
+    path: Assets/Scenes/IntegratorOnly/CutscenePlayer.unity
+    guid: c6ef3c922a11ec94fb230da5cd14eb65
+  - enabled: 1
+    path: Assets/Scenes/Silas/FirstLocation.unity
+    guid: c52df47e4b656814aa5d12bd4adfa871
   m_configObjects: {}

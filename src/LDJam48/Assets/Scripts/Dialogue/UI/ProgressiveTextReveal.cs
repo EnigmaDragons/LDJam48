@@ -12,19 +12,26 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
     [SerializeField, ReadOnly] private bool isRevealing;
     
     private int _cursor;
+    private Color _defaultTextColor;
     private string _fullText = "" ;
     private Action _onFinished = () => { };
 
-    private void Awake() => chatBox.onClick.AddListener(Proceed);
-    
+    private void Awake()
+    {
+        chatBox.onClick.AddListener(Proceed);
+        _defaultTextColor = textBox.color;
+    }
+
     public void Hide() => chatBox.gameObject.SetActive(false);
 
-    public void Display(string text) => Display(text, () => { });
-    public void Display(string text, Action onFinished)
+    public void Display(string text) => Display(text,  _defaultTextColor,() => { });
+    public void Display(string text, Action onFinished) => Display(text, _defaultTextColor, onFinished);
+    public void Display(string text, Color textColor, Action onFinished)
     {
         if (isRevealing)
             return;
-        
+
+        textBox.color = textColor;
         _fullText = text;
         _onFinished = onFinished;
         StartCoroutine(BeginReveal());

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7250873676597684185
+--- !u!1 &7121223778613747800
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2536079363573207387}
-  - component: {fileID: 8432310642843406220}
-  - component: {fileID: 4673073206443635057}
+  - component: {fileID: 3867929062129661962}
+  - component: {fileID: 6616779777767270820}
+  - component: {fileID: 8190798203504576738}
   m_Layer: 0
-  m_Name: ConversationSystem
+  m_Name: CutscenePlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2536079363573207387
+--- !u!4 &3867929062129661962
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7250873676597684185}
+  m_GameObject: {fileID: 7121223778613747800}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,29 +32,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8432310642843406220
+--- !u!114 &6616779777767270820
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7250873676597684185}
+  m_GameObject: {fileID: 7121223778613747800}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 024f0080b4084a5abcf6a46cc3c53e75, type: 3}
+  m_Script: {fileID: 11500000, guid: 57d8b025d7d44694bdec7f371cf74a0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversation: {fileID: 11400000, guid: aae2fc7d62b853d4bbc983d3df10f489, type: 2}
---- !u!114 &4673073206443635057
+  cutscene: {fileID: 11400000, guid: 20e85298acd4be44dbf2d6d42125b95b, type: 2}
+--- !u!114 &8190798203504576738
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7250873676597684185}
+  m_GameObject: {fileID: 7121223778613747800}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1af9dfea43f4beb832b678bd3a5a80f, type: 3}
+  m_Script: {fileID: 11500000, guid: e3f528af648f4fe3bb5680c41ad2678e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversation: {fileID: 0}
+  cutscene: {fileID: 0}
