@@ -26,7 +26,7 @@ namespace Tags
 
             public int GetPenalty()
             {
-                return penalty;
+                return penalty;progr
             }
         }
 

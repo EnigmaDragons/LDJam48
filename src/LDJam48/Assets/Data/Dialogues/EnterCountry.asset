@@ -38,6 +38,7 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
         statement: My apologies, sir. I don't recall seeing you before.
+        onlyShowIfCharacterLikedAnswer: 0
     - text: I am an ambassador who is here to give your country insane amounts of
         foreign aid.
       tags:

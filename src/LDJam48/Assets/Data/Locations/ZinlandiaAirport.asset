@@ -23,7 +23,7 @@ MonoBehaviour:
         m_MethodName: BeginCutscene
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 81789155dae746441bb83e9188a0ab66,
+          m_ObjectArgument: {fileID: 11400000, guid: 4a96ae5c652440a4a97adcaaccb42f12,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: Cutscene, EnigmaDragons.Game
           m_IntArgument: 0
