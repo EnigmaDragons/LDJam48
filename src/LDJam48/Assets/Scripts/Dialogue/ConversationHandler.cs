@@ -1,7 +1,8 @@
 using UnityEngine;
 
-public class ConversationHandler : OnMessage<StartConversation, AdvanceConversation>
+public class ConversationHandler : OnMessage<StartConversation, AdvanceConversation, Finished<DialogueOptionSelected>>
 {
+    
     [SerializeField] private CurrentConversation conversation;
     
     private int _sequenceIndex = 0;
@@ -23,6 +24,12 @@ public class ConversationHandler : OnMessage<StartConversation, AdvanceConversat
     }
 
     protected override void Execute(AdvanceConversation msg)
+    {
+        _sequenceIndex++;
+        BeginSequence();
+    }
+
+    protected override void Execute(Finished<DialogueOptionSelected> msg)
     {
         _sequenceIndex++;
         BeginSequence();

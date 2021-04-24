@@ -1,7 +1,9 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Tags;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu]
 public class Character : ScriptableObject
@@ -9,8 +11,13 @@ public class Character : ScriptableObject
     public string CharacterName;
     public GameObject Prefab;
     [SerializeField] private TagObject[] startTags;
-    private List<TagObject> _learnedTags;
+    [SerializeField] private List<TagObject> learnedTags;
     [SerializeField] private int suspicion;
+
+    private void OnValidate()
+    {
+        Flush();
+    }
 
     public void AddSuspicion(int amount)
     {
@@ -24,23 +31,24 @@ public class Character : ScriptableObject
 
     public void Flush()
     {
-        _learnedTags = startTags.ToList();
+        learnedTags = new List<TagObject>();
+        learnedTags = startTags.ToList();
         suspicion = 0;
     }
 
     public void LearnTag(TagObject tag)
     {
-        _learnedTags.Add(tag);
+        learnedTags.Add(tag);
     }
 
     public void LearnTags(List<TagObject> tags)
     {
-        _learnedTags.AddRange(tags);
+        learnedTags.AddRange(tags);
     }
 
     public TagObject[] GetLearnedTags()
     {
-        return _learnedTags.ToArray();
+        return learnedTags.ToArray();
     }
     
     

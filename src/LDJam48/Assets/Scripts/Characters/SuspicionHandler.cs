@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Tags;
@@ -5,16 +6,24 @@ using UnityEngine;
 
 public class SuspicionHandler : OnMessage<DialogueOptionSelected>
 {
+    [SerializeField] private CurrentConversation conversation;
+    
     protected override void Execute(DialogueOptionSelected msg)
     {
-        GivePenalty(msg);
-        SaveTags(msg);
+        var chars = conversation.Current.NonPlayerCharacters;
+        print(chars.Length);
+        foreach (var character in chars)
+        {
+            GivePenalty(msg, character);
+            SaveTags(msg, character);   
+        }
+        
+        Message.Publish(new Finished<DialogueOptionSelected>());
     }
-
-    private void SaveTags(DialogueOptionSelected msg)
+    
+    private void SaveTags(DialogueOptionSelected msg, Character character)
     {
         var dialog = msg.Selection;
-        var character = msg.CurrentCharacter;
 
         var toLearn = new List<TagObject>();
         foreach (var dialogTag in dialog.Tags)
@@ -31,10 +40,9 @@ public class SuspicionHandler : OnMessage<DialogueOptionSelected>
         character.LearnTags(toLearn);
     }
     
-    private void GivePenalty(DialogueOptionSelected msg)
+    private void GivePenalty(DialogueOptionSelected msg, Character character)
     {
         var dialog = msg.Selection;
-        var character = msg.CurrentCharacter;
 
         foreach (var dialogTag in dialog.Tags)
         {
