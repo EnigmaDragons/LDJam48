@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40b3369c6e0b478e910c4e672df48d79, type: 3}
+  m_Name: EnterCountry
+  m_EditorClassIdentifier: 
+  sequence:
+  - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+      type: 2}
+    statement: Welcome to our country. What is your business here?
+    options: []
+  - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
+      type: 2}
+    statement: 
+    options:
+    - text: "What do you mean welcome?! I work at this airport as a mechanic and
+        I\u2019m headed home for the day!"
+      tags:
+      - {fileID: 11400000, guid: 963b509ccb9cf354685ea434fc1f512e, type: 2}
+      - {fileID: 11400000, guid: 55a1a6b3d34246d49a2b695164e9e40a, type: 2}
+      - {fileID: 11400000, guid: 7d109b0b7fbdf3e468e3e186b157a281, type: 2}
+      - {fileID: 11400000, guid: 5612b4598b3a5c241969da9ebdd2b4ce, type: 2}
+    - text: I am an ambassador who is here to give your country insane amounts of
+        foreign aid.
+      tags:
+      - {fileID: 11400000, guid: 6f5d520e54e7108458f15f75843869c4, type: 2}
+      - {fileID: 11400000, guid: 7bc577093202eff478cf35e4c823014c, type: 2}
+      - {fileID: 11400000, guid: de3063a3468317b4c8e947331e529c56, type: 2}
+    - text: I am a wealthy tourist. Here to enjoy these luscious jungles and overspend
+        on drinks and entertainment.
+      tags:
+      - {fileID: 11400000, guid: d34aa316c85e941469e2f778e88d4ec8, type: 2}
+      - {fileID: 11400000, guid: 7bc577093202eff478cf35e4c823014c, type: 2}
+      - {fileID: 11400000, guid: de3063a3468317b4c8e947331e529c56, type: 2}
+      - {fileID: 11400000, guid: 6b78e6497f022ad4fa7bb394b476fd11, type: 2}
+      - {fileID: 11400000, guid: 0546ebf45b35aa040b24c36e3ff51208, type: 2}
+  - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+      type: 2}
+    statement: Why does you luggage have strange gadgets?
+    options: []
+  - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
+      type: 2}
+    statement: 
+    options:
+    - text: "Don\u2019t be absurd. I don\u2019t have any luggage."
+      tags:
+      - {fileID: 11400000, guid: 8b1e568adbc489a49b4cfe9f7e3b7c02, type: 2}
+    - text: I always bring my Slim Camera Pro Max 2 plus and extensions with me on
+        these excursions.
+      tags:
+      - {fileID: 11400000, guid: de3063a3468317b4c8e947331e529c56, type: 2}
+      - {fileID: 11400000, guid: 42942f01fe877734292d60d326609594, type: 2}
+    - text: "Strange?! You mean you don\u2019t have these devices here?! How barbaric!
+        you really should adopt them and get on that right away, don\u2019t wanna
+        be left in the stone ages do ya?"
+      tags:
+      - {fileID: 11400000, guid: 42942f01fe877734292d60d326609594, type: 2}
+  - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+      type: 2}
+    statement: Do you know how to defend yourself?
+    options: []
+  - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
+      type: 2}
+    statement: 
+    options:
+    - text: 'Between you and me, I would be quite powerless to stop an attacker. '
+      tags:
+      - {fileID: 11400000, guid: 6b78e6497f022ad4fa7bb394b476fd11, type: 2}
+    - text: I could easily take a ruffian if the need arose.
+      tags:
+      - {fileID: 11400000, guid: 7d109b0b7fbdf3e468e3e186b157a281, type: 2}
+    - text: "That\u2019s what I pay my bodyguard\u2019s for."
+      tags:
+      - {fileID: 11400000, guid: de3063a3468317b4c8e947331e529c56, type: 2}
+  - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+      type: 2}
+    statement: Have you ever been here before?
+    options: []
+  - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
+      type: 2}
+    statement: 
+    options:
+    - text: "Are you kidding me? I\u2019m here all the time!"
+      tags:
+      - {fileID: 11400000, guid: 963b509ccb9cf354685ea434fc1f512e, type: 2}
+    - text: "A week ago I didn\u2019t even know this place existed."
+      tags:
+      - {fileID: 11400000, guid: 7bc577093202eff478cf35e4c823014c, type: 2}
+    - text: Every once in awhile, when the opportunity arises.
+      tags:
+      - {fileID: 11400000, guid: 7bc577093202eff478cf35e4c823014c, type: 2}
+  - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+      type: 2}
+    statement: Why do you look different than the picture on your id?
+    options: []
+  - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
+      type: 2}
+    statement: 
+    options:
+    - text: On the nose you are, thanks for noticing. I recently got plastic surgery
+        on my nose .
+      tags:
+      - {fileID: 11400000, guid: de3063a3468317b4c8e947331e529c56, type: 2}
+    - text: "I have never quite looked the same since the\u2026 accident."
+      tags:
+      - {fileID: 11400000, guid: 2e81008d397c9ca4fb392edf9af50d2f, type: 2}
+    - text: "I would hardly call wearing a different shirt in the picture \u201Clooking
+        different\u201D"
+      tags: []
