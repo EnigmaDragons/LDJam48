@@ -23,8 +23,8 @@ public class IntroLoopAudioPlayer : ScriptableObject
     {
         if (currentClip != null && currentClip.name == clipToPlay.name) return;
         
-        if(debugLoggingEnabled)
-            Log.Info("Play Introloop Music");  
+        if (debugLoggingEnabled)
+            Log.Info($"Play Introloop Music {clipToPlay.name}");  
         
         var volume = PlayerPrefs.GetFloat(volumeValueName, 0.5f);
         var mixerVolume = (Mathf.Log10(volume) * 20) - reductionDb;
