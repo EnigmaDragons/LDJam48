@@ -12,3 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b3369c6e0b478e910c4e672df48d79, type: 3}
   m_Name: TestConversation
   m_EditorClassIdentifier: 
+  sequence:
+  - speakingCharacter: {fileID: 11400000, guid: 287c526762abb8f44aa4ddadde2db4de,
+      type: 2}
+    statement: Welcome to our humble country of Zinlandia!
+    options: []
+  - speakingCharacter: {fileID: 11400000, guid: 287c526762abb8f44aa4ddadde2db4de,
+      type: 2}
+    statement: Where are you from?
+    options: []

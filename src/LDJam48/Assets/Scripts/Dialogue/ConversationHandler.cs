@@ -8,10 +8,10 @@ public class ConversationHandler : OnMessage<StartConversation, AdvanceConversat
     {
         _current = msg.Conversation;
         _sequenceIndex = 0;
-        BeginNext();
+        BeginSequence();
     }
 
-    private void BeginNext()
+    private void BeginSequence()
     {
         if (_current.Sequence.Length > _sequenceIndex)
             _current.Sequence[_sequenceIndex].Begin();
@@ -22,6 +22,6 @@ public class ConversationHandler : OnMessage<StartConversation, AdvanceConversat
     protected override void Execute(AdvanceConversation msg)
     {
         _sequenceIndex++;
-        BeginNext();
+        BeginSequence();
     }
 }

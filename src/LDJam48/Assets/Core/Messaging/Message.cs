@@ -7,6 +7,8 @@ public static class Message
     private static readonly List<MessageSubscription> EventSubs = new List<MessageSubscription>();
     private static MessageQueue Msgs = new MessageQueue();
 
+    private static bool _shouldLog = true;
+    
     public static int SubscriptionCount => Msgs.SubscriptionCount;
     public static void Publish(object payload) => Msgs.Enqueue(payload);
     public static void Subscribe<T>(Action<T> onEvent, object owner) => Subscribe(MessageSubscription.Create(onEvent, owner));
@@ -80,6 +82,8 @@ public static class Message
         private void Publish(object payload)
         {
             var eventType = payload.GetType().Name;
+            if (_shouldLog)
+                Log.Info($"Publishing Event {eventType}");
 
             if (_eventActions.ContainsKey(eventType))
                 foreach (var action in _eventActions[eventType].ToList())
