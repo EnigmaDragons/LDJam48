@@ -59,6 +59,8 @@ public class SuspicionHandler : OnMessage<DialogueOptionSelected>
             }
         }
 
+        if (totalSuspicion > 0)
+            Log.Info($"Gained {totalSuspicion} Suspicion from {character.CharacterName}");
         return totalSuspicion;
     }
 }

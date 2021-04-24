@@ -22,7 +22,7 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
 
     private void Awake()
     {
-        chatBox.onClick.AddListener(Proceed);
+        chatBox.onClick.AddListener(() => Proceed(isAuto: false));
         _defaultTextColor = FullAlphaColor(textBox.color);
     }
 
@@ -52,26 +52,27 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
         StartCoroutine(BeginReveal());
     }
 
-    public void Proceed()
+    public void Proceed() => Proceed(false);
+    public void Proceed(bool isAuto)
     {
         if (isRevealing)
-            ShowCompletely();
+            ShowCompletely(isAuto);
         else if (!_proceeded)
         {
             _proceeded = true;
-            if (_showAutoProceed)
+            if (_showAutoProceed && isAuto)
                 this.ExecuteAfterDelay(_onFinished, autoAdvanceDelay);
             else
                 _onFinished();
         }
     }
-    
-    public void ShowCompletely()
+
+    private void ShowCompletely(bool isAuto = false)
     {
         textBox.text = fullText;
         isRevealing = false;
         if (_showAutoProceed)
-            Proceed();
+            Proceed(isAuto);
     }
 
     public void ReversePanelFacing()
@@ -92,7 +93,7 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
             _cursor++;
             yield return new WaitForSeconds(secondsPerCharacter);
         }
-        ShowCompletely();
+        ShowCompletely(isAuto: true);
     }
     
     private Color FullAlphaColor(Color c) => new Color(c.r, c.g, c.b, 1f);
