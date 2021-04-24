@@ -9,10 +9,13 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
     [SerializeField] private Button chatBox;
     [SerializeField] private TextMeshProUGUI textBox;
     [SerializeField] private FloatReference secondsPerCharacter = new FloatReference(0.07f);
+    [SerializeField] private FloatReference autoAdvanceDelay = new FloatReference(0.8f);
     [SerializeField, ReadOnly] private bool isRevealing;
     
     private int _cursor;
     private Color _defaultTextColor;
+    private bool _showAutoProceed = false;
+    private bool _proceeded = false;
     private string _fullText = "" ;
     private Action _onFinished = () => { };
 
@@ -24,9 +27,9 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
 
     public void Hide() => chatBox.gameObject.SetActive(false);
 
-    public void Display(string text) => Display(text,  _defaultTextColor,() => { });
-    public void Display(string text, Action onFinished) => Display(text, _defaultTextColor, onFinished);
-    public void Display(string text, Color textColor, Action onFinished)
+    public void Display(string text) => Display(text,  _defaultTextColor, false, () => { });
+    public void Display(string text, Action onFinished) => Display(text, _defaultTextColor, false, onFinished);
+    public void Display(string text, Color textColor, bool shouldAutoProceed, Action onFinished)
     {
         if (isRevealing)
             return;
@@ -34,6 +37,8 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
         textBox.color = textColor;
         _fullText = text;
         _onFinished = onFinished;
+        _showAutoProceed = shouldAutoProceed;
+        _proceeded = false;
         StartCoroutine(BeginReveal());
     }
 
@@ -41,14 +46,22 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
     {
         if (isRevealing)
             ShowCompletely();
-        else
-            _onFinished();
+        else if (!_proceeded)
+        {
+            _proceeded = true;
+            if (_showAutoProceed)
+                this.ExecuteAfterDelay(_onFinished, autoAdvanceDelay);
+            else
+                _onFinished();
+        }
     }
     
     public void ShowCompletely()
     {
         textBox.text = _fullText;
         isRevealing = false;
+        if (_showAutoProceed)
+            Proceed();
     }
 
     private IEnumerator BeginReveal()
