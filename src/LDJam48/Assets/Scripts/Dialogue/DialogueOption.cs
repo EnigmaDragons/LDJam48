@@ -8,9 +8,9 @@ using UnityEngine;
 public class DialogueOption
 {
     [TextArea] [SerializeField] private string text;
+    [SerializeField] private StringReference spyExpression;
     [SerializeField] private TagObject[] tags;
     [SerializeField] private FollowupDialogueData[] followups;
-    [SerializeField] private StringReference spyExpression;
     public string Text => text;
     public TagObject[] Tags => tags.ToArray();
     public FollowupDialogueData[] Followups => followups.ToArray();
