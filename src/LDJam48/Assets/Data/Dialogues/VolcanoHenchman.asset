@@ -25,8 +25,8 @@ MonoBehaviour:
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
-    statement: I am Mr Trilby The Cane Man and it looks like your fate lies in the
-      Jello pits.
+    statement: I'm Mr Trilby The Cane Man and unfortunately your fate may lie at
+      the bottom of the Jello pits.
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
@@ -34,8 +34,8 @@ MonoBehaviour:
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
-    statement: 'Oh really, and what exactly are you doing in this restricted Jello
-      Prep Zone? '
+    statement: 'Really? What exactly is your function in this restricted Jello Prep
+      Zone? '
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
@@ -48,7 +48,11 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 486e9efc3d6b28c4cab97a366c02e466, type: 2}
       - {fileID: 11400000, guid: a173269af9ceb4f4e8378d8406c97624, type: 2}
       - {fileID: 11400000, guid: fef6ca99b8fc05b46aaffee19b0268cf, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: A sticky situation indeed.
+        onlyShowIfCharacterLikedAnswer: 1
     - text: "I\u2019m the Jello delivery guy, they ran out of the lime flavor I was
         told to bring it right in."
       tags:
@@ -56,7 +60,11 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 4a686078bcb00974895e62444b07026c, type: 2}
       - {fileID: 11400000, guid: b79b40da53159254f9c5e3287c7206aa, type: 2}
       - {fileID: 11400000, guid: 421bddcc3af285243a10317d43b7c20b, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: We do another ton or 2 of Lime Jello for our weekend Jam.
+        onlyShowIfCharacterLikedAnswer: 1
     - text: There was an intruder in the Jello Prep Zone that I am trying to catch,
         same as you.
       tags:
@@ -65,14 +73,23 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 486e9efc3d6b28c4cab97a366c02e466, type: 2}
       - {fileID: 11400000, guid: b79b40da53159254f9c5e3287c7206aa, type: 2}
       - {fileID: 11400000, guid: 421bddcc3af285243a10317d43b7c20b, type: 2}
-      followups: []
+      - {fileID: 11400000, guid: ee1290f62d320e742aa2cff45c831f60, type: 2}
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: I'm sure we will find him, mate.
+        onlyShowIfCharacterLikedAnswer: 1
     - text: Something was wrong with the Jello mixer, I had to fix it.
       tags:
       - {fileID: 11400000, guid: 55a1a6b3d34246d49a2b695164e9e40a, type: 2}
       - {fileID: 11400000, guid: 486e9efc3d6b28c4cab97a366c02e466, type: 2}
       - {fileID: 11400000, guid: 79b983f8a62385b4ba6e40957745d0c9, type: 2}
       - {fileID: 11400000, guid: fef6ca99b8fc05b46aaffee19b0268cf, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: All in order now I hope.
+        onlyShowIfCharacterLikedAnswer: 1
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: "Why don\u2019t I recognize you?"
@@ -85,17 +102,42 @@ MonoBehaviour:
         cause he made fun of the boss."
       tags:
       - {fileID: 11400000, guid: b79b40da53159254f9c5e3287c7206aa, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: That's the second time this week.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: Doubtful for a job like yours.
+        onlyShowIfCharacterLikedAnswer: 0
     - text: A faceless minion like me is hardly important enough to remember.
       tags:
       - {fileID: 11400000, guid: b79b40da53159254f9c5e3287c7206aa, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: Right you are, mate. Can't waste time learning all your faces.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: Someone in your role? I reckon I'd remember.
+        onlyShowIfCharacterLikedAnswer: 0
     - text: "The boss says he wants this plan done yesterday and so he hired a bunch
         of new people, I\u2019m a new hire."
       tags:
       - {fileID: 11400000, guid: 51542a304c81af2498fb4e23b3d12156, type: 2}
       - {fileID: 11400000, guid: 486e9efc3d6b28c4cab97a366c02e466, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: Jolly good.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: Can't quite wrap my mind around how hiring more delivery people
+          would help speed things up.
+        onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: What were you tampering with over there?
@@ -109,24 +151,59 @@ MonoBehaviour:
       tags:
       - {fileID: 11400000, guid: 8bf410ac14c0a8246ac36ae734b22a3a, type: 2}
       - {fileID: 11400000, guid: 49dbe33fa0b0f1346802b20895ccf72c, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: Can't be too careful.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: You just happen to know how that thing works.
+        onlyShowIfCharacterLikedAnswer: 0
     - text: "Fixing it, of course. No idea why it was so broken, hope you don\u2019t
         have a security breach."
       tags:
       - {fileID: 11400000, guid: 55a1a6b3d34246d49a2b695164e9e40a, type: 2}
       - {fileID: 11400000, guid: e6d7f8dbc2b7ab34b920cf2aa735aa88, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: At the rate things are breaking, something suspicious is going
+          on.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: I bet you also hope your not the security breach.
+        onlyShowIfCharacterLikedAnswer: 0
     - text: "The temperature was off, and I had to adjust the thermostat. With how
         hot it gets, it\u2019s like we are in the middle of a volcano or something."
       tags:
       - {fileID: 11400000, guid: 49dbe33fa0b0f1346802b20895ccf72c, type: 2}
       - {fileID: 11400000, guid: 486e9efc3d6b28c4cab97a366c02e466, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: One could get that idea, yes.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: You know where the thermostat is in a restricted area and decided
+          that was the best use of your time, curious.
+        onlyShowIfCharacterLikedAnswer: 0
     - text: Just my phone, there was a rare Lava Pokenon I had to catch.
       tags:
       - {fileID: 11400000, guid: 49dbe33fa0b0f1346802b20895ccf72c, type: 2}
       - {fileID: 11400000, guid: 4a686078bcb00974895e62444b07026c, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: You young whippersnappers and your silly phone games.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: While there is an emergency? It's like you bloody want to be thrown
+          into the lava pit.
+        onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: Have you seen anyone suspicious recently?
@@ -138,15 +215,40 @@ MonoBehaviour:
     - text: Yes I saw someone dressed in full ninja garb sneaking around.
       tags:
       - {fileID: 11400000, guid: e6d7f8dbc2b7ab34b920cf2aa735aa88, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: A very suspicious fellow.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: And you didn't do anything about him?! It's so bloody hard to
+          find good help these days.
+        onlyShowIfCharacterLikedAnswer: 0
     - text: No, everything seems perfectly fine.
       tags:
       - {fileID: 11400000, guid: 49dbe33fa0b0f1346802b20895ccf72c, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: Jolly good.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: 'Your story''s starting to sound like a half eaten cracker. '
+        onlyShowIfCharacterLikedAnswer: 0
     - text: Do I look like a hall monitor? I have got more important things to do.
       tags:
       - {fileID: 11400000, guid: 51542a304c81af2498fb4e23b3d12156, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: Right you are, mate.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: Absurd, your importance is that of a stale croissant.
+        onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: What are you getting paid here?
@@ -158,12 +260,40 @@ MonoBehaviour:
     - text: YOUR GETTING PAID?!
       tags:
       - {fileID: 11400000, guid: b79b40da53159254f9c5e3287c7206aa, type: 2}
-      followups: []
-    - text: I get the keys to a mansion in New Landago when we take it over.
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: Ah, you must be on the life servititude plan.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: If this is your subtle way, of asking for a raise. I'm not amused.
+        onlyShowIfCharacterLikedAnswer: 0
+    - text: I get the keys to a mansion in Zinlandia when we take it over.
       tags:
       - {fileID: 11400000, guid: a173269af9ceb4f4e8378d8406c97624, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: Zinlandia mansions are quite posh.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: The only keys you would be getting are the servant's keys.
+        onlyShowIfCharacterLikedAnswer: 0
     - text: 1 gold bar a week
       tags:
       - {fileID: 11400000, guid: 79b983f8a62385b4ba6e40957745d0c9, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: That's a whole teapot of a sum, very nice mate.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+          type: 2}
+        statement: Fool's gold maybe.
+        onlyShowIfCharacterLikedAnswer: 0
+  - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+      type: 2}
+    statement: Cheerio!
+    options: []
