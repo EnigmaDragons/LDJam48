@@ -28,9 +28,9 @@ public class Character : ScriptableObject, IEqualityComparer<Character>
     {
         if (amount == 0)
             return;
-        
-        suspicion += amount;
-        Log.Info($"{CharacterName} suspicion is now {suspicion}/{maxSus}");
+
+        suspicion = Mathf.Clamp(suspicion + amount, 0, maxSus);
+        Log.Info($"{CharacterName} suspicion is now {suspicion}/{maxSus}. Change {amount}");
         ONSuspicionChange?.Invoke();
     }
 
