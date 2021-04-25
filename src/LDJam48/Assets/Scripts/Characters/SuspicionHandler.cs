@@ -17,6 +17,7 @@ public class SuspicionHandler : OnMessage<DialogueOptionSelected>
             charSusChanges[character] = GivePenalty(msg, character);
             SaveTags(msg, character);
         }
+        charSusChanges[conversation.Current.PlayerCharacter] = charSusChanges.Max(x => x.Value);
         
         Message.Publish(new DialogueOptionResolved(msg.Selection, charSusChanges));
     }

@@ -10,7 +10,7 @@ public class FollowupDialogueData
     [SerializeField] private bool onlyShowIfCharacterLikedAnswer;
 
     private bool MatchesCharacter(Character c) => speakingCharacter == c;
-
+    public Character SpeakingCharacter => speakingCharacter;
     public bool ShouldShow(Character c, int susAmount) =>
         MatchesCharacter(c)
         && (onlyShowIfCharacterLikedAnswer && susAmount < 1) 
