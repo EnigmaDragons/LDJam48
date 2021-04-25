@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using Dialogue.Messages;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ExpressionManager : OnMessage<ShowStatement>
+public class ExpressionManager : OnMessage<ShowStatement, ShowExpression, ShowSpyExpression>
 {
     [SerializeField] private Character character;
     [SerializeField] private Image bust;
@@ -15,11 +16,36 @@ public class ExpressionManager : OnMessage<ShowStatement>
 
     protected override void Execute(ShowStatement msg)
     {
-        var cr = msg.SpeakingCharacter;
+        ShowExpression(msg.Emotion, msg.SpeakingCharacter);
+    }
+    
+    protected override void Execute(ShowExpression msg)
+    {
+        ShowExpression(msg.Emotion, msg.Character);
+    }
+
+    protected override void Execute(ShowSpyExpression msg)
+    {
+        ShowPlayerExpression(msg.Emotion);
+    }
+
+    private void ShowPlayerExpression(string expression)
+    {
+        if (!character.IsPlayer()) return;
+        
+        var emotion = expression != null && !string.IsNullOrWhiteSpace(expression)
+            ? expression
+            : "Default";
+        
+        SetExpression(expression);
+    }
+    
+    private void ShowExpression(string expression, Character cr)
+    {
         if (cr != character) return;
         
-        var expression = msg.Emotion != null && !string.IsNullOrWhiteSpace(msg.Emotion.Value)
-            ? msg.Emotion.Value
+        var emotion = expression != null && !string.IsNullOrWhiteSpace(expression)
+            ? expression
             : "Default";
         
         SetExpression(expression);

@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc54c36b09c63304aa6afaeeab1526ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spy: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477, type: 2}
   character: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477, type: 2}
   bust: {fileID: 8750915328675247358}
 --- !u!1001 &3518307818126547202
