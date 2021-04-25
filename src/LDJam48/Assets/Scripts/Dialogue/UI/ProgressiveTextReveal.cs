@@ -126,11 +126,9 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
             yield return new WaitForSeconds(secondsPerCharacter);
         }
 
+        ShowCompletely();
         if (_shouldAutoProceed)
-        {
-            ShowCompletely();
             Proceed(isAuto: true);
-        }
     }
     
     private Color FullAlphaColor(Color c) => new Color(c.r, c.g, c.b, 1f);
