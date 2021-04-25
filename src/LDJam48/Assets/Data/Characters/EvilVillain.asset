@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8249138620646b59f0e5500ebe20276, type: 3}
-  m_Name: Henchman
+  m_Name: EvilVillain
   m_EditorClassIdentifier: 
-  CharacterName: Mr Trilby The Cane Man
-  Prefab: {fileID: 2408280666022170148, guid: 0f87711b37da83649a9acd1acec4c8d3, type: 3}
+  CharacterName: Evil Villain
+  Prefab: {fileID: 3658446044099768749, guid: db37a6b2c5510034290462ca4350d224, type: 3}
   startTags: []
   learnedTags: []
-  maxSus: 10
+  maxSus: 8
   startingSus: 0
   suspicion: 0

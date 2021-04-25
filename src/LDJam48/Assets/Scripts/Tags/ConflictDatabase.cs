@@ -1,7 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using UnityEditor;
 using UnityEngine;
 
 namespace Tags
@@ -22,7 +20,7 @@ namespace Tags
             {
                 if (_hashed.None())
                     _hashed = new HashSet<TagObject>(tags);
-                return _hashed.Contains(tg1) && _hashed.Contains(tg2);
+                return tg1 != tg2 && _hashed.Contains(tg1) && _hashed.Contains(tg2);
             }
 
             public int GetPenalty()

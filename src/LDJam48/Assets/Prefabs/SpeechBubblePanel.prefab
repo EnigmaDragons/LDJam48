@@ -238,7 +238,7 @@ RectTransform:
   m_GameObject: {fileID: 8717382160425752236}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
   m_Children:
   - {fileID: 7194821048480485693}
   - {fileID: 9180021381128013463}
@@ -307,7 +307,7 @@ MonoBehaviour:
     FloatVariable: {fileID: 11400000, guid: 89ce51464d1f99d4cbcbb7a28cb5490a, type: 2}
   autoAdvanceDelay:
     UseConstant: 1
-    ConstantValue: 0.2
+    ConstantValue: 1.1
     FloatVariable: {fileID: 0}
   isRevealing: 0
   fullText: 

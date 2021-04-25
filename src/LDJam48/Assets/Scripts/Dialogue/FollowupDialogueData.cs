@@ -8,6 +8,11 @@ public class FollowupDialogueData
     [SerializeField] private string statement;
     [SerializeField] private bool onlyShowIfCharacterLikedAnswer;
 
-    public bool OnlyShowIfCharacterLikedAnswer => onlyShowIfCharacterLikedAnswer;
+    private bool MatchesCharacter(Character c) => speakingCharacter == c;
+
+    public bool ShouldShow(Character c, int susAmount) =>
+        MatchesCharacter(c)
+        && (onlyShowIfCharacterLikedAnswer && susAmount < 1) 
+        || (!onlyShowIfCharacterLikedAnswer && susAmount > 0);
     public void Begin() => Message.Publish(new ShowStatement(speakingCharacter, statement));
 }

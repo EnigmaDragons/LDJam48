@@ -14,9 +14,14 @@ public class ConversationHandler : OnMessage<StartConversation, AdvanceConversat
     protected override void Execute(AdvanceConversation msg) => StartNext();
     protected override void Execute(DialogueOptionResolved msg)
     {
-        var gainedSuspicion = msg.PlayerSuspicionChange > 0;
         conversation.QueuePlayerLine(msg.Selected.Text);
-        conversation.Queue(msg.Selected.Followups.Where(x => x.OnlyShowIfCharacterLikedAnswer != gainedSuspicion).ToArray());
+        conversation.Current.NonPlayerCharacters.ForEachArr(c =>
+        {
+            var susAmount = msg.PlayerSuspicionChange.TryGetValue(c, out var susChange) ? susChange : 0;
+            conversation.Queue(msg.Selected.Followups
+                .Where(x => x.ShouldShow(c, susAmount))
+                .ToArray());
+        });
         StartNext();
     }
     
