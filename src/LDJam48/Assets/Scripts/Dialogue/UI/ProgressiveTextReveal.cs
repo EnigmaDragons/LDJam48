@@ -83,6 +83,12 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
 
     private IEnumerator BeginReveal()
     {
+        if (secondsPerCharacter.Value < 0.01f)
+        {
+            ShowCompletely(isAuto: true);
+            yield break;
+        }
+        
         isRevealing = true;
         chatBox.gameObject.SetActive(true);
         _cursor = 1;
