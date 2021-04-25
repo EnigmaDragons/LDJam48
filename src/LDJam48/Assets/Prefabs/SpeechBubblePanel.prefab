@@ -307,7 +307,7 @@ MonoBehaviour:
     FloatVariable: {fileID: 11400000, guid: 89ce51464d1f99d4cbcbb7a28cb5490a, type: 2}
   autoAdvanceDelay:
     UseConstant: 1
-    ConstantValue: 0.2
+    ConstantValue: 1.1
     FloatVariable: {fileID: 0}
   isRevealing: 0
   fullText: 

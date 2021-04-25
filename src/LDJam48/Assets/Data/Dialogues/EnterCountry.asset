@@ -58,7 +58,7 @@ MonoBehaviour:
       followups: []
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
-    statement: Why does you luggage have strange gadgets?
+    statement: Why does your luggage have strange gadgets?
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
