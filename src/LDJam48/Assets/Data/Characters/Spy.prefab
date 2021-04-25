@@ -86,6 +86,7 @@ GameObject:
   - component: {fileID: 6857292762360495609}
   - component: {fileID: 4335934020854422269}
   - component: {fileID: 5130977835692260432}
+  - component: {fileID: 5342892781791424580}
   m_Layer: 0
   m_Name: Spy
   m_TagString: Untagged
@@ -144,6 +145,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speechBubble: {fileID: 4335934020854422269}
+--- !u!114 &5342892781791424580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483828345482842763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc54c36b09c63304aa6afaeeab1526ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477, type: 2}
+  bust: {fileID: 8750915328675247358}
 --- !u!1001 &3518307818126547202
 PrefabInstance:
   m_ObjectHideFlags: 0

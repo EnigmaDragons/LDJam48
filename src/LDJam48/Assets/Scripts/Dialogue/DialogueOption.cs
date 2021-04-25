@@ -6,7 +6,7 @@ using UnityEngine;
 [Serializable]
 public class DialogueOption
 {
-    [SerializeField] private string text;
+    [TextArea] [SerializeField] private string text;
     [SerializeField] private TagObject[] tags;
     [SerializeField] private FollowupDialogueData[] followups;
 

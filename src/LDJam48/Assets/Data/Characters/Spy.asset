@@ -14,7 +14,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterName: Clever Spy
   Prefab: {fileID: 1483828345482842763, guid: b9b1a42282c8b8f42b4dc48ff0a305e2, type: 3}
+  expressions:
+    defaultExpression:
+      expressionType:
+        UseConstant: 1
+        ConstantValue: 
+        Variable: {fileID: 0}
+      sprite: {fileID: 21300000, guid: 1004d0ca5a5b81642b33fa2be278bba5, type: 3}
+    expressions:
+    - expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
+      sprite: {fileID: 21300000, guid: 1004d0ca5a5b81642b33fa2be278bba5, type: 3}
+    - expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
+      sprite: {fileID: 21300000, guid: 1004d0ca5a5b81642b33fa2be278bba5, type: 3}
+    - expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: 070b117adf2459a4588d7e7bf5befcd0, type: 2}
+      sprite: {fileID: 21300000, guid: 1004d0ca5a5b81642b33fa2be278bba5, type: 3}
+    - expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: e6609b2cb7b622c48b40a17c894b01c9, type: 2}
+      sprite: {fileID: 21300000, guid: 1004d0ca5a5b81642b33fa2be278bba5, type: 3}
+    - expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
+      sprite: {fileID: 21300000, guid: 1004d0ca5a5b81642b33fa2be278bba5, type: 3}
   startTags: []
   learnedTags: []
   maxSus: 0
+  startingSus: 0
   suspicion: 0

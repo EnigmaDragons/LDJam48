@@ -5,7 +5,7 @@ using UnityEngine;
 public class FollowupDialogueData
 {
     [SerializeField] private Character speakingCharacter;
-    [SerializeField] private string statement;
+    [TextArea] [SerializeField] private string statement;
     [SerializeField] private StringReference statementEmotion = new StringReference("Default"); 
     [SerializeField] private bool onlyShowIfCharacterLikedAnswer;
 

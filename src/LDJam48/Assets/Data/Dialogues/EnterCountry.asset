@@ -465,3 +465,11 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 0}
     options: []
+  - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+      type: 2}
+    statement: You can go, but I got my eye on you, don't try nothin.
+    statementEmotion:
+      UseConstant: 1
+      ConstantValue: Default
+      Variable: {fileID: 0}
+    options: []
