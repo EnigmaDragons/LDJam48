@@ -26,7 +26,7 @@ public class CurrentConversation : ScriptableObject
     public void ExecuteNext()
     {
         if (_playerCharacterLines.Any())
-            Message.Publish(new ShowStatement(conversation.PlayerCharacter, _playerCharacterLines.Dequeue()));
+            Message.Publish(new ShowStatement(conversation.PlayerCharacter, _playerCharacterLines.Dequeue(), new StringReference("Default")));
         else if (_temporaryFollowups.Any()) 
             _temporaryFollowups.Dequeue().Begin();
         else

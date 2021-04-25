@@ -7,6 +7,7 @@ public class DialogueData
 {
     [SerializeField] private Character speakingCharacter;
     [SerializeField] private string statement;
+    [SerializeField] private StringReference statementEmotion = new StringReference("Default");
     [SerializeField] private DialogueOption[] options;
 
     public bool IsDialogueOptions => string.IsNullOrWhiteSpace(statement) && options.Any();
@@ -14,7 +15,7 @@ public class DialogueData
     public void Begin()
     {
         if (!string.IsNullOrWhiteSpace(statement))
-            Message.Publish(new ShowStatement(speakingCharacter, statement));
+            Message.Publish(new ShowStatement(speakingCharacter, statement, statementEmotion));
         else if (options.Any())
             Message.Publish(new ShowDialogueOptions(options));
     }

@@ -9,18 +9,20 @@ public class CharacterSuspicion : MonoBehaviour
 
     private int _lastValue;
     
-    private void Awake()
+    private void OnEnable()
     {
         character.ONSuspicionChange += UpdateUI;
         UpdateUI();
     }
+
+    private void OnDisable() => character.ONSuspicionChange -= UpdateUI;
 
     private void UpdateUI()
     {
         var currentSus = character.GetSuspicion();
         suspicionSlider.maxValue = character.GetMaxSuspicion();
         suspicionSlider.value = currentSus;
-        if (character.GetSuspicion() > 0 && _lastValue != currentSus)
+        if (character.GetSuspicion() > 0 && currentSus > _lastValue)
             suspicionSlider.gameObject.transform.DOPunchScale(new Vector3(1.6f, 1.6f, 1.6f), 1f, 1);
         _lastValue = currentSus;
     }
