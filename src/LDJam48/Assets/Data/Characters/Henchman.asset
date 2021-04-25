@@ -50,5 +50,5 @@ MonoBehaviour:
   startTags: []
   learnedTags: []
   maxSus: 10
-  startingSus: 0
-  suspicion: 0
+  startingSus: 3
+  suspicion: 3

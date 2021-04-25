@@ -37,11 +37,6 @@ MonoBehaviour:
     tags:
     - {fileID: 11400000, guid: 8b1e568adbc489a49b4cfe9f7e3b7c02, type: 2}
     - {fileID: 11400000, guid: 42942f01fe877734292d60d326609594, type: 2}
-  - name: Physique
-    penalty: 2
-    tags:
-    - {fileID: 11400000, guid: 7d109b0b7fbdf3e468e3e186b157a281, type: 2}
-    - {fileID: 11400000, guid: 6b78e6497f022ad4fa7bb394b476fd11, type: 2}
   - name: Residency
     penalty: 3
     tags:
@@ -156,3 +151,13 @@ MonoBehaviour:
     tags:
     - {fileID: 11400000, guid: 9784ec1f06764ca4782d2f8c0be38e00, type: 2}
     - {fileID: 11400000, guid: 55a1a6b3d34246d49a2b695164e9e40a, type: 2}
+  - name: No Respect/Ambasador
+    penalty: 3
+    tags:
+    - {fileID: 11400000, guid: 6f5d520e54e7108458f15f75843869c4, type: 2}
+    - {fileID: 11400000, guid: 5056db8e2f68eaa4791c4f15d6756481, type: 2}
+  - name: Stylish/Mechanic
+    penalty: 3
+    tags:
+    - {fileID: 11400000, guid: 55a1a6b3d34246d49a2b695164e9e40a, type: 2}
+    - {fileID: 11400000, guid: 98d82324a10aad746aa962b32819920e, type: 2}

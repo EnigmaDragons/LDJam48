@@ -21,36 +21,34 @@ MonoBehaviour:
   sequence:
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
-    statement: Welcome to our country. What is your business here?
+    statement: Hey buddy, you look new here, what's your gig?
     statementEmotion:
-      UseConstant: 1
+      UseConstant: 0
       ConstantValue: Default
-      Variable: {fileID: 0}
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
     statement: 
     statementEmotion:
-      UseConstant: 1
+      UseConstant: 0
       ConstantValue: Default
-      Variable: {fileID: 0}
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: "What do you mean welcome?! I work at this airport as a mechanic and
+    - text: "What do you mean new here?! I work at this airport as a mechanic and
         I\u2019m headed home for the day!"
       tags:
       - {fileID: 11400000, guid: 963b509ccb9cf354685ea434fc1f512e, type: 2}
       - {fileID: 11400000, guid: 55a1a6b3d34246d49a2b695164e9e40a, type: 2}
-      - {fileID: 11400000, guid: 7d109b0b7fbdf3e468e3e186b157a281, type: 2}
       - {fileID: 11400000, guid: 5612b4598b3a5c241969da9ebdd2b4ce, type: 2}
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: My apologies, sir. I don't recall seeing you before. But I will
-          have to finish questioning before I can let you go.
+        statement: If you say so.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
     - text: I am an ambassador who is here to give your country insane amounts of
         foreign aid.
@@ -61,11 +59,11 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Hopefully that means I can get start getting paid.
+        statement: Hope, that means I can start getting some cash.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
     - text: I am a wealthy tourist. Here to enjoy these luscious jungles and overspend
         on drinks and entertainment.
@@ -73,21 +71,20 @@ MonoBehaviour:
       - {fileID: 11400000, guid: d34aa316c85e941469e2f778e88d4ec8, type: 2}
       - {fileID: 11400000, guid: 7bc577093202eff478cf35e4c823014c, type: 2}
       - {fileID: 11400000, guid: de3063a3468317b4c8e947331e529c56, type: 2}
-      - {fileID: 11400000, guid: 6b78e6497f022ad4fa7bb394b476fd11, type: 2}
       - {fileID: 11400000, guid: 0546ebf45b35aa040b24c36e3ff51208, type: 2}
       - {fileID: 11400000, guid: 421bddcc3af285243a10317d43b7c20b, type: 2}
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: I'm sure people will enjoy your patronage.
+        statement: Lucky you, silver spoon.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
-    statement: Why does your luggage have strange gadgets?
+    statement: What are these strange gadgets in your luggage?
     statementEmotion:
       UseConstant: 1
       ConstantValue: Default
@@ -107,20 +104,19 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Ah of course, that would be silly.
+        statement: Ah cause you say you're a mechanic.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Really you expect me to believe you would bring absolutely no
-          luggage.
+        statement: You think I'm gonna buy that, YOU wouldn't bring luggage.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
     - text: I always bring my Slim Camera Pro Max 2 Plus and extensions with me on
         these excursions.
@@ -130,154 +126,154 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: I would ask about the extensions, but with names like that we'd
-          be here forever.
+        statement: You and your fancy stuff, silver spoon.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Strange thing to have if you work here as a mechanic.
+        statement: That helps you repair the planes buddy.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "Strange?! You mean you don\u2019t have these devices here?! How barbaric!
-        you really should adopt them and get on that right away, don\u2019t wanna
-        be left in the stone ages do ya?"
+    - text: "Strange?! You mean you don\u2019t have these devices here?! How barbaric!"
       tags:
       - {fileID: 11400000, guid: 42942f01fe877734292d60d326609594, type: 2}
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Ahh well I'm sure we will have those soon.
+        statement: Keep your fancy tech.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Strange that you would be able to get it mechanic either.
+        statement: Barbaric?! You work here, you are starting to piss me off!
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
-    statement: Do you know how to defend yourself?
+    statement: What's with the suit?
     statementEmotion:
-      UseConstant: 1
+      UseConstant: 0
       ConstantValue: Default
-      Variable: {fileID: 0}
+      Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
     statement: 
     statementEmotion:
-      UseConstant: 1
+      UseConstant: 0
       ConstantValue: Default
-      Variable: {fileID: 0}
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: 'Between you and me, I would be quite powerless to stop an attacker. '
+    - text: People weren't taking me seriously or showing enough respect, so I looked
+        it up on the web, and it said "get a suit".
       tags:
-      - {fileID: 11400000, guid: 6b78e6497f022ad4fa7bb394b476fd11, type: 2}
+      - {fileID: 11400000, guid: 5056db8e2f68eaa4791c4f15d6756481, type: 2}
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: I thought so, best to keep an eye out then.
+        statement: Hate to break it to you Buddy, but I'm not sure it's working.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: e6609b2cb7b622c48b40a17c894b01c9, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Really you work HERE as a mechanic and can't handle yourself.
+        statement: An ambassador without charisma. If that's your jokes, it's good
+          you didn't become a comedian.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: I could easily take a ruffian if the need arose.
+    - text: Like I need a reason to look stylish.
       tags:
-      - {fileID: 11400000, guid: 7d109b0b7fbdf3e468e3e186b157a281, type: 2}
+      - {fileID: 11400000, guid: 98d82324a10aad746aa962b32819920e, type: 2}
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Good, pays to be prepared.
+        statement: Doesn't look comfy, but whatever suits your style.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: You are not fooling any ruffians buddy.
+        statement: Who you trying to impress, the machines you work on!
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "That\u2019s what I pay my bodyguard\u2019s for."
+    - text: I own the suit company. Say you would look real sharp with a suit.
       tags:
       - {fileID: 11400000, guid: de3063a3468317b4c8e947331e529c56, type: 2}
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: A good expenditure of money, I assure you.
+        statement: I wouldn't be caught dead in a suit.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: You don't seem like the type to be able to afford body guards.
+        statement: A mechanic and you own a suit company, wanna tell me any other
+          jobs you do.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 070b117adf2459a4588d7e7bf5befcd0, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
-    statement: Have you ever been here before?
+    statement: You ever been to Zinlandia before?
     statementEmotion:
-      UseConstant: 1
+      UseConstant: 0
       ConstantValue: Default
-      Variable: {fileID: 0}
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
     statement: 
     statementEmotion:
-      UseConstant: 1
+      UseConstant: 0
       ConstantValue: Default
-      Variable: {fileID: 0}
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: "Are you kidding me? I\u2019m here all the time!"
+    - text: Are you kidding me? I live here!
       tags:
       - {fileID: 11400000, guid: 963b509ccb9cf354685ea434fc1f512e, type: 2}
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: I doubt that very much.
+        statement: Yeah, yeah
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: I know, I know, these questions are a formality.
+        statement: Don't you lie to me, or your in for a lotta pain.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
     - text: "A couple weeks ago I didn\u2019t even know this place existed."
       tags:
@@ -286,20 +282,20 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Well as a first timer, I recommend the trying the Jello, no where
-          else makes it quite like we do.
+        statement: Well then, Jello's pretty good here, no where makes it quite like
+          Zinlandia.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Given your job real strange you are not more familiar with Zinlandia.
+        statement: Given your job, real strange you are not more familiar with Zinlandia.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
     - text: Every once in awhile, when the opportunity arises.
       tags:
@@ -307,20 +303,19 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Well your in for a special treat this visit, there may be some
-          changes
+        statement: Well Zinlandia's got big changes coming.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Never heard someone call something breaking down, an oppertunity
+        statement: Never heard of someone calling a mechanical breakdown, an oppertunity.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
@@ -457,14 +452,6 @@ MonoBehaviour:
           ConstantValue: Default
           Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 1
-  - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
-      type: 2}
-    statement: You can go, but I got my eye on you, don't try nothin.
-    statementEmotion:
-      UseConstant: 1
-      ConstantValue: Default
-      Variable: {fileID: 0}
-    options: []
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
     statement: You can go, but I got my eye on you, don't try nothin.
