@@ -31,10 +31,10 @@ MonoBehaviour:
     storyText: Your mission is to infiltrate their base, find out their dastardly
       scheme, and put a stop to it.
     textColor: {r: 0, g: 0, b: 0, a: 1}
-  - artBackground: {fileID: 4667574391697563776, guid: 626956314d2d09b44b887a7d0e7b3a36,
+  - artBackground: {fileID: 2202170337963522669, guid: 5e34e4fafb3074abc8283c646be210f1,
       type: 3}
     storyText: You fly into Zinlandia the country where the volcano is.
-    textColor: {r: 0, g: 0, b: 0, a: 1}
+    textColor: {r: 1, g: 1, b: 1, a: 1}
   - artBackground: {fileID: 4667574391697563776, guid: 626956314d2d09b44b887a7d0e7b3a36,
       type: 3}
     storyText: Everything is going well into you are stopped by security for additional
