@@ -14,7 +14,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterName: Security Guard
   Prefab: {fileID: 1697081042536614812, guid: 2cdd5cca5b6c5b347bc2006fdef242af, type: 3}
+  expressions:
+    defaultExpression:
+      expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+      sprite: {fileID: 21300000, guid: 8f1771ade216d1c4bb073e7bcb7d2019, type: 3}
+    expressions:
+    - expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
+      sprite: {fileID: 21300000, guid: 6e660b7b9742f6c49b9493e7e9a1b711, type: 3}
+    - expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
+      sprite: {fileID: 21300000, guid: b6cf8e3c157693d4e8c2ec69abc65419, type: 3}
+    - expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: 070b117adf2459a4588d7e7bf5befcd0, type: 2}
+      sprite: {fileID: 21300000, guid: 5b0a544c3dd47d144b7421996f7612fe, type: 3}
+    - expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: e6609b2cb7b622c48b40a17c894b01c9, type: 2}
+      sprite: {fileID: 21300000, guid: 738614875700dd745bff4aa1d2fae1c2, type: 3}
+    - expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: 070b117adf2459a4588d7e7bf5befcd0, type: 2}
+      sprite: {fileID: 21300000, guid: 6e660b7b9742f6c49b9493e7e9a1b711, type: 3}
   startTags: []
   learnedTags: []
   maxSus: 10
+  startingSus: 0
   suspicion: 0

@@ -182,6 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chatBox: {fileID: 7632293859265913990}
+  panelBg: {fileID: 0}
   textBox: {fileID: 3631546255087125820}
   secondsPerCharacter:
     UseConstant: 1
@@ -192,6 +193,7 @@ MonoBehaviour:
     ConstantValue: 0.2
     FloatVariable: {fileID: 0}
   isRevealing: 0
+  fullText: 
 --- !u!114 &7632293859265913990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,8 +333,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Lorem ipsum
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4465db4f9aff06f45a504ba93ac493b2, type: 2}
-  m_sharedMaterial: {fileID: -6670066766322023224, guid: 4465db4f9aff06f45a504ba93ac493b2,
+  m_fontAsset: {fileID: 11400000, guid: 7af6043334f13874db1e00dd6c3f790a, type: 2}
+  m_sharedMaterial: {fileID: 4094639419049531659, guid: 7af6043334f13874db1e00dd6c3f790a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -357,8 +359,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
