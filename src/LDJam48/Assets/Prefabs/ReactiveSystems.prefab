@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8593013913974506984}
   - component: {fileID: 6601953045551528945}
   - component: {fileID: 5958105542653191466}
+  - component: {fileID: -8160832330306632460}
   m_Layer: 0
   m_Name: ReactiveSystems
   m_TagString: Untagged
@@ -118,3 +119,20 @@ MonoBehaviour:
   gameState: {fileID: 11400000, guid: 564bc3db6d1a6d2429d3d2b4d07a7993, type: 2}
   tenseThreshold: 0.1
   superTenseThreshold: 0.6
+--- !u!114 &-8160832330306632460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7250873676597684185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05823625847a4ee08422e51bfb386637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameState: {fileID: 11400000, guid: 564bc3db6d1a6d2429d3d2b4d07a7993, type: 2}
+  player: {fileID: 11400000, guid: 95f47694e0b28ce48a808ae15f18f4d8, type: 2}
+  calmMusic: {fileID: 11400000, guid: 61113d14fbcea2941957c081a00d35ee, type: 2}
+  tenseMusic: {fileID: 11400000, guid: d0139c70c7ef92346809d2946648b764, type: 2}
+  superTenseMusic: {fileID: 11400000, guid: 33d078ac971f13c44b5a02bf24d0f37d, type: 2}
