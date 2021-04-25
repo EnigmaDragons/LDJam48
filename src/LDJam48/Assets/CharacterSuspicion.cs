@@ -9,11 +9,13 @@ public class CharacterSuspicion : MonoBehaviour
 
     private int _lastValue;
     
-    private void Awake()
+    private void OnEnable()
     {
         character.ONSuspicionChange += UpdateUI;
         UpdateUI();
     }
+
+    private void OnDisable() => character.ONSuspicionChange -= UpdateUI;
 
     private void UpdateUI()
     {

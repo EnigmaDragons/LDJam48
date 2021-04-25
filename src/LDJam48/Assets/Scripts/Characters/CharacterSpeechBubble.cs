@@ -19,7 +19,7 @@ public class CharacterSpeechBubble : MonoBehaviour
 
     public void Speak(string option)
     {
-        speechBubble.Display(option, conversation.NextSequenceIsOptions || character == conversation.Current.PlayerCharacter, Proceed);
+        speechBubble.Display(option, true, Proceed);
     }
 
     public void Hide() => speechBubble.Hide();
