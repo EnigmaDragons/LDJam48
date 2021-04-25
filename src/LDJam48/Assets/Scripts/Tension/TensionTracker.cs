@@ -5,8 +5,8 @@ using Dialogue.Messages;using UnityEngine;
 public class TensionTracker : OnMessage<SpawnCharacters, DialogueOptionResolved>
 {
     [SerializeField] private CurrentGameState gameState;
-    [SerializeField] private float tenseThreshold;
-    [SerializeField] private float superTenseThreshold;
+    [SerializeField] private float tenseThreshold = 0.1f;
+    [SerializeField] private float superTenseThreshold = 0.6f;
 
     private readonly HashSet<Character> _characters = new HashSet<Character>();
     

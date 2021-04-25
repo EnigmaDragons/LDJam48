@@ -102,7 +102,7 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
         if (secondsPerCharacter.Value < 0.01f)
         {
             ShowCompletely();
-            Proceed(isAuto: true);
+            this.ExecuteAfterDelay(Proceed, autoAdvanceDelay);
             yield break;
         }
         
