@@ -15,6 +15,7 @@ public class Character : ScriptableObject, IEqualityComparer<Character>
     [SerializeField] private int maxSus;
     [SerializeField] private int startingSus;
     [SerializeField] private int suspicion;
+    [SerializeField] private bool isPlayer;
     public Action ONSuspicionChange;
     
     private void OnValidate()
@@ -28,9 +29,9 @@ public class Character : ScriptableObject, IEqualityComparer<Character>
     {
         if (amount == 0)
             return;
-        
-        suspicion += amount;
-        Log.Info($"{CharacterName} suspicion is now {suspicion}/{maxSus}");
+
+        suspicion = Mathf.Clamp(suspicion + amount, 0, maxSus);
+        Log.Info($"{CharacterName} suspicion is now {suspicion}/{maxSus}. Change {amount}");
         ONSuspicionChange?.Invoke();
     }
 
@@ -89,5 +90,10 @@ public class Character : ScriptableObject, IEqualityComparer<Character>
         {
             return ((obj.CharacterName != null ? obj.CharacterName.GetHashCode() : 0) * 397) ^ obj.maxSus;
         }
+    }
+
+    public bool IsPlayer()
+    {
+        return isPlayer;
     }
 }

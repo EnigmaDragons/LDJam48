@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2cd7c3672a89964589361a843fb5884, type: 3}
-  m_Name: credits-theme
+  m_Name: epic-main-theme-no-intro
   m_EditorClassIdentifier: 
   volume: 1
   pitch: 1
-  audioClip: {fileID: 8300000, guid: 2e2da672f097644b482946863cc7ae98, type: 3}
+  audioClip: {fileID: 8300000, guid: a6eda0570c4f543c89b5b51d96aafd8f, type: 3}
   introBoundary: 0
   loopingBoundary: 0
   nonLooping: 0

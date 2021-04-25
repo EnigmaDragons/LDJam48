@@ -390,6 +390,10 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 0.15
     FloatVariable: {fileID: 0}
+  perCharacterSound:
+    clip: {fileID: 8300000, guid: d86dfb4c9f18f4f2ebb0868f769b2580, type: 3}
+    volume: 0.26
+  sfx: {fileID: 11400000, guid: bfe56e3518f684c4387de97bd5db348d, type: 2}
   isRevealing: 0
   fullText: 
 --- !u!114 &6244348384472840160

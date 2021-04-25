@@ -1,14 +1,16 @@
-
 using UnityEngine;
 
 public class CutsceneHandler : OnMessage<ShowCutscene, AdvanceCutscene, SkipCutscene>
 {
     [SerializeField] private CurrentCutscene cutscene;
+    [SerializeField] private float delayBeforeFinishing = 2f;
     
     private int _sequenceIndex = 0;
+    private bool _finishTriggered = false;
     
     protected override void Execute(ShowCutscene msg)
     {
+        _finishTriggered = false;
         cutscene.Set(msg.Cutscene);
         _sequenceIndex = 0;
         BeginSegment();
@@ -28,7 +30,10 @@ public class CutsceneHandler : OnMessage<ShowCutscene, AdvanceCutscene, SkipCuts
         var c = cutscene.Current;
         if (c.Segments.Length > _sequenceIndex)
             c.Segments[_sequenceIndex].Begin();
-        else
-            c.OnFinished.Invoke();
+        else if (!_finishTriggered)
+        {
+            _finishTriggered = true;
+            this.ExecuteAfterDelay(() => c.OnFinished.Invoke(), delayBeforeFinishing);
+        }
     }
 }
