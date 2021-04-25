@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Henchman
   m_EditorClassIdentifier: 
   CharacterName: Mr Trilby The Cane Man
-  Prefab: {fileID: 0}
+  Prefab: {fileID: 1697081042536614812, guid: 2cdd5cca5b6c5b347bc2006fdef242af, type: 3}
   startTags: []
   learnedTags: []
   maxSus: 10
+  startingSus: 0
   suspicion: 0
