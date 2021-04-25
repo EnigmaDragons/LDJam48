@@ -70,7 +70,7 @@ public class SuspicionHandler : OnMessage<DialogueOptionSelected>
         var finalSusAmount = tagMatchesWithExistingStory.Any() && totalSuspicion <= 0
             ? -1 // Bonus for being congruent with existing Cover Story
             : totalSuspicion;
-        character.AddSuspicion(totalSuspicion);
+        character.AddSuspicion(finalSusAmount);
         return finalSusAmount;
     }
 }
