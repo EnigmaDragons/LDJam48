@@ -49,6 +49,7 @@ MonoBehaviour:
       sprite: {fileID: 21300000, guid: 1004d0ca5a5b81642b33fa2be278bba5, type: 3}
   startTags: []
   learnedTags: []
-  maxSus: 0
+  maxSus: 1000
   startingSus: 0
   suspicion: 0
+  isPlayer: 1

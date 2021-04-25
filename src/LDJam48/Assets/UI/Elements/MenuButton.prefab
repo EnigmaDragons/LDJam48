@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1612062460753857839}
-  sound: {fileID: 8300000, guid: d2d3358d72218ef4798f1ca2b15e1b1e, type: 3}
+  sound: {fileID: 8300000, guid: 7623a8764c36d4824b366a20915e0859, type: 3}
   player: {fileID: 11400000, guid: bfe56e3518f684c4387de97bd5db348d, type: 2}
   volume:
     UseConstant: 1

@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: VolcanoCutscene
   m_EditorClassIdentifier: 
   segments:
-  - artBackground: {fileID: 0}
+  - artBackground: {fileID: 4081354377671999505, guid: 2fee32111821e4cc1aafe2345c67f2c1,
+      type: 3}
     storyText: Upon leaving the airport you head directly to the Volcano lair
     textColor: {r: 0, g: 0, b: 0, a: 0}
-  - artBackground: {fileID: 0}
+  - artBackground: {fileID: 4081354377671999505, guid: 2fee32111821e4cc1aafe2345c67f2c1,
+      type: 3}
     storyText: You easily bypass the Lair's entrance and find where the scientists
       work to modify Jello.
     textColor: {r: 0, g: 0, b: 0, a: 0}

@@ -15,12 +15,12 @@ public class ConversationHandler : OnMessage<StartConversation, AdvanceConversat
     protected override void Execute(DialogueOptionResolved msg)
     {
         conversation.QueuePlayerLine(msg.Selected.Text);
-        conversation.Current.NonPlayerCharacters.ForEachArr(c =>
+        msg.Selected.Followups.ForEachArr(followup =>
         {
+            var c = followup.SpeakingCharacter;
             var susAmount = msg.PlayerSuspicionChange.TryGetValue(c, out var susChange) ? susChange : 0;
-            conversation.Queue(msg.Selected.Followups
-                .Where(x => x.ShouldShow(c, susAmount))
-                .ToArray());
+            if (followup.ShouldShow(c, susAmount))
+                conversation.Queue(followup.AsArray());
         });
         StartNext();
     }

@@ -17,6 +17,7 @@ public class SuspicionHandler : OnMessage<DialogueOptionSelected>
             charSusChanges[character] = GivePenalty(msg, character);
             SaveTags(msg, character);
         }
+        charSusChanges[conversation.Current.PlayerCharacter] = charSusChanges.Max(x => x.Value);
         
         Message.Publish(new DialogueOptionResolved(msg.Selection, charSusChanges));
     }
@@ -62,13 +63,13 @@ public class SuspicionHandler : OnMessage<DialogueOptionSelected>
 
         if (tagMatchesWithExistingStory.Any())
             Log.Info($"Matches existing story: {string.Join(",",tagMatchesWithExistingStory.Select(x => x.GetName()))}");
-        if (totalSuspicion > 0)
-            Log.Info($"Gained {totalSuspicion} Suspicion from {character.CharacterName}");
 
         var finalSusAmount = tagMatchesWithExistingStory.Any() && totalSuspicion <= 0
             ? -1 // Bonus for being congruent with existing Cover Story
             : totalSuspicion;
         character.AddSuspicion(finalSusAmount);
+        if (finalSusAmount > 0)
+            Log.Info($"Gained {finalSusAmount} Suspicion from {character.CharacterName}");
         return finalSusAmount;
     }
 }
