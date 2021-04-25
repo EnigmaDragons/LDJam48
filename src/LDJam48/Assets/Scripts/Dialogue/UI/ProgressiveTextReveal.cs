@@ -11,7 +11,8 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textBox;
     [SerializeField] private FloatReference secondsPerCharacter = new FloatReference(0.07f);
     [SerializeField] private FloatReference autoAdvanceDelay = new FloatReference(0.8f);
-    [SerializeField] private FloatReference cooldown = new FloatReference(0.15f);
+    [SerializeField] private AudioClipVolume perCharacterSound;
+    [SerializeField] private UiSfxPlayer sfx;
     [SerializeField, ReadOnly] private bool isRevealing;
     [SerializeField, ReadOnly] private string fullText;
     
@@ -124,6 +125,8 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
             var shownText = fullText.Substring(0, _cursor);
             textBox.text = shownText;
             _cursor++;
+            if (sfx != null && perCharacterSound != null)
+                sfx.Play(perCharacterSound);
             yield return new WaitForSeconds(secondsPerCharacter);
         }
 
