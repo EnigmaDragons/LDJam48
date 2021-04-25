@@ -37,15 +37,20 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: My apologies, sir. I don't recall seeing you before.
-        onlyShowIfCharacterLikedAnswer: 0
+        statement: My apologies, sir. I don't recall seeing you before. But I will
+          have to finish questioning before I can let you go.
+        onlyShowIfCharacterLikedAnswer: 1
     - text: I am an ambassador who is here to give your country insane amounts of
         foreign aid.
       tags:
       - {fileID: 11400000, guid: 6f5d520e54e7108458f15f75843869c4, type: 2}
       - {fileID: 11400000, guid: 7bc577093202eff478cf35e4c823014c, type: 2}
       - {fileID: 11400000, guid: de3063a3468317b4c8e947331e529c56, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: Hopefully that means I can get start getting paid.
+        onlyShowIfCharacterLikedAnswer: 1
     - text: I am a wealthy tourist. Here to enjoy these luscious jungles and overspend
         on drinks and entertainment.
       tags:
@@ -55,7 +60,11 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 6b78e6497f022ad4fa7bb394b476fd11, type: 2}
       - {fileID: 11400000, guid: 0546ebf45b35aa040b24c36e3ff51208, type: 2}
       - {fileID: 11400000, guid: 421bddcc3af285243a10317d43b7c20b, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: I'm sure people will enjoy your patronage.
+        onlyShowIfCharacterLikedAnswer: 1
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
     statement: Why does your luggage have strange gadgets?
@@ -67,19 +76,45 @@ MonoBehaviour:
     - text: "Don\u2019t be absurd. I don\u2019t have any luggage."
       tags:
       - {fileID: 11400000, guid: 8b1e568adbc489a49b4cfe9f7e3b7c02, type: 2}
-      followups: []
-    - text: I always bring my Slim Camera Pro Max 2 plus and extensions with me on
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: Ah of course, that would be silly.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: Really you expect me to believe you would bring absolutely no
+          luggage.
+        onlyShowIfCharacterLikedAnswer: 0
+    - text: I always bring my Slim Camera Pro Max 2 Plus and extensions with me on
         these excursions.
       tags:
       - {fileID: 11400000, guid: de3063a3468317b4c8e947331e529c56, type: 2}
       - {fileID: 11400000, guid: 42942f01fe877734292d60d326609594, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: I would ask about the extensions, but with names like that we'd
+          be here forever.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: Strange thing to have if you work here as a mechanic.
+        onlyShowIfCharacterLikedAnswer: 0
     - text: "Strange?! You mean you don\u2019t have these devices here?! How barbaric!
         you really should adopt them and get on that right away, don\u2019t wanna
         be left in the stone ages do ya?"
       tags:
       - {fileID: 11400000, guid: 42942f01fe877734292d60d326609594, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: Ahh well I'm sure we will have those soon.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: Strange that you would be able to get it mechanic either.
+        onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
     statement: Do you know how to defend yourself?
@@ -91,15 +126,39 @@ MonoBehaviour:
     - text: 'Between you and me, I would be quite powerless to stop an attacker. '
       tags:
       - {fileID: 11400000, guid: 6b78e6497f022ad4fa7bb394b476fd11, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: I thought so, best to keep an eye out then.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: Really you work HERE as a mechanic and can't handle yourself.
+        onlyShowIfCharacterLikedAnswer: 0
     - text: I could easily take a ruffian if the need arose.
       tags:
       - {fileID: 11400000, guid: 7d109b0b7fbdf3e468e3e186b157a281, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: Good, pays to be prepared.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: You are not fooling any ruffians buddy.
+        onlyShowIfCharacterLikedAnswer: 0
     - text: "That\u2019s what I pay my bodyguard\u2019s for."
       tags:
       - {fileID: 11400000, guid: de3063a3468317b4c8e947331e529c56, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: A good expenditure of money, I assure you.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: You don't seem like the type to be able to afford body guards.
+        onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
     statement: Have you ever been here before?
@@ -111,16 +170,42 @@ MonoBehaviour:
     - text: "Are you kidding me? I\u2019m here all the time!"
       tags:
       - {fileID: 11400000, guid: 963b509ccb9cf354685ea434fc1f512e, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: I doubt that very much.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: I know, I know, these questions are a formality.
+        onlyShowIfCharacterLikedAnswer: 0
     - text: "A couple weeks ago I didn\u2019t even know this place existed."
       tags:
       - {fileID: 11400000, guid: 7bc577093202eff478cf35e4c823014c, type: 2}
       - {fileID: 11400000, guid: d34aa316c85e941469e2f778e88d4ec8, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: Well as a first timer, I recommend the trying the Jello, no where
+          else makes it quite like we do.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: Given your job real strange you are not more familiar with Zinlandia.
+        onlyShowIfCharacterLikedAnswer: 0
     - text: Every once in awhile, when the opportunity arises.
       tags:
       - {fileID: 11400000, guid: 7bc577093202eff478cf35e4c823014c, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: Well your in for a special treat this visit, there may be some
+          changes
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: Never heard someone call something breaking down, an oppertunity
+        onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
     statement: Why do you look different than the picture on your id?
@@ -133,12 +218,66 @@ MonoBehaviour:
         on my nose .
       tags:
       - {fileID: 11400000, guid: de3063a3468317b4c8e947331e529c56, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: ah yes I see it now, you look nosier than in the picture.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: That's impressive, given we have no plastic surgeons in the country.
+        onlyShowIfCharacterLikedAnswer: 0
     - text: "I have never quite looked the same since the\u2026 accident."
       tags:
       - {fileID: 11400000, guid: 2e81008d397c9ca4fb392edf9af50d2f, type: 2}
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: The accident?
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
+          type: 2}
+        statement: I was camping and went to sleep into my tent when a hippo arrived
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: You got attacked by a Hippo!
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
+          type: 2}
+        statement: 'No, the hippo started charging and my friend grabbed his rifle
+          and shot at it, but his aim was off. '
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: You got shot by your friend?!
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
+          type: 2}
+        statement: No, the sound of the gun startled me so I ran out of my tent.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: And ran into the hippo?
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
+          type: 2}
+        statement: No the Hippo was also startled and ran away, so that's how it
+          happened
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: Ah.. Well.. so sorry that uh.. happened to you.
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: You seemed so happy about your visit just a moment before.
+        onlyShowIfCharacterLikedAnswer: 0
     - text: "I would hardly call wearing a different shirt in the picture \u201Clooking
         different\u201D"
       tags: []
-      followups: []
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: My mistake.
+        onlyShowIfCharacterLikedAnswer: 1
