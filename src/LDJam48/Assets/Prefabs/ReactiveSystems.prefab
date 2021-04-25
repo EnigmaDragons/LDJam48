@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4673073206443635057}
   - component: {fileID: 1245016237289485867}
   - component: {fileID: 8593013913974506984}
+  - component: {fileID: 6601953045551528945}
   m_Layer: 0
   m_Name: ReactiveSystems
   m_TagString: Untagged
@@ -87,3 +88,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameState: {fileID: 11400000, guid: 564bc3db6d1a6d2429d3d2b4d07a7993, type: 2}
+--- !u!114 &6601953045551528945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7250873676597684185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32fd926580a24c49b3645f915077641a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  navigator: {fileID: 11400000, guid: c3cd3edfa3cf5c94fbbf792f8728cebb, type: 2}
+  delayBeforeScene: 1.8

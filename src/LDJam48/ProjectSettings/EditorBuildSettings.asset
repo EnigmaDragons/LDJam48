@@ -21,6 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/IntegratorOnly/LocationScene.unity
     guid: a5ce651222640d14eaf4134ff1a0ad3d
   - enabled: 1
-    path: Assets/Scenes/Silas/FirstLocation.unity
-    guid: c52df47e4b656814aa5d12bd4adfa871
+    path: Assets/Scenes/IntegratorOnly/GameOver.unity
+    guid: bf1f012472c95014798d6a49b022cc5f
   m_configObjects: {}
