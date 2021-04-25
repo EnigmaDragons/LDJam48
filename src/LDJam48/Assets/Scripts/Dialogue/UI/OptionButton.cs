@@ -12,6 +12,8 @@ public class OptionButton : MonoBehaviour
 
     private void Start() => button.onClick.AddListener(() => _onSelected());
 
+    public void Select() => _onSelected();
+    
     public OptionButton Initialized(string text, Action onSelected)
     {
         label.text = text;

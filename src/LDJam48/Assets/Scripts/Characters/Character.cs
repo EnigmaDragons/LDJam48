@@ -24,7 +24,11 @@ public class Character : ScriptableObject, IEqualityComparer<Character>
 
     public void AddSuspicion(int amount)
     {
+        if (amount == 0)
+            return;
+        
         suspicion += amount;
+        Log.Info($"{CharacterName} suspicion is now {suspicion}/{maxSus}");
         ONSuspicionChange?.Invoke();
     }
 

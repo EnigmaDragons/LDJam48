@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Tags;
 using UnityEngine;
 
@@ -44,22 +45,32 @@ public class SuspicionHandler : OnMessage<DialogueOptionSelected>
     private int GivePenalty(DialogueOptionSelected msg, Character character)
     {
         var dialog = msg.Selection;
-
         var totalSuspicion = 0;
+        var tagMatchesWithExistingStory = new List<TagObject>();
         foreach (var dialogTag in dialog.Tags)
         {
             foreach (var characterTag in character.GetLearnedTags())
             {
-                var penalty = conflictDatabase.GetPenalty(dialogTag, characterTag);
-                totalSuspicion += penalty;
-                character.AddSuspicion(conflictDatabase.GetPenalty(dialogTag, characterTag));
-                //make sure that we add suspicion only once per dialog option 
-                if(penalty > 0) break;
+                // Track Congruent Cover Story
+                if (characterTag == dialogTag)
+                    tagMatchesWithExistingStory.Add(characterTag);
+                
+                var penaltyAmount = conflictDatabase.GetPenalty(dialogTag, characterTag);
+                totalSuspicion += penaltyAmount;
+                //make sure that we add suspicion only once per dialog option
+                if(penaltyAmount > 0) break;
             }
         }
 
+        if (tagMatchesWithExistingStory.Any())
+            Log.Info($"Matches existing story: {string.Join(",",tagMatchesWithExistingStory.Select(x => x.GetName()))}");
         if (totalSuspicion > 0)
             Log.Info($"Gained {totalSuspicion} Suspicion from {character.CharacterName}");
-        return totalSuspicion;
+
+        var finalSusAmount = tagMatchesWithExistingStory.Any() && totalSuspicion <= 0
+            ? -1 // Bonus for being congruent with existing Cover Story
+            : totalSuspicion;
+        character.AddSuspicion(totalSuspicion);
+        return finalSusAmount;
     }
 }

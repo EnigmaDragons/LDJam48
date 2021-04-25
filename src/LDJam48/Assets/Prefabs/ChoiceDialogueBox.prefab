@@ -116,6 +116,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2543371628921199288}
   - component: {fileID: 4590188617288726960}
+  - component: {fileID: 986587568024380647}
+  - component: {fileID: 1179452290894035647}
+  - component: {fileID: 2607694988877439970}
+  - component: {fileID: 2293986701457059983}
   m_Layer: 5
   m_Name: ChoiceDialogueBox
   m_TagString: Untagged
@@ -158,6 +162,118 @@ MonoBehaviour:
   optionsParent: {fileID: 2543371628339933727}
   optionButtonPrototype: {fileID: 8896560724911548047, guid: 75f465bc952a5e84cb53e751c21545b8,
     type: 3}
+--- !u!114 &986587568024380647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2543371628921199289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15d5ff66b7276842b4357acc6811c1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys: 0101000031000000
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4590188617288726960}
+        m_TargetAssemblyTypeName: DialogueOptionsDisplay, EnigmaDragons.Game
+        m_MethodName: SelectOption
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1179452290894035647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2543371628921199289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15d5ff66b7276842b4357acc6811c1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys: 0201000032000000
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4590188617288726960}
+        m_TargetAssemblyTypeName: DialogueOptionsDisplay, EnigmaDragons.Game
+        m_MethodName: SelectOption
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2607694988877439970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2543371628921199289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15d5ff66b7276842b4357acc6811c1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys: 0301000033000000
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4590188617288726960}
+        m_TargetAssemblyTypeName: DialogueOptionsDisplay, EnigmaDragons.Game
+        m_MethodName: SelectOption
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2293986701457059983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2543371628921199289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15d5ff66b7276842b4357acc6811c1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys: 0401000034000000
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4590188617288726960}
+        m_TargetAssemblyTypeName: DialogueOptionsDisplay, EnigmaDragons.Game
+        m_MethodName: SelectOption
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &884450032201750592
 PrefabInstance:
   m_ObjectHideFlags: 0

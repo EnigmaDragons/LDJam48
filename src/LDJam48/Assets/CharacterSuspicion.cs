@@ -22,7 +22,7 @@ public class CharacterSuspicion : MonoBehaviour
         var currentSus = character.GetSuspicion();
         suspicionSlider.maxValue = character.GetMaxSuspicion();
         suspicionSlider.value = currentSus;
-        if (character.GetSuspicion() > 0 && _lastValue != currentSus)
+        if (character.GetSuspicion() > 0 && currentSus > _lastValue)
             suspicionSlider.gameObject.transform.DOPunchScale(new Vector3(1.6f, 1.6f, 1.6f), 1f, 1);
         _lastValue = currentSus;
     }
