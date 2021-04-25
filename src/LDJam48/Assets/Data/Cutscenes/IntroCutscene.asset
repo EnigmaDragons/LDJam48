@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IntroCutscene
   m_EditorClassIdentifier: 
   segments:
-  - artBackground: {fileID: 4667574391697563776, guid: 626956314d2d09b44b887a7d0e7b3a36,
+  - artBackground: {fileID: 6822918450477247980, guid: e229ab6207c4644e6b31c24126445249,
       type: 3}
     storyText: You're a spy known as double 0 and a half.
     textColor: {r: 0, g: 0, b: 0, a: 1}
