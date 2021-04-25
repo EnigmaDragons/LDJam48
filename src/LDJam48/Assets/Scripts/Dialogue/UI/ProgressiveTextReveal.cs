@@ -17,7 +17,7 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
     private int _cursor;
     private Color _defaultTextColor;
     private bool _showAutoProceed = false;
-    private bool _proceeded = false;
+    private bool _finished = false;
     private Action _onFinished = () => { };
 
     private void Awake()
@@ -48,23 +48,34 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
         fullText = text;
         _onFinished = onFinished;
         _showAutoProceed = shouldAutoProceed;
-        _proceeded = false;
+        _finished = false;
         StartCoroutine(BeginReveal());
     }
 
     public void Proceed() => Proceed(false);
     public void Proceed(bool isAuto)
     {
+        if (_finished)
+            return;
         if (isRevealing)
             ShowCompletely(isAuto);
-        else if (!_proceeded)
+        else
         {
-            _proceeded = true;
             if (_showAutoProceed && isAuto)
-                this.ExecuteAfterDelay(_onFinished, autoAdvanceDelay);
+                this.ExecuteAfterDelay(Finish, autoAdvanceDelay);
             else
-                _onFinished();
+                Finish();
         }
+    }
+
+    private void Finish()
+    {
+        if (_finished)
+            return;
+        
+        _finished = true;
+        _onFinished();
+        
     }
 
     private void ShowCompletely(bool isAuto = false)
