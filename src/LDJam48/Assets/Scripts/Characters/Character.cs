@@ -34,6 +34,8 @@ public class Character : ScriptableObject, IEqualityComparer<Character>
         ONSuspicionChange?.Invoke();
     }
 
+    public float GetSuspicionPercentage => suspicion / (float)maxSus;
+    
     public int GetSuspicion()
     {
         return suspicion;

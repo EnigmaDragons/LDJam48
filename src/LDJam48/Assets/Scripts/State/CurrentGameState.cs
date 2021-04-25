@@ -13,6 +13,7 @@ public sealed class CurrentGameState : ScriptableObject
     public int LocationConversationIndex => locationConversationIndex;
     public Location CurrentLocation => currentLocation;
     public void AdvanceLocationConversation() => locationConversationIndex++;
+    public TensionLevel TensionLevel => gameState.TensionLevel;
 
     public void SetLocation(Location l)
     {
