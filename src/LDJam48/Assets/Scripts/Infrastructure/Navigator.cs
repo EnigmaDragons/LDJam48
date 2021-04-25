@@ -9,6 +9,7 @@ public sealed class Navigator : ScriptableObject
     public void NavigateToCutscenePlayer() => NavigateTo("CutscenePlayer");
     public void NavigateToLocationScene() => NavigateTo("LocationScene");
     public void NavigateToCreditsScene() => NavigateTo("CreditsScene");
+    public void NavigateToGameOver() => NavigateTo("GameOver");
     public void NavigateToLocation1() => NavigateTo("FirstLocation");
     public void NavigateToScene(string sceneName) => NavigateTo(sceneName);
 
