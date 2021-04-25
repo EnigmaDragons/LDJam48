@@ -14,14 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   segments:
   - artBackground: {fileID: 0}
-    storyText: You sabotaged the monitoring room.
+    storyText: It seems the henchman buys your story... for now.
     textColor: {r: 0, g: 0, b: 0, a: 0}
   - artBackground: {fileID: 0}
-    storyText: You begin swapping jello packets with explosives.
+    storyText: You finish sabotaging the monitoring system.
     textColor: {r: 0, g: 0, b: 0, a: 0}
   - artBackground: {fileID: 0}
-    storyText: Your plan is to leave the volcano and detonate them when you are suddenly
-      stopped.
+    storyText: And with the cameras out of the way your able to begin swapping the
+      modified Jello with explosives.
+    textColor: {r: 0, g: 0, b: 0, a: 0}
+  - artBackground: {fileID: 0}
+    storyText: All there is to do now, is make it out of the facility and detonate
+      the explosives.
+    textColor: {r: 0, g: 0, b: 0, a: 0}
+  - artBackground: {fileID: 0}
+    storyText: But you are stopped by the henchman and so is a certain security guard
+      from the airport as well.
+    textColor: {r: 0, g: 0, b: 0, a: 0}
+  - artBackground: {fileID: 0}
+    storyText: But you You are gonna have to watch your lies, so you don't tip either
+      of them off.
     textColor: {r: 0, g: 0, b: 0, a: 0}
   onFinishedAction:
     m_PersistentCalls:
@@ -31,7 +43,7 @@ MonoBehaviour:
         m_MethodName: GoToLocation
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: df3d43c608bd7c94ea6e3aef6ef371cd,
+          m_ObjectArgument: {fileID: 11400000, guid: cc57d7e337be2c141a182f47527e638a,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: Location, EnigmaDragons.Game
           m_IntArgument: 0
