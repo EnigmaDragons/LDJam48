@@ -1,9 +1,10 @@
+using TMPro;
 using UnityEngine;
 
 public class CutsceneSegmentPresenter : OnMessage<PlayCutsceneSegment>
 {
     [SerializeField] private GameObject parent;
-    [SerializeField] private ProgressiveTextReveal text;
+    [SerializeField] private TextMeshProUGUI textBox;
 
     private GameObject _lastArtBackground;
     private CutsceneSegment _lastSegment;
@@ -22,8 +23,12 @@ public class CutsceneSegmentPresenter : OnMessage<PlayCutsceneSegment>
         }
 
         Log.Info($"Cutscene - {segment.StoryText}");
-        text.Display(segment.StoryText, segment.TextColor, true, false, () => Message.Publish(new AdvanceCutscene()));
+        textBox.text = segment.StoryText;
+        textBox.color = FullAlphaColor(segment.TextColor);
         _lastArtBackground = segment.ArtBackground;
         _lastSegment = segment;
+        this.ExecuteAfterDelay(() => Message.Publish(new AdvanceCutscene()), segment.DurationSeconds);
     }
+
+    private Color FullAlphaColor(Color c) => new Color(c.r, c.g, c.b, 1f);
 }
