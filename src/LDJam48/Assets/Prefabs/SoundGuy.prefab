@@ -45,5 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sfx: {fileID: 11400000, guid: bfe56e3518f684c4387de97bd5db348d, type: 2}
   gainedSus:
-    clip: {fileID: 8300000, guid: b8a0563e2343bf94baa602ebf61b996e, type: 3}
+    clip: {fileID: 8300000, guid: df303b3c081ec41f1a7a76fa51b03edf, type: 3}
+    volume: 1
+  gainedMuchSus:
+    clip: {fileID: 8300000, guid: db9d95bd48089460f9489d1d14c68fcf, type: 3}
     volume: 1
