@@ -6,6 +6,13 @@ public class Progression : ScriptableObject
     [SerializeField] private CurrentGameState gameState;
     [SerializeField] private CurrentCutscene cutscene;
     [SerializeField] private Navigator navigator;
+    [SerializeField] private Character[] allCharacters;
+
+    public void StartNewGame()
+    {
+        gameState.Init();
+        allCharacters.ForEachArr(c => c.Flush());
+    }
     
     public void BeginCutscene(Cutscene c)
     {
