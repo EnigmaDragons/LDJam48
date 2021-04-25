@@ -11,14 +11,16 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textBox;
     [SerializeField] private FloatReference secondsPerCharacter = new FloatReference(0.07f);
     [SerializeField] private FloatReference autoAdvanceDelay = new FloatReference(0.8f);
+    [SerializeField] private FloatReference cooldown = new FloatReference(0.15f);
     [SerializeField, ReadOnly] private bool isRevealing;
     [SerializeField, ReadOnly] private string fullText;
     
     private int _cursor;
     private Color _defaultTextColor;
-    private bool _showAutoProceed = false;
+    private bool _shouldAutoProceed = false;
     private bool _finished = false;
     private Action _onFinished = () => { };
+    private float _cooldownRemaining = 0;
 
     private void Awake()
     {
@@ -47,7 +49,7 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
         textBox.color = FullAlphaColor(textColor);
         fullText = text;
         _onFinished = onFinished;
-        _showAutoProceed = shouldAutoProceed;
+        _shouldAutoProceed = shouldAutoProceed;
         _finished = false;
         StartCoroutine(BeginReveal());
     }
@@ -55,17 +57,21 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
     public void Proceed() => Proceed(false);
     public void Proceed(bool isAuto)
     {
+        Log.Info($"Text Box - Proceed Auto: {isAuto}");
         if (_finished)
             return;
+        if (!isAuto)
+            _shouldAutoProceed = false;
         if (isRevealing)
-            ShowCompletely(isAuto);
+            ShowCompletely();
         else
         {
-            if (_showAutoProceed && isAuto)
-                this.ExecuteAfterDelay(Finish, autoAdvanceDelay);
-            else
-                Finish();
+            Finish();
+            return;
         }
+
+        if (_shouldAutoProceed && isAuto)
+            this.ExecuteAfterDelay(Finish, autoAdvanceDelay);
     }
 
     private void Finish()
@@ -73,17 +79,16 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
         if (_finished)
             return;
         
+        Log.Info($"Text Box - Finished");
         _finished = true;
         _onFinished();
-        
     }
 
-    private void ShowCompletely(bool isAuto = false)
+    private void ShowCompletely()
     {
-        textBox.text = fullText;
+        Log.Info($"Text Box - Displayed Completely");
         isRevealing = false;
-        if (_showAutoProceed)
-            Proceed(isAuto);
+        textBox.text = fullText;
     }
 
     public void ReversePanelFacing()
@@ -96,7 +101,8 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
     {
         if (secondsPerCharacter.Value < 0.01f)
         {
-            ShowCompletely(isAuto: true);
+            ShowCompletely();
+            Proceed(isAuto: true);
             yield break;
         }
         
@@ -110,7 +116,12 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
             _cursor++;
             yield return new WaitForSeconds(secondsPerCharacter);
         }
-        ShowCompletely(isAuto: true);
+
+        if (_shouldAutoProceed)
+        {
+            ShowCompletely();
+            Proceed(isAuto: true);
+        }
     }
     
     private Color FullAlphaColor(Color c) => new Color(c.r, c.g, c.b, 1f);
