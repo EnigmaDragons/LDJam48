@@ -16,8 +16,12 @@ public class ExpressionManager : OnMessage<ShowStatement>
     protected override void Execute(ShowStatement msg)
     {
         var cr = msg.SpeakingCharacter;
-        if(cr != character) return;
-        if (msg.Emotion == null) return;
-        SetExpression(msg.Emotion);
+        if (cr != character) return;
+        
+        var expression = msg.Emotion != null && !string.IsNullOrWhiteSpace(msg.Emotion.Value)
+            ? msg.Emotion.Value
+            : "Default";
+        
+        SetExpression(expression);
     }
 }
