@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 797388358581155495}
   - component: {fileID: 797388358581155494}
   - component: {fileID: 797388358581155488}
-  - component: {fileID: 797388358581155489}
   m_Layer: 0
   m_Name: SceneBackgroundMusic
   m_TagString: Music
@@ -66,17 +65,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 11400000, guid: 95f47694e0b28ce48a808ae15f18f4d8, type: 2}
---- !u!114 &797388358581155489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 797388358581155490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b70a64aadd044ec8855c8e23db761393, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  music: {fileID: 11400000, guid: 53e62816dfdf41a4ca9bfb0d87976174, type: 2}
-  musicPlayer: {fileID: 11400000, guid: 95f47694e0b28ce48a808ae15f18f4d8, type: 2}
