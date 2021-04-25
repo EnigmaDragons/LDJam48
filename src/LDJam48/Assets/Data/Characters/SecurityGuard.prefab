@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 5008957089299368569}
   - component: {fileID: 1969658237732620182}
   - component: {fileID: 240330951911549572}
+  - component: {fileID: 7352110209848675231}
   m_Layer: 0
   m_Name: SecurityGuard
   m_TagString: Untagged
@@ -160,6 +161,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   suspicionSlider: {fileID: 8105760090885274044}
   character: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c, type: 2}
+--- !u!114 &7352110209848675231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697081042536614812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc54c36b09c63304aa6afaeeab1526ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c, type: 2}
+  bust: {fileID: 8849400725466573563}
 --- !u!1001 &2722243110860338458
 PrefabInstance:
   m_ObjectHideFlags: 0

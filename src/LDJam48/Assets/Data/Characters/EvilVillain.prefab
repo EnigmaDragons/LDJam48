@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 6974726255720738888}
   - component: {fileID: 4476004939435851175}
   - component: {fileID: 2746497335687516341}
+  - component: {fileID: 747913660492814428}
   m_Layer: 0
   m_Name: EvilVillain
   m_TagString: Untagged
@@ -128,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bf3eb73ea04ed0adf0401c0285e8a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65, type: 2}
+  character: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518, type: 2}
   speechBubble: {fileID: 1065205693499491812}
   scenePositions: {fileID: 11400000, guid: 1ad2a147bae6bef4d88efb6c8dfafaa8, type: 2}
   conversation: {fileID: 11400000, guid: aae2fc7d62b853d4bbc983d3df10f489, type: 2}
@@ -159,7 +160,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   suspicionSlider: {fileID: 6139856165905826701}
-  character: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65, type: 2}
+  character: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518, type: 2}
+--- !u!114 &747913660492814428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3658446044099768749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc54c36b09c63304aa6afaeeab1526ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518, type: 2}
+  bust: {fileID: 6883528204985487562}
 --- !u!1001 &40267224830414635
 PrefabInstance:
   m_ObjectHideFlags: 0

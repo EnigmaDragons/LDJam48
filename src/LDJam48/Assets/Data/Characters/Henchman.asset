@@ -14,6 +14,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterName: Mr Trilby The Cane Man
   Prefab: {fileID: 2408280666022170148, guid: 0f87711b37da83649a9acd1acec4c8d3, type: 3}
+  expressions:
+    defaultExpression:
+      expressionType:
+        UseConstant: 1
+        ConstantValue: 
+        Variable: {fileID: 0}
+      sprite: {fileID: 21300000, guid: 19cca69665448b44587ba92a2a98b76b, type: 3}
+    expressions:
+    - expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
+      sprite: {fileID: 21300000, guid: 9196d317bd9815945b519778e530e3d6, type: 3}
+    - expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
+      sprite: {fileID: 21300000, guid: dee1f4bee2179194f9943541da24cf21, type: 3}
+    - expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: e6609b2cb7b622c48b40a17c894b01c9, type: 2}
+      sprite: {fileID: 21300000, guid: 19cca69665448b44587ba92a2a98b76b, type: 3}
+    - expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: 070b117adf2459a4588d7e7bf5befcd0, type: 2}
+      sprite: {fileID: 21300000, guid: 19cca69665448b44587ba92a2a98b76b, type: 3}
+    - expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
+      sprite: {fileID: 21300000, guid: a4956d059f9a35143aa431911930b09a, type: 3}
   startTags: []
   learnedTags: []
   maxSus: 10
