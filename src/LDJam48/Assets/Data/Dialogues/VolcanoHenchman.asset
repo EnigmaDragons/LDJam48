@@ -22,24 +22,44 @@ MonoBehaviour:
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: 'Allow me to introduce myself, intruder. '
+    statementEmotion:
+      UseConstant: 1
+      ConstantValue: Default
+      Variable: {fileID: 0}
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: I'm Mr Trilby The Cane Man and unfortunately your fate may lie at
       the bottom of the Jello pits.
+    statementEmotion:
+      UseConstant: 1
+      ConstantValue: Default
+      Variable: {fileID: 0}
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
     statement: "I am no intruder, I\u2019m supposed to be here!"
+    statementEmotion:
+      UseConstant: 1
+      ConstantValue: Default
+      Variable: {fileID: 0}
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: 'Really? What exactly is your function in this restricted Jello Prep
       Zone? '
+    statementEmotion:
+      UseConstant: 1
+      ConstantValue: Default
+      Variable: {fileID: 0}
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
     statement: 
+    statementEmotion:
+      UseConstant: 1
+      ConstantValue: Default
+      Variable: {fileID: 0}
     options:
     - text: "I\u2019m a jello scientist, but yesterday I accidentally got jello all
         over my uniform so I had to send it to the dry cleaners."
@@ -52,6 +72,10 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: A sticky situation indeed.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 1
     - text: "I\u2019m the Jello delivery guy, they ran out of the lime flavor I was
         told to bring it right in."
@@ -64,6 +88,10 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: We do another ton or 2 of Lime Jello for our weekend Jam.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 1
     - text: There was an intruder in the Jello Prep Zone that I am trying to catch,
         same as you.
@@ -78,6 +106,10 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: I'm sure we will find him, mate.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 1
     - text: Something was wrong with the Jello mixer, I had to fix it.
       tags:
@@ -89,14 +121,26 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: All in order now I hope.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 1
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: "Why don\u2019t I recognize you?"
+    statementEmotion:
+      UseConstant: 1
+      ConstantValue: Default
+      Variable: {fileID: 0}
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
     statement: 
+    statementEmotion:
+      UseConstant: 1
+      ConstantValue: Default
+      Variable: {fileID: 0}
     options:
     - text: "I\u2019m the replacement for the guy that got shoved into the volcano
         cause he made fun of the boss."
@@ -106,10 +150,18 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: That's the second time this week.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: Doubtful for a job like yours.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 0
     - text: A faceless minion like me is hardly important enough to remember.
       tags:
@@ -118,10 +170,18 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: Right you are, mate. Can't waste time learning all your faces.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: Someone in your role? I reckon I'd remember.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 0
     - text: "The boss says he wants this plan done yesterday and so he hired a bunch
         of new people, I\u2019m a new hire."
@@ -132,19 +192,35 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: Jolly good.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: Can't quite wrap my mind around how hiring more delivery people
           would help speed things up.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: What were you tampering with over there?
+    statementEmotion:
+      UseConstant: 1
+      ConstantValue: Default
+      Variable: {fileID: 0}
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
     statement: 
+    statementEmotion:
+      UseConstant: 1
+      ConstantValue: Default
+      Variable: {fileID: 0}
     options:
     - text: I was checking to make sure nothing was tampered with and I can confirm
         everything is not tampered with.
@@ -155,10 +231,18 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: Can't be too careful.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: You just happen to know how that thing works.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 0
     - text: "Fixing it, of course. No idea why it was so broken, hope you don\u2019t
         have a security breach."
@@ -170,10 +254,18 @@ MonoBehaviour:
           type: 2}
         statement: At the rate things are breaking, something suspicious is going
           on.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: I bet you also hope your not the security breach.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 0
     - text: "The temperature was off, and I had to adjust the thermostat. With how
         hot it gets, it\u2019s like we are in the middle of a volcano or something."
@@ -184,11 +276,19 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: One could get that idea, yes.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: You know where the thermostat is in a restricted area and decided
           that was the best use of your time, curious.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 0
     - text: Just my phone, there was a rare Lava Pokenon I had to catch.
       tags:
@@ -198,32 +298,57 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: You young whippersnappers and your silly phone games.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: While there is an emergency? It's like you bloody want to be thrown
           into the lava pit.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: Have you seen anyone suspicious recently?
+    statementEmotion:
+      UseConstant: 1
+      ConstantValue: Default
+      Variable: {fileID: 0}
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
     statement: 
+    statementEmotion:
+      UseConstant: 1
+      ConstantValue: Default
+      Variable: {fileID: 0}
     options:
     - text: Yes I saw someone dressed in full ninja garb sneaking around.
       tags:
       - {fileID: 11400000, guid: e6d7f8dbc2b7ab34b920cf2aa735aa88, type: 2}
+      - {fileID: 11400000, guid: ee1290f62d320e742aa2cff45c831f60, type: 2}
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: A very suspicious fellow.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: And you didn't do anything about him?! It's so bloody hard to
           find good help these days.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 0
     - text: No, everything seems perfectly fine.
       tags:
@@ -232,10 +357,18 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: Jolly good.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: 'Your story''s starting to sound like a half eaten cracker. '
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 0
     - text: Do I look like a hall monitor? I have got more important things to do.
       tags:
@@ -244,18 +377,34 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: Right you are, mate.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: Absurd, your importance is that of a stale croissant.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: What are you getting paid here?
+    statementEmotion:
+      UseConstant: 1
+      ConstantValue: Default
+      Variable: {fileID: 0}
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
     statement: 
+    statementEmotion:
+      UseConstant: 1
+      ConstantValue: Default
+      Variable: {fileID: 0}
     options:
     - text: YOUR GETTING PAID?!
       tags:
@@ -264,10 +413,18 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: Ah, you must be on the life servititude plan.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: If this is your subtle way, of asking for a raise. I'm not amused.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 0
     - text: I get the keys to a mansion in Zinlandia when we take it over.
       tags:
@@ -276,10 +433,18 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: Zinlandia mansions are quite posh.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: The only keys you would be getting are the servant's keys.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 0
     - text: 1 gold bar a week
       tags:
@@ -288,12 +453,24 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: That's a whole teapot of a sum, very nice mate.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: Fool's gold maybe.
+        statementEmotion:
+          UseConstant: 1
+          ConstantValue: Default
+          Variable: {fileID: 0}
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: Cheerio!
+    statementEmotion:
+      UseConstant: 1
+      ConstantValue: Default
+      Variable: {fileID: 0}
     options: []
