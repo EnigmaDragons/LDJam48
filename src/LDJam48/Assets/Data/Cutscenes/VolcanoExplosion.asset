@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   segments:
   - artBackground: {fileID: 0}
-    storyText: In a flash, The Cane Man shot the Security Guard. "He was obviously
-      the spy"
+    storyText: "In a flash, The Cane Man shot Eiz\u014D. \"He was obviously the spy\""
     textColor: {r: 0, g: 0, b: 0, a: 0}
   - artBackground: {fileID: 0}
     storyText: '"Glad to be rid of that unpleasentness, ta ta for now"'

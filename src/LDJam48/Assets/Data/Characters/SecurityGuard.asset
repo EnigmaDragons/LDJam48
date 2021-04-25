@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8249138620646b59f0e5500ebe20276, type: 3}
   m_Name: SecurityGuard
   m_EditorClassIdentifier: 
-  CharacterName: Security Guard
+  CharacterName: "Eiz\u014D"
   Prefab: {fileID: 1697081042536614812, guid: 2cdd5cca5b6c5b347bc2006fdef242af, type: 3}
   expressions:
     defaultExpression:
@@ -50,5 +50,5 @@ MonoBehaviour:
   startTags: []
   learnedTags: []
   maxSus: 10
-  startingSus: 0
-  suspicion: 0
+  startingSus: 3
+  suspicion: 3
