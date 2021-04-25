@@ -6,7 +6,7 @@ using UnityEngine;
 public class DialogueData
 {
     [SerializeField] private Character speakingCharacter;
-    [SerializeField] private string statement;
+    [TextArea][SerializeField] private string statement;
     [SerializeField] private StringReference statementEmotion = new StringReference("Default");
     [SerializeField] private DialogueOption[] options;
 
