@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   segments:
   - artBackground: {fileID: 0}
-    storyText: It seems the henchman buys your story... for now.
+    storyText: It seems the Cane Man buys your story... for now.
     textColor: {r: 0, g: 0, b: 0, a: 0}
   - artBackground: {fileID: 0}
     storyText: You finish sabotaging the monitoring system.
@@ -28,11 +28,10 @@ MonoBehaviour:
       the explosives.
     textColor: {r: 0, g: 0, b: 0, a: 0}
   - artBackground: {fileID: 0}
-    storyText: But you are stopped by the henchman and so is a certain security guard
-      from the airport as well.
+    storyText: "But you are stopped by the Cane Man and so is Eiz\u014D as well."
     textColor: {r: 0, g: 0, b: 0, a: 0}
   - artBackground: {fileID: 0}
-    storyText: But you You are gonna have to watch your lies, so you don't tip either
+    storyText: But you are gonna have to watch your lies, so you don't tip either
       of them off.
     textColor: {r: 0, g: 0, b: 0, a: 0}
   onFinishedAction:
