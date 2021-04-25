@@ -15,6 +15,7 @@ public class ConversationHandler : OnMessage<StartConversation, AdvanceConversat
     protected override void Execute(DialogueOptionResolved msg)
     {
         var gainedSuspicion = msg.PlayerSuspicionChange > 0;
+        conversation.QueuePlayerLine(msg.Selected.Text);
         conversation.Queue(msg.Selected.Followups.Where(x => x.OnlyShowIfCharacterLikedAnswer != gainedSuspicion).ToArray());
         StartNext();
     }

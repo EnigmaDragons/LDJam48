@@ -266,6 +266,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeechBubblePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 8725555915506685903, guid: d41da6625dad7e040bc5f679eac60821,
+        type: 3}
+      propertyPath: autoAdvanceDelay.ConstantValue
+      value: 0.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d41da6625dad7e040bc5f679eac60821, type: 3}
 --- !u!224 &3358835809478381423 stripped

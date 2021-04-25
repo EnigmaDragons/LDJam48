@@ -281,16 +281,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chatBox: {fileID: 6098409110573772366}
+  panelBg: {fileID: 0}
   textBox: {fileID: 6098409108892675644}
   secondsPerCharacter:
-    UseConstant: 0
-    ConstantValue: 0.08
+    UseConstant: 1
+    ConstantValue: 0
     FloatVariable: {fileID: 11400000, guid: 89ce51464d1f99d4cbcbb7a28cb5490a, type: 2}
   autoAdvanceDelay:
     UseConstant: 1
-    ConstantValue: 1.2
+    ConstantValue: 3.3
     FloatVariable: {fileID: 0}
   isRevealing: 0
+  fullText: 
 --- !u!114 &7556740250258760945
 MonoBehaviour:
   m_ObjectHideFlags: 0

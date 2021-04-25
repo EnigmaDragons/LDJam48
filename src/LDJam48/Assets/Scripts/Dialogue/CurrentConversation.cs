@@ -9,6 +9,7 @@ public class CurrentConversation : ScriptableObject
     [SerializeField] private int sequenceIndex;
 
     private readonly Queue<FollowupDialogueData> _temporaryFollowups = new Queue<FollowupDialogueData>();
+    private readonly Queue<string> _playerCharacterLines = new Queue<string>();
     
     public Conversation Current => conversation;
     private DialogueData CurrentSequence => Current.Sequence[sequenceIndex];
@@ -24,7 +25,9 @@ public class CurrentConversation : ScriptableObject
 
     public void ExecuteNext()
     {
-        if (_temporaryFollowups.Any()) 
+        if (_playerCharacterLines.Any())
+            Message.Publish(new ShowStatement(conversation.PlayerCharacter, _playerCharacterLines.Dequeue()));
+        else if (_temporaryFollowups.Any()) 
             _temporaryFollowups.Dequeue().Begin();
         else
         {
@@ -46,4 +49,6 @@ public class CurrentConversation : ScriptableObject
     {
         selectionFollowups.ForEachArr(s => _temporaryFollowups.Enqueue(s));
     }
+
+    public void QueuePlayerLine(string line) => _playerCharacterLines.Enqueue(line);
 }
