@@ -52,3 +52,4 @@ MonoBehaviour:
   maxSus: 1000
   startingSus: 0
   suspicion: 0
+  isPlayer: 1
