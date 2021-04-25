@@ -10,5 +10,5 @@ public sealed class GameState
     
     // All enums used in this class should have specified integer values.
     // This is necessary to preserve backwards save compatibility.
-    public TensionLevel TensionLevel { get; set; } = TensionLevel.Calm
+    public TensionLevel TensionLevel { get; set; } = TensionLevel.Calm;
 }
