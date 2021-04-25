@@ -67,8 +67,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Lorem ipsum
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc5db2ea4cf5218459e85e2080b6fd13, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: dc5db2ea4cf5218459e85e2080b6fd13, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7af6043334f13874db1e00dd6c3f790a, type: 2}
+  m_sharedMaterial: {fileID: 4094639419049531659, guid: 7af6043334f13874db1e00dd6c3f790a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -92,8 +93,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using Tags;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 [CreateAssetMenu]
 public class Character : ScriptableObject, IEqualityComparer<Character>
 {
     public string CharacterName;
     public GameObject Prefab;
+    [SerializeField] private ExpressionSet expressions;
     [SerializeField] private TagObject[] startTags;
     [SerializeField] private List<TagObject> learnedTags;
     [SerializeField] private int maxSus;
@@ -22,6 +22,8 @@ public class Character : ScriptableObject, IEqualityComparer<Character>
         Flush();
     }
 
+    public Expression Expression(string type) => expressions[type];
+    
     public void AddSuspicion(int amount)
     {
         if (amount == 0)
