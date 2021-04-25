@@ -54,6 +54,7 @@ MonoBehaviour:
       - {fileID: 11400000, guid: de3063a3468317b4c8e947331e529c56, type: 2}
       - {fileID: 11400000, guid: 6b78e6497f022ad4fa7bb394b476fd11, type: 2}
       - {fileID: 11400000, guid: 0546ebf45b35aa040b24c36e3ff51208, type: 2}
+      - {fileID: 11400000, guid: 421bddcc3af285243a10317d43b7c20b, type: 2}
       followups: []
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}

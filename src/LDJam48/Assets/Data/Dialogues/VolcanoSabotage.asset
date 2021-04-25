@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40b3369c6e0b478e910c4e672df48d79, type: 3}
+  m_Name: VolcanoSabotage
+  m_EditorClassIdentifier: 
+  playerCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477, type: 2}
+  nonPlayerCharacters:
+  - {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65, type: 2}
+  - {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c, type: 2}
+  onFinished:
+    m_PersistentCalls:
+      m_Calls: []
+  sequence:
+  - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+      type: 2}
+    statement: Someone has sabotaged the cameras.
+    options: []
+  - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+      type: 2}
+    statement: What were you 2 doing?
+    options: []
+  - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+      type: 2}
+    statement: I came directly from the airport and have been on the lookout for
+      intruders.
+    options: []
+  - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
+      type: 2}
+    statement: 
+    options:
+    - text: I have been talking with the boss.
+      tags:
+      - {fileID: 11400000, guid: d9520ef820c824144b5fc221a0728fc8, type: 2}
+      followups: []
+    - text: I have been working on fixing the cameras, whoever sabotaged them was
+        incredible and probably attractive.
+      tags:
+      - {fileID: 11400000, guid: 55a1a6b3d34246d49a2b695164e9e40a, type: 2}
+      - {fileID: 11400000, guid: 8bf410ac14c0a8246ac36ae734b22a3a, type: 2}
+      followups: []
+    - text: I also have been frantically looking for the intruder.
+      tags:
+      - {fileID: 11400000, guid: d3831e72a8e8d5442bf817d11fe17dbf, type: 2}
+      - {fileID: 11400000, guid: 486e9efc3d6b28c4cab97a366c02e466, type: 2}
+      followups: []
+    - text: This place is a maze and I have been trying to leave for the past 30
+        minutes.
+      tags:
+      - {fileID: 11400000, guid: 4a686078bcb00974895e62444b07026c, type: 2}
+      - {fileID: 11400000, guid: 4a686078bcb00974895e62444b07026c, type: 2}
+      followups: []
+  - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+      type: 2}
+    statement: "Don\u2019t I recognize you from the airport?"
+    options: []
+  - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
+      type: 2}
+    statement: 
+    options:
+    - text: Yes I headed here straight from the airport got a job to do.
+      tags:
+      - {fileID: 11400000, guid: 120a0ff2035fb1146961a284e2491a42, type: 2}
+      followups: []
+    - text: Yes I was going for some volcano hiking when I stumbled into here.
+      tags:
+      - {fileID: 11400000, guid: d34aa316c85e941469e2f778e88d4ec8, type: 2}
+      - {fileID: 11400000, guid: 0546ebf45b35aa040b24c36e3ff51208, type: 2}
+      followups: []
+    - text: "Impossible, I hate going to airports don\u2019t be absurd."
+      tags:
+      - {fileID: 0}
+      followups: []
+  - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+      type: 2}
+    statement: What is our evil scheme?
+    options: []
+  - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
+      type: 2}
+    statement: 
+    options:
+    - text: We are using Jello to overflow the volcano.
+      tags:
+      - {fileID: 11400000, guid: 30cd045069badd146abc133d2b352ae7, type: 2}
+      - {fileID: 11400000, guid: fef6ca99b8fc05b46aaffee19b0268cf, type: 2}
+      followups: []
+    - text: "There\u2019s an evil scheme?!"
+      tags:
+      - {fileID: 11400000, guid: 7bc577093202eff478cf35e4c823014c, type: 2}
+      - {fileID: 11400000, guid: 421bddcc3af285243a10317d43b7c20b, type: 2}
+      followups: []
+    - text: We are taking over a country
+      tags:
+      - {fileID: 11400000, guid: fef6ca99b8fc05b46aaffee19b0268cf, type: 2}
+      followups: []
+    - text: "I don\u2019t get told the big schemes."
+      tags:
+      - {fileID: 11400000, guid: b79b40da53159254f9c5e3287c7206aa, type: 2}
+      - {fileID: 11400000, guid: 486e9efc3d6b28c4cab97a366c02e466, type: 2}
+      - {fileID: 11400000, guid: 421bddcc3af285243a10317d43b7c20b, type: 2}
+      - {fileID: 11400000, guid: 963b509ccb9cf354685ea434fc1f512e, type: 2}
+      followups: []
+  - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+      type: 2}
+    statement: Anyone could be the spy, even you, why should we not kill you?
+    options:
+    - text: "I don\u2019t recognize you, pretty sus, are you the actual spy?"
+      tags:
+      - {fileID: 11400000, guid: d3831e72a8e8d5442bf817d11fe17dbf, type: 2}
+      followups: []
+    - text: "If you kill me there won\u2019t be anyone left to keep this facility
+        running, enjoy explaining that to the boss!"
+      tags:
+      - {fileID: 11400000, guid: 55a1a6b3d34246d49a2b695164e9e40a, type: 2}
+      followups: []
+    - text: How do we know there is an intruder what if the spy is actually someone
+        who works here!
+      tags:
+      - {fileID: 11400000, guid: 5fddbca03a2230242980a89ca9717c7b, type: 2}
+      - {fileID: 11400000, guid: 486e9efc3d6b28c4cab97a366c02e466, type: 2}
+      followups: []
+    - text: That would cost your boss a LOT of money!
+      tags:
+      - {fileID: 11400000, guid: 5fddbca03a2230242980a89ca9717c7b, type: 2}
+      - {fileID: 11400000, guid: 486e9efc3d6b28c4cab97a366c02e466, type: 2}
+      followups: []
+    - text: "I am vital to the plan, you can\u2019t kill me and finish getting these
+        volcano to overflow."
+      tags:
+      - {fileID: 11400000, guid: a173269af9ceb4f4e8378d8406c97624, type: 2}
+      - {fileID: 11400000, guid: 30cd045069badd146abc133d2b352ae7, type: 2}
+      followups: []
