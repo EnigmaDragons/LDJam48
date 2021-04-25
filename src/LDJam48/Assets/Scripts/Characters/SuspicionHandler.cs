@@ -12,15 +12,14 @@ public class SuspicionHandler : OnMessage<DialogueOptionSelected>
     protected override void Execute(DialogueOptionSelected msg)
     {
         var chars = conversation.Current.NonPlayerCharacters;
-        var totalPenalty = 0;
-        print(chars.Length);
+        var charSusChanges = new Dictionary<Character, int>();
         foreach (var character in chars)
         {
-            totalPenalty += GivePenalty(msg, character);
-            SaveTags(msg, character);   
+            charSusChanges[character] = GivePenalty(msg, character);
+            SaveTags(msg, character);
         }
         
-        Message.Publish(new DialogueOptionResolved(msg.Selection, totalPenalty));
+        Message.Publish(new DialogueOptionResolved(msg.Selection, charSusChanges));
     }
     
     private void SaveTags(DialogueOptionSelected msg, Character character)
