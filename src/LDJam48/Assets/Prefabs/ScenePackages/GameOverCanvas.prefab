@@ -121,7 +121,7 @@ MonoBehaviour:
   targetIsSelf: 1
   targetGO: {fileID: 0}
   tweenTargetIsTargetGO: 1
-  delay: 0.3
+  delay: 0.4
   duration: 1
   easeType: 5
   easeCurve:
@@ -377,7 +377,7 @@ MonoBehaviour:
   targetIsSelf: 1
   targetGO: {fileID: 0}
   tweenTargetIsTargetGO: 1
-  delay: 0.16
+  delay: 0.26
   duration: 1.8
   easeType: 5
   easeCurve:
@@ -722,7 +722,7 @@ MonoBehaviour:
   targetIsSelf: 1
   targetGO: {fileID: 0}
   tweenTargetIsTargetGO: 1
-  delay: 0.5
+  delay: 0.6
   duration: 1
   easeType: 8
   easeCurve:
@@ -903,7 +903,7 @@ MonoBehaviour:
   targetIsSelf: 1
   targetGO: {fileID: 0}
   tweenTargetIsTargetGO: 1
-  delay: 0.2
+  delay: 0.3
   duration: 1
   easeType: 1
   easeCurve:
