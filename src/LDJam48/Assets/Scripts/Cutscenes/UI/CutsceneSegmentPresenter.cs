@@ -22,7 +22,7 @@ public class CutsceneSegmentPresenter : OnMessage<PlayCutsceneSegment>
         }
 
         Log.Info($"Cutscene - {segment.StoryText}");
-        text.Display(segment.StoryText, segment.TextColor, true, () => Message.Publish(new AdvanceCutscene()));
+        text.Display(segment.StoryText, segment.TextColor, true, false, () => Message.Publish(new AdvanceCutscene()));
         _lastArtBackground = segment.ArtBackground;
         _lastSegment = segment;
     }
