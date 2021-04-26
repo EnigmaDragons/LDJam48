@@ -23,46 +23,50 @@ MonoBehaviour:
       type: 2}
     statement: 'Allow me to introduce myself, intruder. '
     statementEmotion:
-      UseConstant: 1
+      UseConstant: 0
       ConstantValue: Default
-      Variable: {fileID: 0}
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: I'm Mr Trilby The Cane Man and unfortunately your fate may lie at
       the bottom of the Jello pits.
     statementEmotion:
-      UseConstant: 1
+      UseConstant: 0
       ConstantValue: Default
-      Variable: {fileID: 0}
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
     statement: "I am no intruder, I\u2019m supposed to be here!"
     statementEmotion:
-      UseConstant: 1
+      UseConstant: 0
       ConstantValue: Default
-      Variable: {fileID: 0}
+      Variable: {fileID: 11400000, guid: 070b117adf2459a4588d7e7bf5befcd0, type: 2}
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: 'Really? What exactly is your function in this restricted Jello Prep
       Zone? '
     statementEmotion:
-      UseConstant: 1
+      UseConstant: 0
       ConstantValue: Default
-      Variable: {fileID: 0}
+      Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
     statement: 
     statementEmotion:
-      UseConstant: 1
+      UseConstant: 0
       ConstantValue: Default
-      Variable: {fileID: 0}
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
     - text: "I\u2019m a jello scientist, but yesterday I accidentally got jello all
         over my uniform so I had to send it to the dry cleaners."
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
       tags:
       - {fileID: 11400000, guid: 30cd045069badd146abc133d2b352ae7, type: 2}
       - {fileID: 11400000, guid: 486e9efc3d6b28c4cab97a366c02e466, type: 2}
@@ -73,12 +77,16 @@ MonoBehaviour:
           type: 2}
         statement: A sticky situation indeed.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
     - text: "I\u2019m the Jello delivery guy, they ran out of the lime flavor I was
         told to bring it right in."
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
       tags:
       - {fileID: 11400000, guid: 20188d2f3017f0340b03731f6bcf1137, type: 2}
       - {fileID: 11400000, guid: 4a686078bcb00974895e62444b07026c, type: 2}
@@ -87,14 +95,18 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: We do another ton or 2 of Lime Jello for our weekend Jam.
+        statement: We did need another ton or 2 of Lime Jello for our weekend Jam.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
     - text: There was an intruder in the Jello Prep Zone that I am trying to catch,
         same as you.
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
       tags:
       - {fileID: 11400000, guid: d3831e72a8e8d5442bf817d11fe17dbf, type: 2}
       - {fileID: 11400000, guid: e6d7f8dbc2b7ab34b920cf2aa735aa88, type: 2}
@@ -107,11 +119,15 @@ MonoBehaviour:
           type: 2}
         statement: I'm sure we will find him, mate.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
     - text: Something was wrong with the Jello mixer, I had to fix it.
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
       tags:
       - {fileID: 11400000, guid: 55a1a6b3d34246d49a2b695164e9e40a, type: 2}
       - {fileID: 11400000, guid: 486e9efc3d6b28c4cab97a366c02e466, type: 2}
@@ -122,28 +138,32 @@ MonoBehaviour:
           type: 2}
         statement: All in order now I hope.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: "Why don\u2019t I recognize you?"
     statementEmotion:
-      UseConstant: 1
+      UseConstant: 0
       ConstantValue: Default
-      Variable: {fileID: 0}
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
     statement: 
     statementEmotion:
-      UseConstant: 1
+      UseConstant: 0
       ConstantValue: Default
-      Variable: {fileID: 0}
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
     - text: "I\u2019m the replacement for the guy that got shoved into the volcano
         cause he made fun of the boss."
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
       tags:
       - {fileID: 11400000, guid: b79b40da53159254f9c5e3287c7206aa, type: 2}
       followups:
@@ -151,19 +171,23 @@ MonoBehaviour:
           type: 2}
         statement: That's the second time this week.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 070b117adf2459a4588d7e7bf5befcd0, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: Doubtful for a job like yours.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
     - text: A faceless minion like me is hardly important enough to remember.
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
       tags:
       - {fileID: 11400000, guid: b79b40da53159254f9c5e3287c7206aa, type: 2}
       followups:
@@ -171,20 +195,25 @@ MonoBehaviour:
           type: 2}
         statement: Right you are, mate. Can't waste time learning all your faces.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Someone in your role? I reckon I'd remember.
+        statement: There is more fingers on my hand then number of people in your
+          role, and I know the back of my hand.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
     - text: "The boss says he wants this plan done yesterday and so he hired a bunch
         of new people, I\u2019m a new hire."
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
       tags:
       - {fileID: 11400000, guid: 51542a304c81af2498fb4e23b3d12156, type: 2}
       - {fileID: 11400000, guid: 486e9efc3d6b28c4cab97a366c02e466, type: 2}
@@ -193,26 +222,26 @@ MonoBehaviour:
           type: 2}
         statement: Jolly good.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Can't quite wrap my mind around how hiring more delivery people
-          would help speed things up.
+        statement: Can't quite wrap my mind around how hiring more guards or delivery
+          people would help speed things up.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: What were you tampering with over there?
     statementEmotion:
-      UseConstant: 1
+      UseConstant: 0
       ConstantValue: Default
-      Variable: {fileID: 0}
+      Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
@@ -224,6 +253,10 @@ MonoBehaviour:
     options:
     - text: I was checking to make sure nothing was tampered with and I can confirm
         everything is not tampered with.
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
       tags:
       - {fileID: 11400000, guid: 8bf410ac14c0a8246ac36ae734b22a3a, type: 2}
       - {fileID: 11400000, guid: 49dbe33fa0b0f1346802b20895ccf72c, type: 2}
@@ -232,20 +265,24 @@ MonoBehaviour:
           type: 2}
         statement: Can't be too careful.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: You just happen to know how that thing works.
+        statement: Naturally you just happened to know how that thing works.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
     - text: "Fixing it, of course. No idea why it was so broken, hope you don\u2019t
         have a security breach."
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
       tags:
       - {fileID: 11400000, guid: 55a1a6b3d34246d49a2b695164e9e40a, type: 2}
       - {fileID: 11400000, guid: e6d7f8dbc2b7ab34b920cf2aa735aa88, type: 2}
@@ -255,20 +292,24 @@ MonoBehaviour:
         statement: At the rate things are breaking, something suspicious is going
           on.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: I bet you also hope your not the security breach.
+        statement: I hope for your sake you're not the security breach.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
     - text: "The temperature was off, and I had to adjust the thermostat. With how
         hot it gets, it\u2019s like we are in the middle of a volcano or something."
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
       tags:
       - {fileID: 11400000, guid: 49dbe33fa0b0f1346802b20895ccf72c, type: 2}
       - {fileID: 11400000, guid: 486e9efc3d6b28c4cab97a366c02e466, type: 2}
@@ -277,20 +318,24 @@ MonoBehaviour:
           type: 2}
         statement: One could get that idea, yes.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: You know where the thermostat is in a restricted area and decided
           that was the best use of your time, curious.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: Just my phone, there was a rare Lava Pokenon I had to catch.
+    - text: Just my phone, there was a rare Lava Pokemon I had to catch.
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
       tags:
       - {fileID: 11400000, guid: 49dbe33fa0b0f1346802b20895ccf72c, type: 2}
       - {fileID: 11400000, guid: 4a686078bcb00974895e62444b07026c, type: 2}
@@ -299,36 +344,40 @@ MonoBehaviour:
           type: 2}
         statement: You young whippersnappers and your silly phone games.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: While there is an emergency? It's like you bloody want to be thrown
           into the lava pit.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 070b117adf2459a4588d7e7bf5befcd0, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
     statement: Have you seen anyone suspicious recently?
     statementEmotion:
-      UseConstant: 1
+      UseConstant: 0
       ConstantValue: Default
-      Variable: {fileID: 0}
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
     statement: 
     statementEmotion:
-      UseConstant: 1
+      UseConstant: 0
       ConstantValue: Default
-      Variable: {fileID: 0}
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
     - text: Yes I saw someone dressed in full ninja garb sneaking around.
+      spyExpression:
+        UseConstant: 1
+        ConstantValue: 
+        Variable: {fileID: 0}
       tags:
       - {fileID: 11400000, guid: e6d7f8dbc2b7ab34b920cf2aa735aa88, type: 2}
       - {fileID: 11400000, guid: ee1290f62d320e742aa2cff45c831f60, type: 2}
@@ -337,20 +386,24 @@ MonoBehaviour:
           type: 2}
         statement: A very suspicious fellow.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: And you didn't do anything about him?! It's so bloody hard to
           find good help these days.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
     - text: No, everything seems perfectly fine.
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
       tags:
       - {fileID: 11400000, guid: 49dbe33fa0b0f1346802b20895ccf72c, type: 2}
       followups:
@@ -358,19 +411,23 @@ MonoBehaviour:
           type: 2}
         statement: Jolly good.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: 'Your story''s starting to sound like a half eaten cracker. '
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
     - text: Do I look like a hall monitor? I have got more important things to do.
+      spyExpression:
+        UseConstant: 1
+        ConstantValue: 
+        Variable: {fileID: 0}
       tags:
       - {fileID: 11400000, guid: 51542a304c81af2498fb4e23b3d12156, type: 2}
       followups:
@@ -378,99 +435,115 @@ MonoBehaviour:
           type: 2}
         statement: Right you are, mate.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: Absurd, your importance is that of a stale croissant.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
-    statement: What are you getting paid here?
+    statement: What is with the spiffy suit chap?
     statementEmotion:
-      UseConstant: 1
+      UseConstant: 0
       ConstantValue: Default
-      Variable: {fileID: 0}
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
     statement: 
     statementEmotion:
-      UseConstant: 1
+      UseConstant: 0
       ConstantValue: Default
-      Variable: {fileID: 0}
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: YOUR GETTING PAID?!
+    - text: Well with the lab coat at the cleaners, I looked for the next coat I
+        had and it was a suit coat.
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
       tags:
-      - {fileID: 11400000, guid: b79b40da53159254f9c5e3287c7206aa, type: 2}
+      - {fileID: 11400000, guid: 30cd045069badd146abc133d2b352ae7, type: 2}
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Ah, you must be on the life servititude plan.
+        statement: Looks sharp.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: If this is your subtle way, of asking for a raise. I'm not amused.
+        statement: That story sounds like the rice that came out of an unplugged
+          rice cooker.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: I get the keys to a mansion in Zinlandia when we take it over.
+    - text: "Guards don\u2019t look scary. But you see one with a suit and think
+        \u201CNow that\u2019s someone dangerous\u201D."
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
       tags:
-      - {fileID: 11400000, guid: a173269af9ceb4f4e8378d8406c97624, type: 2}
+      - {fileID: 11400000, guid: d3831e72a8e8d5442bf817d11fe17dbf, type: 2}
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Zinlandia mansions are quite posh.
+        statement: I happen to think I look more intimidating with a suit as well.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: The only keys you would be getting are the servant's keys.
+        statement: I'm the dangerous someone you should be worried about, if I think
+          your story is tailored.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: 1 gold bar a week
+    - text: You gotta dress the way you wanna be paid.
+      spyExpression:
+        UseConstant: 1
+        ConstantValue: 
+        Variable: {fileID: 0}
       tags:
-      - {fileID: 11400000, guid: 79b983f8a62385b4ba6e40957745d0c9, type: 2}
+      - {fileID: 11400000, guid: 9d237b2d11bd0a240ad8142db8100b67, type: 2}
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: That's a whole teapot of a sum, very nice mate.
+        statement: Ambitious, but I think you look sharp.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Fool's gold maybe.
+        statement: You are already being paid a whole teapot of a sum.
         statementEmotion:
-          UseConstant: 1
+          UseConstant: 0
           ConstantValue: Default
-          Variable: {fileID: 0}
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
-    statement: Cheerio!
+    statement: Back to work for you, Cheerio!
     statementEmotion:
-      UseConstant: 1
+      UseConstant: 0
       ConstantValue: Default
-      Variable: {fileID: 0}
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options: []
