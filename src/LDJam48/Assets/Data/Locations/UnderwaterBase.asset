@@ -18,6 +18,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1103e227da888d3498a25dab3c9baf87, type: 2}
   - {fileID: 11400000, guid: 3b43e0939f9ab0d4f84e8431b6109e0f, type: 2}
   - {fileID: 11400000, guid: 9622f40a7b725544e97ff8c8de5a40fa, type: 2}
+  - {fileID: 11400000, guid: af8fdd67d25143b4993ee5181618e842, type: 2}
   onFinished:
     m_PersistentCalls:
       m_Calls:
@@ -34,6 +35,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  calmMusic: {fileID: 11400000, guid: 69a1cf85e999bd245b9ba6e58a1c0c79, type: 2}
-  tenseMusic: {fileID: 11400000, guid: 69a1cf85e999bd245b9ba6e58a1c0c79, type: 2}
-  superTenseMusic: {fileID: 11400000, guid: 69a1cf85e999bd245b9ba6e58a1c0c79, type: 2}
+  calmMusic: {fileID: 11400000, guid: bdb80b7ed8bfac04c9237b4edff6856a, type: 2}
+  tenseMusic: {fileID: 11400000, guid: bdb80b7ed8bfac04c9237b4edff6856a, type: 2}
+  superTenseMusic: {fileID: 11400000, guid: bdb80b7ed8bfac04c9237b4edff6856a, type: 2}
