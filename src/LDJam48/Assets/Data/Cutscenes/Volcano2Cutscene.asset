@@ -38,12 +38,14 @@ MonoBehaviour:
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
     durationSeconds: 4
-  - artBackground: {fileID: 0}
+  - artBackground: {fileID: 3545209771406788281, guid: ff9ee5cb9d0ad457b90e8a842e8784b1,
+      type: 3}
     storyText: But you are stopped by the Cane Man and so is Eizo as well.
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
     durationSeconds: 4
-  - artBackground: {fileID: 0}
+  - artBackground: {fileID: 3545209771406788281, guid: ff9ee5cb9d0ad457b90e8a842e8784b1,
+      type: 3}
     storyText: But you are gonna have to watch your lies, so you don't tip either
       of them off.
     textColor: {r: 1, g: 1, b: 1, a: 0}
