@@ -17,6 +17,12 @@ public class ConversationHandler : OnMessage<StartConversation, AdvanceConversat
         conversation.QueuePlayerLine(msg.Selected.Text);
         msg.Selected.Followups.ForEachArr(followup =>
         {
+            if (followup.SpeakingCharacter == null)
+            {
+                Log.Error($"No Speaking Character specified for Followup Line: {followup.Statement}");
+                return;
+            }
+
             var c = followup.SpeakingCharacter;
             var susAmount = msg.PlayerSuspicionChange.TryGetValue(c, out var susChange) ? susChange : 0;
             if (followup.ShouldShow(c, susAmount))

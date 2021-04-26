@@ -11,6 +11,7 @@ public class FollowupDialogueData
 
     private bool MatchesCharacter(Character c) => speakingCharacter == c;
     public Character SpeakingCharacter => speakingCharacter;
+    public string Statement => statement;
     public bool ShouldShow(Character c, int susAmount) =>
         MatchesCharacter(c)
         && (onlyShowIfCharacterLikedAnswer && susAmount < 1) 
