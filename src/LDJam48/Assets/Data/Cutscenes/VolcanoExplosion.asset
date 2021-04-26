@@ -16,42 +16,64 @@ MonoBehaviour:
   - artBackground: {fileID: 0}
     storyText: "In a flash, The Cane Man shot Eiz\u014D. \"He was obviously the spy\""
     textColor: {r: 0, g: 0, b: 0, a: 0}
+    showStoryText: 1
+    durationSeconds: 4
   - artBackground: {fileID: 0}
     storyText: '"Glad to be rid of that unpleasentness, ta ta for now"'
     textColor: {r: 0, g: 0, b: 0, a: 0}
+    showStoryText: 1
+    durationSeconds: 4
   - artBackground: {fileID: 0}
     storyText: Having narrowly avoided your own demise, you escape and detonate the
       explosives.
     textColor: {r: 0, g: 0, b: 0, a: 0}
+    showStoryText: 1
+    durationSeconds: 4
   - artBackground: {fileID: 0}
     storyText: A large TV screen comes to life, right outside the volcano.
     textColor: {r: 0, g: 0, b: 0, a: 0}
+    showStoryText: 1
+    durationSeconds: 4
   - artBackground: {fileID: 0}
-    storyText: '"HAHA You fell for my bait Double 0 and a half. While you have been
-      stopping the dumbest plot, I mean dumping Jello in a Volcano, really?"'
+    storyText: '"HAHA You fell for my bait Double 0 and a half. You where distracted
+      stopping the dumbest plot I mean dumping Jello in a Volcano, really?"'
     textColor: {r: 0, g: 0, b: 0, a: 0}
+    showStoryText: 1
+    durationSeconds: 4
   - artBackground: {fileID: 0}
     storyText: '"I, Venix have all but completed a scheme to take over the entire
       world"'
     textColor: {r: 0, g: 0, b: 0, a: 0}
+    showStoryText: 1
+    durationSeconds: 4
   - artBackground: {fileID: 0}
     storyText: '"Some clips play of world leaders swearing loyalty to fenix in what
       seems to be a hypnotized state"'
     textColor: {r: 0, g: 0, b: 0, a: 0}
+    showStoryText: 1
+    durationSeconds: 4
   - artBackground: {fileID: 0}
     storyText: The screen cuts off and your agency is calling you.
     textColor: {r: 0, g: 0, b: 0, a: 0}
+    showStoryText: 1
+    durationSeconds: 4
   - artBackground: {fileID: 0}
     storyText: They have located the secret Underwater base of Venix and are sending
       you right away to stop whatever this plan is.
     textColor: {r: 0, g: 0, b: 0, a: 0}
+    showStoryText: 1
+    durationSeconds: 4
   - artBackground: {fileID: 0}
     storyText: Thankfully Venix has no idea what you look like, just knows how many
       of his schemes you have stopped in the past.
     textColor: {r: 0, g: 0, b: 0, a: 0}
+    showStoryText: 1
+    durationSeconds: 4
   - artBackground: {fileID: 0}
     storyText: You are gonna have to be clever with your lies.
     textColor: {r: 0, g: 0, b: 0, a: 0}
+    showStoryText: 1
+    durationSeconds: 4
   onFinishedAction:
     m_PersistentCalls:
       m_Calls:

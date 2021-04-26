@@ -30,7 +30,7 @@ MonoBehaviour:
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
-    statement: You two wouldn't happen to know anything about that?
+    statement: You two wouldn't happen to know anything about that sabotage?
     statementEmotion:
       UseConstant: 0
       ConstantValue: Default
@@ -105,7 +105,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Hopefully you'll have them fixed in no time.
+        statement: Hopefully you'll have those cameras fixed in no time.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -113,7 +113,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Are you hoping you can fix them with duct tape?
+        statement: Are you hoping you can fix cameras with duct tape?
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -138,7 +138,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: 'We will catch them like a bird in a hang glider. '
+        statement: 'We will catch that spy like a bird in a hang glider. '
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -146,13 +146,13 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Idiotic, you'd be dead if you found them.
+        statement: Idiotic, you'd be dead if you found the spy.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
           Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: This place is a maze and I have been trying to leave for the past 30
+    - text: This volcano is a maze and I have been trying to leave for the past 30
         minutes.
       spyExpression:
         UseConstant: 0
@@ -254,7 +254,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Do I look like an idiot pal?!
+        statement: Do I look like an idiot, pal?!
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -327,7 +327,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Jello good.
+        statement: Jolly good.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -483,7 +483,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Curious, one of you is lying...
+        statement: Curious... One of you is lying...
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -640,3 +640,11 @@ MonoBehaviour:
           ConstantValue: 
           Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
+  - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
+      type: 2}
+    statement: I have deduced who the spy is.
+    statementEmotion:
+      UseConstant: 0
+      ConstantValue: Default
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+    options: []

@@ -46,9 +46,10 @@ MonoBehaviour:
         UseConstant: 0
         ConstantValue: 
         Variable: {fileID: 11400000, guid: 070b117adf2459a4588d7e7bf5befcd0, type: 2}
-      sprite: {fileID: 21300000, guid: 6e660b7b9742f6c49b9493e7e9a1b711, type: 3}
+      sprite: {fileID: 21300000, guid: 95488d44ca770004c99bb311b17f73bd, type: 3}
   startTags: []
   learnedTags: []
   maxSus: 10
   startingSus: 3
   suspicion: 3
+  isPlayer: 0

@@ -14,8 +14,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterName: Evil Villain
   Prefab: {fileID: 3658446044099768749, guid: db37a6b2c5510034290462ca4350d224, type: 3}
+  expressions:
+    defaultExpression:
+      expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+      sprite: {fileID: 21300000, guid: 489ce53b43fbec84d884bea177c2d0f1, type: 3}
+    expressions:
+    - expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
+      sprite: {fileID: 21300000, guid: 9ca37426d0e72b141874a61aecfb33c7, type: 3}
+    - expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
+      sprite: {fileID: 21300000, guid: 8bc82432d9441424ca6912de2002fa2c, type: 3}
+    - expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: e6609b2cb7b622c48b40a17c894b01c9, type: 2}
+      sprite: {fileID: 21300000, guid: bbfc2be9b9835eb45bc6863c062f5d6b, type: 3}
+    - expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: 070b117adf2459a4588d7e7bf5befcd0, type: 2}
+      sprite: {fileID: 21300000, guid: de2058041b258a749b960bd1c40addb3, type: 3}
+    - expressionType:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
+      sprite: {fileID: 21300000, guid: e53a3051bd40e9b49b751116ac592144, type: 3}
   startTags: []
   learnedTags: []
   maxSus: 8
   startingSus: 0
   suspicion: 0
+  isPlayer: 0
