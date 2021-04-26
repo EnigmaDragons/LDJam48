@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8249138620646b59f0e5500ebe20276, type: 3}
   m_Name: EvilVillain
   m_EditorClassIdentifier: 
-  CharacterName: Evil Villain
+  CharacterName: Venix, Evil Mastermind
   Prefab: {fileID: 3658446044099768749, guid: db37a6b2c5510034290462ca4350d224, type: 3}
   expressions:
     defaultExpression:
@@ -47,9 +47,10 @@ MonoBehaviour:
         ConstantValue: 
         Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
       sprite: {fileID: 21300000, guid: e53a3051bd40e9b49b751116ac592144, type: 3}
-  startTags: []
-  learnedTags: []
+  coverBlownStatements: []
   maxSus: 8
   startingSus: 0
   suspicion: 0
   isPlayer: 0
+  startTags: []
+  learnedTags: []
