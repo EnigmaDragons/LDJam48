@@ -33,10 +33,11 @@ MonoBehaviour:
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
     durationSeconds: 4
-  - artBackground: {fileID: 0}
+  - artBackground: {fileID: 6952878146834618957, guid: 915d007353a474fc2a3d9ad720db53c0,
+      type: 3}
     storyText: The plan is to threaten Zinlandia unless they unconditionally surrender
       to S.U.S.
-    textColor: {r: 0, g: 0, b: 0, a: 0}
+    textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
     durationSeconds: 4
   - artBackground: {fileID: 4332764545868041054, guid: 108ea3cfc8374433fafa89b3ce6792d7,
