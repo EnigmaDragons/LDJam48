@@ -459,7 +459,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
-    statement: Anyone could be the spy, even <style="Loud">you,</style> why should
+    statement: Anyone could be the spy, even <style="Loud">you.</style> Why should
       we not kill you?
     statementEmotion:
       UseConstant: 0
@@ -474,7 +474,7 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 0}
     options:
-    - text: I don't recognize you Ezio, pretty sus?
+    - text: I don't recognize you Ezio, pretty sus!
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -506,8 +506,8 @@ MonoBehaviour:
           ConstantValue: 
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: If you kill me there won't be anyone left to keep this facility running,
-        enjoy explaining <style="Emphasize">that</style> to the boss!
+    - text: If you kill me there won't be anyone left to keep this facility running.
+        Enjoy explaining <style="Emphasize">that</style> to the boss!
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -539,8 +539,8 @@ MonoBehaviour:
           ConstantValue: 
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: How do we know there is an intruder, what if the spy is actually someone
-        who works here!
+    - text: How do we know there is an intruder. What if the spy is actually someone
+        who works here?
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -615,7 +615,7 @@ MonoBehaviour:
           ConstantValue: 
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: I am vital to the plan, you can't kill me and finish getting these volcano
+    - text: I am vital to the plan. You can't kill me and finish getting this volcano
         to overflow.
       spyExpression:
         UseConstant: 0
@@ -645,7 +645,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Your vital organs are getting finished.
+        statement: Your vital organs are about to be finished.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
