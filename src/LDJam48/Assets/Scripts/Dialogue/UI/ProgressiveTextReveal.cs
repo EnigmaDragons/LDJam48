@@ -115,6 +115,9 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
         isRevealing = true;
         chatBox.gameObject.SetActive(true);
         _cursor = 1;
+        //This advances past markdown
+        while (_cursor < fullText.Length && fullText[_cursor - 1] == '<')
+            _cursor = fullText.IndexOf('>', _cursor) + 2;
         while (isRevealing && _cursor < fullText.Length)
         {
             var shownText = fullText.Substring(0, _cursor);
@@ -122,6 +125,9 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
             _cursor++;
             if (sfx != null && perCharacterSound != null)
                 sfx.Play(perCharacterSound);
+            //This advances past markdown
+            while (_cursor < fullText.Length && fullText[_cursor - 1] == '<')
+                _cursor = fullText.IndexOf('>', _cursor) + 2;
             yield return new WaitForSeconds(secondsPerCharacter);
         }
 
