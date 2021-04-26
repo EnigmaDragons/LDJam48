@@ -65,21 +65,24 @@ MonoBehaviour:
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
     durationSeconds: 4
-  - artBackground: {fileID: 0}
+  - artBackground: {fileID: 2401397096358769421, guid: 6d57c6a3b881f40c5841e151f4d22ad4,
+      type: 3}
     storyText: They have located the secret Underwater base of Venix and are sending
       you right away to stop whatever this plan is.
-    textColor: {r: 0, g: 0, b: 0, a: 0}
+    textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
     durationSeconds: 4
-  - artBackground: {fileID: 0}
+  - artBackground: {fileID: 2401397096358769421, guid: 6d57c6a3b881f40c5841e151f4d22ad4,
+      type: 3}
     storyText: Thankfully Venix has no idea what you look like, just knows how many
       of his schemes you have stopped in the past.
-    textColor: {r: 0, g: 0, b: 0, a: 0}
+    textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
     durationSeconds: 4
-  - artBackground: {fileID: 0}
+  - artBackground: {fileID: 2401397096358769421, guid: 6d57c6a3b881f40c5841e151f4d22ad4,
+      type: 3}
     storyText: You are gonna have to be clever with your lies.
-    textColor: {r: 0, g: 0, b: 0, a: 0}
+    textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
     durationSeconds: 4
   onFinishedAction:
