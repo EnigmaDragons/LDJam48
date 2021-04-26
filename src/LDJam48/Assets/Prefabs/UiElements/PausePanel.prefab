@@ -20,6 +20,7 @@ GameObject:
   m_IsActive: 1
 --- !u!224 &4446911899532198835
 RectTransform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
