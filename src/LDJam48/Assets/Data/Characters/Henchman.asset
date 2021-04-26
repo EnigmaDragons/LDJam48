@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8249138620646b59f0e5500ebe20276, type: 3}
   m_Name: Henchman
   m_EditorClassIdentifier: 
-  CharacterName: Mr Trilby The Cane Man
+  CharacterName: The Cane Man
   Prefab: {fileID: 2408280666022170148, guid: 0f87711b37da83649a9acd1acec4c8d3, type: 3}
   expressions:
     defaultExpression:
@@ -47,9 +47,10 @@ MonoBehaviour:
         ConstantValue: 
         Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
       sprite: {fileID: 21300000, guid: a4956d059f9a35143aa431911930b09a, type: 3}
-  startTags: []
-  learnedTags: []
+  coverBlownStatements: []
   maxSus: 10
   startingSus: 3
   suspicion: 3
   isPlayer: 0
+  startTags: []
+  learnedTags: []
