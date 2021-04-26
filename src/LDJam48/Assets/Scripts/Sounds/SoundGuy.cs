@@ -6,6 +6,7 @@ public class SoundGuy : OnMessage<DialogueOptionResolved>
     [SerializeField] private UiSfxPlayer sfx;
     [SerializeField] private AudioClipVolume gainedSus;
     [SerializeField] private AudioClipVolume gainedMuchSus;
+    [SerializeField] private AudioClipVolume lostSus;
     
     protected override void Execute(DialogueOptionResolved msg)
     {
@@ -13,5 +14,7 @@ public class SoundGuy : OnMessage<DialogueOptionResolved>
             sfx.Play(gainedMuchSus);
         else if (msg.PlayerSuspicionChange.Any(x => x.Value > 0))
             sfx.Play(gainedSus);
+        else if (msg.PlayerSuspicionChange.Any(x => x.Value < 0))
+            sfx.Play(lostSus);
     }
 }
