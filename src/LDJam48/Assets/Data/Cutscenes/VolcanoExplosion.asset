@@ -52,13 +52,15 @@ MonoBehaviour:
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
     durationSeconds: 4
-  - artBackground: {fileID: 0}
+  - artBackground: {fileID: 4769483287830225300, guid: 599d469beae164f24973f7483d2e5d0e,
+      type: 3}
     storyText: '"Some clips play of world leaders swearing loyalty to fenix in what
       seems to be a hypnotized state"'
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
     durationSeconds: 4
-  - artBackground: {fileID: 0}
+  - artBackground: {fileID: 727215581717638124, guid: 4a83695029230476fb4b75cd71296e02,
+      type: 3}
     storyText: The screen cuts off and your agency is calling you.
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
