@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GuardAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: WebGL
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 29
+      m_TextureCompression: 1
+      m_CompressionQuality: 30
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 8f1771ade216d1c4bb073e7bcb7d2019, type: 3}
+    - {fileID: 2800000, guid: b6cf8e3c157693d4e8c2ec69abc65419, type: 3}
+    - {fileID: 2800000, guid: 6e660b7b9742f6c49b9493e7e9a1b711, type: 3}
+    - {fileID: 2800000, guid: 738614875700dd745bff4aa1d2fae1c2, type: 3}
+    - {fileID: 2800000, guid: 95488d44ca770004c99bb311b17f73bd, type: 3}
+    - {fileID: 2800000, guid: 7d82ab542720b8d4999f6c8558311667, type: 3}
+    - {fileID: 2800000, guid: 5b0a544c3dd47d144b7421996f7612fe, type: 3}
+    totalSpriteSurfaceArea: 25145344
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 95488d44ca770004c99bb311b17f73bd, type: 3}
+  - {fileID: 21300000, guid: 7d82ab542720b8d4999f6c8558311667, type: 3}
+  - {fileID: 21300000, guid: 738614875700dd745bff4aa1d2fae1c2, type: 3}
+  - {fileID: 21300000, guid: 6e660b7b9742f6c49b9493e7e9a1b711, type: 3}
+  - {fileID: 21300000, guid: b6cf8e3c157693d4e8c2ec69abc65419, type: 3}
+  - {fileID: 21300000, guid: 5b0a544c3dd47d144b7421996f7612fe, type: 3}
+  - {fileID: 21300000, guid: 8f1771ade216d1c4bb073e7bcb7d2019, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - AirportSecurity_Shocked
+  - AirportSecurity_Silhouette
+  - AirportSecurity_Sad
+  - AirportSecurity_Mad
+  - AirportSecurity_Happy
+  - AirportSecurity_Suspicious
+  - AirportSecurity
+  m_RenderDataMap: {}
+  m_Tag: GuardAtlas
+  m_IsVariant: 0
