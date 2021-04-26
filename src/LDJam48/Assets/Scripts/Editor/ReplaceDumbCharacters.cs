@@ -56,7 +56,11 @@ namespace Editor
             }
         }
         
-        private static string Replace(string value) => value.Replace('‘', '\'').Replace('”', '"').Replace('ō', 'o');
+        private static string Replace(string value) => value
+            .Replace('‘', '\'')
+            .Replace('”', '"')
+            .Replace('ō', 'o')
+            .Replace("’", "'");
         
         public static List<T> GetAllInstances<T>() where T : ScriptableObject 
             => AssetDatabase.FindAssets("t:" + typeof(T).Name)
