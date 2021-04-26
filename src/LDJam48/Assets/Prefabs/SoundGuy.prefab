@@ -50,3 +50,6 @@ MonoBehaviour:
   gainedMuchSus:
     clip: {fileID: 8300000, guid: db9d95bd48089460f9489d1d14c68fcf, type: 3}
     volume: 1
+  lostSus:
+    clip: {fileID: 8300000, guid: ed7badfafca4d42019755a0319f4e91a, type: 3}
+    volume: 0.3
