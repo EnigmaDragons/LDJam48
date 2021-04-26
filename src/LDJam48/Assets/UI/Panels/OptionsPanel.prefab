@@ -1025,6 +1025,25 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1866759171877266911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9127537049539876925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42bac3dc46d85a047a49fac3be0c1685, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: d6eedae8265dd6146907e7ef03b80fb6, type: 2}
+  slider: {fileID: 444528952126055068}
+  valueName: UiVolume
+  reductionDb:
+    UseConstant: 0
+    ConstantValue: 0
+    FloatVariable: {fileID: 11400000, guid: 1414f3852a506dc4393584d753739f6c, type: 2}
 --- !u!1001 &515496773168446850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1500,6 +1519,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4094639419049531659, guid: 144dcb3a2ef1d3e459d699de509f83f8,
         type: 2}
+    - target: {fileID: 6871505283779923047, guid: 31f42237a7e7edc4b83078b83d969b0e,
+        type: 3}
+      propertyPath: valueName
+      value: SoundVolume
+      objectReference: {fileID: 0}
     - target: {fileID: 7848137480537616827, guid: 31f42237a7e7edc4b83078b83d969b0e,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1976,6 +2000,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31f42237a7e7edc4b83078b83d969b0e, type: 3}
+--- !u!114 &444528952126055068 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7214519554437406672, guid: 31f42237a7e7edc4b83078b83d969b0e,
+    type: 3}
+  m_PrefabInstance: {fileID: 7076377626574617932}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9127537049539876925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &9127537049539876925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2062597380452836721, guid: 31f42237a7e7edc4b83078b83d969b0e,
+    type: 3}
+  m_PrefabInstance: {fileID: 7076377626574617932}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &2182776798280973073 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8970765955235841629, guid: 31f42237a7e7edc4b83078b83d969b0e,
