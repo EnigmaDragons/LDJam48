@@ -6,7 +6,8 @@ public class CutsceneSegmentPresenter : OnMessage<PlayCutsceneSegment>
     [SerializeField] private GameObject parent;
     [SerializeField] private TextMeshProUGUI textBox;
 
-    private GameObject _lastArtBackground;
+    private GameObject _lastArtBackgroundPrototype;
+    private GameObject _currentSegment;
     private CutsceneSegment _lastSegment;
     
     protected override void Execute(PlayCutsceneSegment msg)
@@ -14,18 +15,33 @@ public class CutsceneSegmentPresenter : OnMessage<PlayCutsceneSegment>
         var segment = msg.Segment;
         if (_lastSegment == segment)
             return;
-        
-        if (_lastArtBackground != segment.ArtBackground)
+
+        if (_lastArtBackgroundPrototype != segment.ArtBackground)
         {
             parent.DestroyAllChildren();
             if (segment.ArtBackground != null)
-                Instantiate(segment.ArtBackground, parent.transform);
+                _currentSegment = Instantiate(segment.ArtBackground, parent.transform);
+        }
+        
+        Log.Info($"Cutscene - {segment.StoryText}");
+        var targetTextbox = textBox;
+        if (_currentSegment != null)
+        {
+            var segmentCustomTextLocation = _currentSegment.transform.GetComponentInChildren<TextMeshProUGUI>();
+            if (segmentCustomTextLocation != null)
+                targetTextbox = segmentCustomTextLocation;
         }
 
-        Log.Info($"Cutscene - {segment.StoryText}");
-        textBox.text = segment.StoryText;
-        textBox.color = FullAlphaColor(segment.TextColor);
-        _lastArtBackground = segment.ArtBackground;
+        textBox.text = "";
+        targetTextbox.text = "";
+        
+        if (segment.ShouldShowStoryText)
+        {
+            targetTextbox.text = segment.StoryText;
+            targetTextbox.color = FullAlphaColor(segment.TextColor);
+        }
+
+        _lastArtBackgroundPrototype = segment.ArtBackground;
         _lastSegment = segment;
         this.ExecuteAfterDelay(() => Message.Publish(new AdvanceCutscene()), segment.DurationSeconds);
     }

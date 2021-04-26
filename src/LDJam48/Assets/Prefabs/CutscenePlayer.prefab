@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 150}
-  m_SizeDelta: {x: 1200, y: 160}
+  m_SizeDelta: {x: 1200, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6098409108892675647
 CanvasRenderer:
@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6ecc75eabe6c3482bbff9d4129b8c48d, type: 2}
-  m_sharedMaterial: {fileID: -4853220037525525211, guid: 6ecc75eabe6c3482bbff9d4129b8c48d,
+  m_fontAsset: {fileID: 11400000, guid: 7af6043334f13874db1e00dd6c3f790a, type: 2}
+  m_sharedMaterial: {fileID: 4094639419049531659, guid: 7af6043334f13874db1e00dd6c3f790a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -224,7 +224,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!114 &6098409109340605776
 MonoBehaviour:
@@ -436,6 +436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cutscene: {fileID: 11400000, guid: 20e85298acd4be44dbf2d6d42125b95b, type: 2}
+  delayBeforeFinishing: 2
 --- !u!114 &8190798203504576738
 MonoBehaviour:
   m_ObjectHideFlags: 0
