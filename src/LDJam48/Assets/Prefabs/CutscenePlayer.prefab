@@ -224,7 +224,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!114 &6098409109340605776
 MonoBehaviour:
@@ -436,6 +436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cutscene: {fileID: 11400000, guid: 20e85298acd4be44dbf2d6d42125b95b, type: 2}
+  delayBeforeFinishing: 2
 --- !u!114 &8190798203504576738
 MonoBehaviour:
   m_ObjectHideFlags: 0

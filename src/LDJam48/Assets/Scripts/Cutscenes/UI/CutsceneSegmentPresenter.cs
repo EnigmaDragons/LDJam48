@@ -23,8 +23,13 @@ public class CutsceneSegmentPresenter : OnMessage<PlayCutsceneSegment>
         }
 
         Log.Info($"Cutscene - {segment.StoryText}");
-        textBox.text = segment.StoryText;
-        textBox.color = FullAlphaColor(segment.TextColor);
+        textBox.text = "";
+        if (segment.ShouldShowStoryText)
+        {
+            textBox.text = segment.StoryText;
+            textBox.color = FullAlphaColor(segment.TextColor);
+        }
+
         _lastArtBackground = segment.ArtBackground;
         _lastSegment = segment;
         this.ExecuteAfterDelay(() => Message.Publish(new AdvanceCutscene()), segment.DurationSeconds);
