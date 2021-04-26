@@ -22,7 +22,7 @@ MonoBehaviour:
   - artBackground: {fileID: 2448115664457130381, guid: 39203f6a61bca4f50a2f0388f28d73ba,
       type: 3}
     storyText: Every other weekend you save the world, and this is that other weekend.
-    textColor: {r: 0, g: 0, b: 0, a: 1}
+    textColor: {r: 1, g: 1, b: 1, a: 1}
     showStoryText: 1
     durationSeconds: 4
   - artBackground: {fileID: 7688699568928860539, guid: a23d0639de6d84492b446e5882039ade,
@@ -30,14 +30,14 @@ MonoBehaviour:
     storyText: The evil organization S.U.S. (Sinister Ultra Syndicate) has recently
       bought a volcano island and is buying large quantites of jello packets.
     textColor: {r: 0, g: 0, b: 0, a: 1}
-    showStoryText: 0
+    showStoryText: 1
     durationSeconds: 4
   - artBackground: {fileID: 7688699568928860539, guid: a23d0639de6d84492b446e5882039ade,
       type: 3}
     storyText: Your mission is to infiltrate their base, find out their dastardly
       scheme, and put a stop to it.
     textColor: {r: 0, g: 0, b: 0, a: 1}
-    showStoryText: 0
+    showStoryText: 1
     durationSeconds: 4
   - artBackground: {fileID: 2202170337963522669, guid: 5e34e4fafb3074abc8283c646be210f1,
       type: 3}
