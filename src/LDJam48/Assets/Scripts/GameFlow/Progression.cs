@@ -26,5 +26,11 @@ public class Progression : ScriptableObject
         navigator.NavigateToLocationScene();
     }
 
+    public void GoToVictory()
+    {
+        gameState.UpdateState(g => g.IsVictory = true);
+        navigator.NavigateToCreditsScene();
+    }
+    
     public void SkipCutscene() => Message.Publish(new SkipCutscene());
 }
