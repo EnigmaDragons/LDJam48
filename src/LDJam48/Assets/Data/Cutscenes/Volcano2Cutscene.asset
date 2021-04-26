@@ -32,7 +32,8 @@ MonoBehaviour:
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
     durationSeconds: 4
-  - artBackground: {fileID: 0}
+  - artBackground: {fileID: 4184835318532210885, guid: 9810f5b0583874f3f916c7be8decada4,
+      type: 3}
     storyText: All there is to do now, is make it out of the volcano and detonate
       the explosives.
     textColor: {r: 1, g: 1, b: 1, a: 0}
@@ -40,7 +41,7 @@ MonoBehaviour:
     durationSeconds: 4
   - artBackground: {fileID: 3545209771406788281, guid: ff9ee5cb9d0ad457b90e8a842e8784b1,
       type: 3}
-    storyText: But you are stopped by the Cane Man and so is Eizo as well.
+    storyText: You're stopped by the Cane Man and so is Eizo as well.
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
     durationSeconds: 4
