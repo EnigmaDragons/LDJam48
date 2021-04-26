@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 637, y: 379}
+  m_AnchoredPosition: {x: 627, y: 354}
   m_SizeDelta: {x: 600, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6164232818692638024
@@ -332,8 +332,8 @@ MonoBehaviour:
   targetIsSelf: 1
   targetGO: {fileID: 0}
   tweenTargetIsTargetGO: 1
-  delay: 1
-  duration: 4
+  delay: 0
+  duration: 3
   easeType: 6
   easeCurve:
     serializedVersion: 2
@@ -437,8 +437,8 @@ MonoBehaviour:
   targetIsSelf: 1
   targetGO: {fileID: 0}
   tweenTargetIsTargetGO: 1
-  delay: 1
-  duration: 4
+  delay: 0
+  duration: 3
   easeType: 6
   easeCurve:
     serializedVersion: 2
