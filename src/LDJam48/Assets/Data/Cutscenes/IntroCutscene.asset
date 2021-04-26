@@ -15,13 +15,13 @@ MonoBehaviour:
   segments:
   - artBackground: {fileID: 6822918450477247980, guid: e229ab6207c4644e6b31c24126445249,
       type: 3}
-    storyText: You're a spy known as double 0 and a half.
+    storyText: You're a super spy for ___ Agency. Agent number Double O and a Half
     textColor: {r: 1, g: 1, b: 1, a: 1}
     showStoryText: 1
     durationSeconds: 4
   - artBackground: {fileID: 2448115664457130381, guid: 39203f6a61bca4f50a2f0388f28d73ba,
       type: 3}
-    storyText: Every other weekend you save the world, and this is that other weekend.
+    storyText: Every other weekend you save the world. This is that other weekend.
     textColor: {r: 1, g: 1, b: 1, a: 1}
     showStoryText: 1
     durationSeconds: 4
@@ -41,14 +41,14 @@ MonoBehaviour:
     durationSeconds: 4
   - artBackground: {fileID: 2202170337963522669, guid: 5e34e4fafb3074abc8283c646be210f1,
       type: 3}
-    storyText: You fly into Zinlandia the country where the volcano is.
+    storyText: You fly into Zinlandia, the country where the volcano is.
     textColor: {r: 1, g: 1, b: 1, a: 1}
     showStoryText: 1
     durationSeconds: 4
   - artBackground: {fileID: 4516152737117826139, guid: 17e46534e4b8f40f9a84a318cb01a2c9,
       type: 3}
-    storyText: Everything is going well into you are stopped by security for additional
-      question.
+    storyText: Everything is going well until you are stopped by security for additional
+      questioning.
     textColor: {r: 1, g: 1, b: 1, a: 1}
     showStoryText: 1
     durationSeconds: 4
@@ -60,8 +60,8 @@ MonoBehaviour:
     durationSeconds: 4
   - artBackground: {fileID: 5480023870415276281, guid: a33101cdbbfb14dff9051e4c316b337a,
       type: 3}
-    storyText: You had better ready to come up with some clever lies and not contradict
-      your story.
+    storyText: Get ready to come up with some clever lies and not contradict your
+      story.
     textColor: {r: 0.9176471, g: 0.9176471, b: 0.9176471, a: 1}
     showStoryText: 1
     durationSeconds: 4
