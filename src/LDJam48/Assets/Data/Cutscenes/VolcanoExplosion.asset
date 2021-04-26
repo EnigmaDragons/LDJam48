@@ -13,17 +13,20 @@ MonoBehaviour:
   m_Name: VolcanoExplosion
   m_EditorClassIdentifier: 
   segments:
-  - artBackground: {fileID: 0}
+  - artBackground: {fileID: 8965012232640377840, guid: 8bf228be71c33453b83aa20b3cdc77de,
+      type: 3}
     storyText: In a flash, The Cane Man shot Eizo. "He was obviously the spy"
-    textColor: {r: 0, g: 0, b: 0, a: 0}
+    textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
-    durationSeconds: 4
-  - artBackground: {fileID: 0}
+    durationSeconds: 5
+  - artBackground: {fileID: 7966358865446072126, guid: cb0fa119725a643479ed4f54cb73610b,
+      type: 3}
     storyText: '"Glad to be rid of that unpleasentness, ta ta for now"'
     textColor: {r: 0, g: 0, b: 0, a: 0}
     showStoryText: 1
     durationSeconds: 4
-  - artBackground: {fileID: 0}
+  - artBackground: {fileID: 333002766857362500, guid: 404702480d57f4522bc331e91dcd18af,
+      type: 3}
     storyText: Having narrowly avoided your own demise, you escape and detonate the
       explosives.
     textColor: {r: 0, g: 0, b: 0, a: 0}
