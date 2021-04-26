@@ -29,7 +29,7 @@ MonoBehaviour:
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
-    statement: I'm Mr Trilby The Cane Man and unfortunately your fate may lie at
+    statement: I'm Mr Trilby, The Cane Man, and unfortunately your fate may lie at
       the bottom of the Jello pits.
     statementEmotion:
       UseConstant: 0
@@ -38,7 +38,8 @@ MonoBehaviour:
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
-    statement: "I am no intruder, I\u2019m supposed to be here!"
+    statement: "<style=\"Loud\">I am no intruder!</style> I\u2019m <style=\"Emphasize\">supposed</style>
+      to be here!"
     statementEmotion:
       UseConstant: 0
       ConstantValue: Default
@@ -46,8 +47,8 @@ MonoBehaviour:
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
-    statement: 'Really? What exactly is your function in this restricted Jello Prep
-      Zone? '
+    statement: '<style="Slow">Really?</style> What exactly is your function in this
+      restricted Jello Prep Zone? '
     statementEmotion:
       UseConstant: 0
       ConstantValue: Default
@@ -61,7 +62,7 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: "I\u2019m a jello scientist, but yesterday I accidentally got jello all
+    - text: "I\u2019m a Jello scientist, but yesterday I accidentally got Jello all
         over my uniform so I had to send it to the dry cleaners."
       spyExpression:
         UseConstant: 0
@@ -75,14 +76,14 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: A sticky situation indeed.
+        statement: A <style="Pun">sticky situation</style> indeed.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
-    - text: "I\u2019m the Jello delivery guy, they ran out of the lime flavor I was
-        told to bring it right in."
+    - text: "I\u2019m the Jello delivery guy, they ran out of the lime flavor. I
+        was told to bring it right in."
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -95,7 +96,8 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: We did need another ton or 2 of Lime Jello for our weekend Jam.
+        statement: We did need another ton or 2 of Lime Jello for our <style="Pun">weekend
+          Jam.</style>
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -169,7 +171,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: That's the second time this week.
+        statement: That's the <style="Emphasize">second time</style> this week.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -177,13 +179,14 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Doubtful for a job like yours.
+        statement: <style="Emphasize">Doubtful,</style> for a job like yours.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: A faceless minion like me is hardly important enough to remember.
+    - text: A faceless minion like me is <style="Emphasize">hardly</style> important
+        enough to remember.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -209,7 +212,7 @@ MonoBehaviour:
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
     - text: "The boss says he wants this plan done yesterday and so he hired a bunch
-        of new people, I\u2019m a new hire."
+        of new people; I\u2019m a new hire."
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -228,8 +231,8 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Can't quite wrap my mind around how hiring more guards or delivery
-          people would help speed things up.
+        statement: Can't quite understand how hiring more guards or delivery people
+          would help speed things up.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -252,7 +255,7 @@ MonoBehaviour:
       Variable: {fileID: 0}
     options:
     - text: I was checking to make sure nothing was tampered with and I can confirm
-        everything is not tampered with.
+        <style="Emphasize">everything</style> is not tampered with.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -271,7 +274,8 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Naturally you just happened to know how all the things work.
+        statement: Naturally you just <style="Emphasize">happened</style> to know
+          how all the things work.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -289,8 +293,8 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: At the rate things are breaking, something suspicious is going
-          on.
+        statement: At the rate things are breaking, <style="Emphasize">something</style>
+          suspicious is going on.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -298,7 +302,8 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: I hope for your sake you're not the security breach.
+        statement: I hope for your sake <style="Emphasize">you're</style> not the
+          security breach.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -324,8 +329,8 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: You know where the thermostat is, in a restricted area, and decided
-          that was the best use of your time. Curious.
+        statement: You know where the thermostat is, <style="Emphasize">in a restricted
+          area,</style> and decided that was the best use of your time. <style="Slow">Curious.</style>
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -350,8 +355,8 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: While there is an emergency? It's like you bloody want to be thrown
-          into the lava pit.
+        statement: <style="Loud">While there is an emergency?</style> It's like you
+          <style="Loud">bloody</style> want to be thrown into the lava pit.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -359,7 +364,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
-    statement: Have you seen anyone suspicious recently?
+    statement: Have you seen anyone <style="Emphasize">suspicious</style> recently?
     statementEmotion:
       UseConstant: 0
       ConstantValue: Default
@@ -373,7 +378,7 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: Yes I saw someone dressed in full ninja garb sneaking around.
+    - text: Yes, I saw someone dressed in full ninja garb sneaking around.
       spyExpression:
         UseConstant: 1
         ConstantValue: 
@@ -392,8 +397,9 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: And you didn't do anything about him?! It's so bloody hard to
-          find good help these days.
+        statement: "<style=\"Loud\">And you didn't do anything about him?!</style>
+          It's so <style=\"Loud\">bloody</style>\r\n hard to find good help these
+          days."
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -508,8 +514,8 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: I'm the dangerous someone you should be worried about, if I think
-          your story is tailored.
+        statement: I'm the dangerous someone you should be worried about, if I discover
+          your story is <style="Pun">tailored.</style>
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
