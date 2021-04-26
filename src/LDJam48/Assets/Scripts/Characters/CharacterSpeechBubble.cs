@@ -6,6 +6,7 @@ public class CharacterSpeechBubble : MonoBehaviour
     [SerializeField] private ProgressiveTextReveal speechBubble;
     [SerializeField] private ScenePositions scenePositions;
     [SerializeField] private CurrentConversation conversation;
+    [SerializeField] private CharacterNameLabel nameLabel;
     [SerializeField] private bool speechBubbleIsToTheLeftOfTheCharacter = true;
     
     private void Awake()
@@ -13,7 +14,8 @@ public class CharacterSpeechBubble : MonoBehaviour
         Log.Info($"{character.CharacterName} speech bubble awake");
         speechBubble.Hide();
         scenePositions.Register(character, speechBubble);
-        if (speechBubbleIsToTheLeftOfTheCharacter)
+        nameLabel.Init(character.CharacterName);
+        if (!speechBubbleIsToTheLeftOfTheCharacter)
             speechBubble.ReversePanelFacing();
     }
 

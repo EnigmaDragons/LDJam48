@@ -13,11 +13,11 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
     [SerializeField] private FloatReference autoAdvanceDelay = new FloatReference(0.8f);
     [SerializeField] private AudioClipVolume perCharacterSound;
     [SerializeField] private UiSfxPlayer sfx;
+    [SerializeField] private Vector2 reversedTextBoxOffset = Vector2.zero;
     [SerializeField, ReadOnly] private bool isRevealing;
     [SerializeField, ReadOnly] private string fullText;
     
     private int _cursor;
-    private Color _defaultTextColor;
     private bool _shouldAutoProceed = false;
     private bool _manualInterventionDisablesAuto = true;
     private bool _finished = false;
@@ -28,7 +28,6 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
     private void Awake()
     {
         chatBox.onClick.AddListener(() => Proceed(isAuto: false));
-        _defaultTextColor = FullAlphaColor(textBox.color);
     }
 
     public void Hide()
@@ -41,22 +40,17 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
     }
 
     public void Display(string text) 
-        => Display(text,  _defaultTextColor, false, true, () => { });
+        => Display(text,  false, true, () => { });
     public void Display(string text, Action onFinished) 
-        => Display(text, _defaultTextColor, false, true, onFinished);
+        => Display(text, false, true, onFinished);
     public void Display(string text, bool shouldAutoProceed, Action onFinished) 
-        => Display(text, _defaultTextColor, shouldAutoProceed, true, onFinished);
+        => Display(text, shouldAutoProceed, true, onFinished);
     public void Display(string text, bool shouldAutoProceed, bool manualInterventionDisablesAuto,  Action onFinished) 
-        => Display(text, _defaultTextColor, shouldAutoProceed, manualInterventionDisablesAuto, onFinished);
-    public void Display(string text, Color textColor, bool shouldAutoProceed, Action onFinished) =>
-        Display(text, textColor, shouldAutoProceed, true, onFinished);
-    public void Display(string text, Color textColor, bool shouldAutoProceed, bool manualInterventionDisablesAuto, Action onFinished)
     {
         if (isRevealing)
             return;
 
         chatBox.gameObject.SetActive(true);
-        textBox.color = FullAlphaColor(textColor);
         fullText = text;
         _onFinished = onFinished;
         _shouldAutoProceed = shouldAutoProceed;
@@ -106,6 +100,7 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
     {
         if (panelBg != null)
             panelBg.transform.Rotate(0, 180, 0);
+        textBox.transform.localPosition = textBox.transform.localPosition + new Vector3(reversedTextBoxOffset.x, reversedTextBoxOffset.y);
     }
 
     private IEnumerator BeginReveal()
@@ -135,7 +130,7 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
             Proceed(isAuto: true);
     }
     
-    private Color FullAlphaColor(Color c) => new Color(c.r, c.g, c.b, 1f);
+    private Color FullAlphaColor(Color c) => new Color(c.r, c.g, c.b, 255f);
 
     private void Info(string message)
     {

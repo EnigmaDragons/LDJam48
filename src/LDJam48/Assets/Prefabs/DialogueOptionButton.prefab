@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 4196160772580520603}
   - component: {fileID: 8603972234166771699}
   - component: {fileID: 8522562428037023898}
-  - component: {fileID: 7096097399397136496}
   m_Layer: 5
   m_Name: DialogueOptionButton
   m_TagString: Untagged
@@ -309,25 +308,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &7096097399397136496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3219430677993133199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f2f8fee63b8472cb49e686c5220708b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: {fileID: 3219430677993133197}
-  sound: {fileID: 8300000, guid: 7623a8764c36d4824b366a20915e0859, type: 3}
-  player: {fileID: 11400000, guid: bfe56e3518f684c4387de97bd5db348d, type: 2}
-  volume:
-    UseConstant: 1
-    ConstantValue: 1
-    FloatVariable: {fileID: 0}
 --- !u!1 &3822010951746477471
 GameObject:
   m_ObjectHideFlags: 0

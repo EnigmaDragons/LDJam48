@@ -59,6 +59,7 @@ MonoBehaviour:
   speechBubble: {fileID: 2118619430145260141}
   scenePositions: {fileID: 11400000, guid: 1ad2a147bae6bef4d88efb6c8dfafaa8, type: 2}
   conversation: {fileID: 11400000, guid: aae2fc7d62b853d4bbc983d3df10f489, type: 2}
+  nameLabel: {fileID: 255861279314362557}
   speechBubbleIsToTheLeftOfTheCharacter: 1
 --- !u!114 &3293100055908123182
 MonoBehaviour:
@@ -503,12 +504,12 @@ PrefabInstance:
     - target: {fileID: 2184088652181378669, guid: d41da6625dad7e040bc5f679eac60821,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -566
+      value: -468
       objectReference: {fileID: 0}
     - target: {fileID: 2184088652181378669, guid: d41da6625dad7e040bc5f679eac60821,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 193
+      value: 156
       objectReference: {fileID: 0}
     - target: {fileID: 2184088652181378669, guid: d41da6625dad7e040bc5f679eac60821,
         type: 3}
@@ -548,5 +549,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 443bd4c3b5e24924883c042bd2945242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &255861279314362557 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7493074710433279263, guid: d41da6625dad7e040bc5f679eac60821,
+    type: 3}
+  m_PrefabInstance: {fileID: 7237776931668225442}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 238ac546b30a46dc93a9951b79b2cc40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
