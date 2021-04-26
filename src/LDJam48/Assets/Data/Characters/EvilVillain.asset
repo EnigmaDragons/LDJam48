@@ -47,10 +47,17 @@ MonoBehaviour:
         ConstantValue: 
         Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
       sprite: {fileID: 21300000, guid: e53a3051bd40e9b49b751116ac592144, type: 3}
-  coverBlownStatements: []
+  coverBlownStatements:
+  - speakingCharacter: {fileID: 11400000}
+    statement: <style="Loud">HA!</style> Got you now Double 0!
+    statementEmotion:
+      UseConstant: 0
+      ConstantValue: 
+      Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
+    onlyShowIfCharacterLikedAnswer: 0
   maxSus: 8
-  startingSus: 0
-  suspicion: 0
+  startingSus: 3
+  suspicion: 3
   isPlayer: 0
   startTags: []
   learnedTags: []
