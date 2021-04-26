@@ -110,30 +110,6 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 0}
     options:
-    - text: "Don\u2019t be absurd. I don\u2019t have any luggage."
-      spyExpression:
-        UseConstant: 0
-        ConstantValue: 
-        Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
-      tags:
-      - {fileID: 11400000, guid: 8b1e568adbc489a49b4cfe9f7e3b7c02, type: 2}
-      followups:
-      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
-          type: 2}
-        statement: Ah cause you say you're a mechanic.
-        statementEmotion:
-          UseConstant: 0
-          ConstantValue: Default
-          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
-        onlyShowIfCharacterLikedAnswer: 1
-      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
-          type: 2}
-        statement: You think I'm gonna buy that, YOU wouldn't bring luggage.
-        statementEmotion:
-          UseConstant: 0
-          ConstantValue: Default
-          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
-        onlyShowIfCharacterLikedAnswer: 0
     - text: I always bring my Slim Camera Pro Max 2 Plus and extensions with me on
         these excursions.
       spyExpression:
@@ -155,6 +131,30 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
         statement: That helps you repair the <style="Emphasize">planes</style> buddy.
+        statementEmotion:
+          UseConstant: 0
+          ConstantValue: Default
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
+        onlyShowIfCharacterLikedAnswer: 0
+    - text: "Don't be absurd. I don\u2019t have any luggage."
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
+      tags:
+      - {fileID: 11400000, guid: 8b1e568adbc489a49b4cfe9f7e3b7c02, type: 2}
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: Ah cause you say you're a mechanic.
+        statementEmotion:
+          UseConstant: 0
+          ConstantValue: Default
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: You think I'm gonna buy that, YOU wouldn't bring luggage.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -321,7 +321,7 @@ MonoBehaviour:
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "A couple weeks ago I didn\u2019t even know Zinlandia existed."
+    - text: A couple weeks ago I didn't even know Zinlandia existed.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
