@@ -54,8 +54,8 @@ MonoBehaviour:
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
-    - text: I am an ambassador, here to give your country insane amounts of foreign
-        aid.
+    - text: I am an ambassador who is in Zinlandia to give your country insane amounts
+        of foreign aid.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -67,14 +67,14 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Hope that means I can start getting some cash.
+        statement: Hope, that means I can start getting some cash.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
-    - text: I am a wealthy tourist. I'm here to enjoy these luscious jungles and
-        overspend on drinks and entertainment.
+    - text: I am a wealthy tourist. Here to enjoy these luscious jungles and overspend
+        on drinks and entertainment.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -120,7 +120,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Ah. 'Cause you say you're a mechanic.
+        statement: Ah cause you say you're a mechanic.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -128,7 +128,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: You think I'm gonna buy that? YOU wouldn't bring luggage!
+        statement: You think I'm gonna buy that, YOU wouldn't bring luggage.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -154,8 +154,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: That''ll sure help you repair the <style="Emphasize">planes</style>,
-          buddy.
+        statement: That helps you repair the <style="Emphasize">planes</style> buddy.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -180,7 +179,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: <style="Loud">Barbaric?! You work in this airport... you are starting
+        statement: <style="Loud">Barbaric?! You work in this airport, you are starting
           to piss me off!</style>
         statementEmotion:
           UseConstant: 0
@@ -204,7 +203,7 @@ MonoBehaviour:
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
     - text: People weren't taking me seriously or showing respect, so I looked it
-        up, and the web said <style="Emphasize">"wear a suit".</style>
+        up, and the web said <style="Emphasize">"get a suit".</style>
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -214,7 +213,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Hate to break it to you, buddy, but I'm not sure the suit is working.
+        statement: Hate to break it to you buddy, but I'm not sure the suit is working.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -222,8 +221,8 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: An ambassador without charisma. If that's a joke, it's good you
-          didn't become a comedian.
+        statement: An ambassador without charisma. If that's your jokes, it is good
+          you didn't become a comedian.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -239,7 +238,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Doesn't look comfy. But, whatever <style="Pun">suits</style> your
+        statement: Doesn't look comfy, but whatever <style="Pun">suits</style> your
           style.
         statementEmotion:
           UseConstant: 0
@@ -249,14 +248,14 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
         statement: Who you trying to impress? <style="Emphasize">The machines you
-          work on?</style>
+          work on!</style>
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: I own a suit company. <style="Slow">Say</style>, you would look real
-        sharp in a suit.
+    - text: I own the suit company. <style="Slow">Say</style> you would look real
+        sharp with a suit.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -274,8 +273,8 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: A mechanic and you own a suit company. Wanna tell me any <style="Emphasize">other</style>
-          jobs you do?
+        statement: A mechanic and you own a suit company, wanna tell me any <style="Emphasize">other</style>
+          jobs you do.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -297,6 +296,31 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
+    - text: Are you kidding me? I <style="Emphasize">live</style> here!
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
+      tags:
+      - {fileID: 11400000, guid: 963b509ccb9cf354685ea434fc1f512e, type: 2}
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: Yeah, yeah.
+        statementEmotion:
+          UseConstant: 0
+          ConstantValue: Default
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: <style="Fast">Don't you lie to me,</style> or your in for a lotta
+          pain.
+        statementEmotion:
+          UseConstant: 0
+          ConstantValue: Default
+          Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
+        onlyShowIfCharacterLikedAnswer: 0
     - text: "A couple weeks ago I didn\u2019t even know Zinlandia existed."
       spyExpression:
         UseConstant: 0
@@ -348,31 +372,6 @@ MonoBehaviour:
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: Are you kidding me? I <style="Emphasize">live</style> here!
-      spyExpression:
-        UseConstant: 0
-        ConstantValue: 
-        Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
-      tags:
-      - {fileID: 11400000, guid: 963b509ccb9cf354685ea434fc1f512e, type: 2}
-      followups:
-      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
-          type: 2}
-        statement: Yeah, yeah.
-        statementEmotion:
-          UseConstant: 0
-          ConstantValue: Default
-          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
-        onlyShowIfCharacterLikedAnswer: 1
-      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
-          type: 2}
-        statement: <style="Fast">Don't you lie to me,</style> or your in for a lotta
-          pain.
-        statementEmotion:
-          UseConstant: 0
-          ConstantValue: Default
-          Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
-        onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
     statement: Why do you look different than the <style="Emphasize">picture</style>
@@ -390,8 +389,8 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: On the <style="Pun">nose</style> you are, thanks for noticing. I recently
-        got plastic surgery on my nose.
+    - text: On the nose you are, thanks for noticing. I recently got plastic surgery
+        on my <style="Pun">nose.</style>
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -410,8 +409,8 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Impressive lie buddy, since we have no plastic <style="Emphasize">surgeons</style>
-          in the country.
+        statement: You can't afford plastic surgery. Don't make me break your nose,
+          cause then you'll need it.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -435,8 +434,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
           type: 2}
-        statement: You see, I was camping and went to sleep in my tent and then a
-          hippo arrived.
+        statement: I was camping and went to sleep into my tent when a hippo arrived.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -452,7 +450,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
           type: 2}
-        statement: 'No. The hippo started charging and my friend grabbed his rifle
+        statement: 'No, the hippo started charging and my friend grabbed his rifle
           and shot at it, but his aim was off. '
         statementEmotion:
           UseConstant: 0
@@ -469,7 +467,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
           type: 2}
-        statement: No. The sound of the gun startled me, so I dashed out of the tent.
+        statement: No, the sound of the gun startled me so I ran out of my tent.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -485,7 +483,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
           type: 2}
-        statement: No. The Hippo was also startled and ran away. So that's how it
+        statement: No the Hippo was also startled and ran away, so that's how it
           happened.
         statementEmotion:
           UseConstant: 0
@@ -494,7 +492,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: <style="Slow">Ah... well...</style> so sorry that <style="Slow">uh...</style>
+        statement: <style="Slow">Ah.. well..</style> so sorry that <style="Slow">uh..</style>
           happened to you.
         statementEmotion:
           UseConstant: 0
@@ -503,7 +501,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: You seemed so happy about your visit just a moment ago.
+        statement: You seemed so happy about your visit just a moment before.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -527,7 +525,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
-    statement: 'You can proceed, but don''t cause any trouble. '
+    statement: You can go, but I got my eye on you.
     statementEmotion:
       UseConstant: 0
       ConstantValue: Default
