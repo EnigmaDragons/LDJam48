@@ -10,12 +10,15 @@ public class Character : ScriptableObject, IEqualityComparer<Character>
     public string CharacterName;
     public GameObject Prefab;
     [SerializeField] private ExpressionSet expressions;
-    [SerializeField] private TagObject[] startTags;
-    [SerializeField] private List<TagObject> learnedTags;
+    [SerializeField] private FollowupDialogueData[] coverBlownStatements;
+    
     [SerializeField] private int maxSus;
     [SerializeField] private int startingSus;
     [SerializeField] private int suspicion;
     [SerializeField] private bool isPlayer;
+    
+    [SerializeField] private TagObject[] startTags;
+    [SerializeField] private List<TagObject> learnedTags;
     public Action ONSuspicionChange;
     
     private void OnValidate()
@@ -36,6 +39,7 @@ public class Character : ScriptableObject, IEqualityComparer<Character>
     }
 
     public float GetSuspicionPercentage => suspicion / (float)maxSus;
+    public FollowupDialogueData[] CoverBlownLines => coverBlownStatements.ToArray();
     
     public int GetSuspicion()
     {
