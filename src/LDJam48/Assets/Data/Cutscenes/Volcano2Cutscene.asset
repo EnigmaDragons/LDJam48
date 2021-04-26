@@ -15,10 +15,10 @@ MonoBehaviour:
   segments:
   - artBackground: {fileID: 7966358865446072126, guid: cb0fa119725a643479ed4f54cb73610b,
       type: 3}
-    storyText: It seems the Cane Man buys your story... for now.
+    storyText: It seems The Cane Man buys your story... for now.
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
-    durationSeconds: 4
+    durationSeconds: 5
   - artBackground: {fileID: 2572605148199990735, guid: 6359f310e0c744518839d359948ed0d5,
       type: 3}
     storyText: You finish sabotaging the monitoring system.
@@ -27,31 +27,32 @@ MonoBehaviour:
     durationSeconds: 4
   - artBackground: {fileID: 6886916720410031252, guid: 502174d92a6af4d99aad1a87a506ac05,
       type: 3}
-    storyText: And with the cameras out of the way your able to begin swapping the
-      modified Jello with explosives.
+    storyText: And with the cameras out of the way you're able to begin swapping
+      the modified Jello with explosives.
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
-    durationSeconds: 4
+    durationSeconds: 5
   - artBackground: {fileID: 4184835318532210885, guid: 9810f5b0583874f3f916c7be8decada4,
       type: 3}
-    storyText: All there is to do now, is make it out of the volcano and detonate
-      the explosives.
+    storyText: All you have left is making it out of the volcano and detonating the
+      explosives.
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
-    durationSeconds: 4
+    durationSeconds: 5.6
   - artBackground: {fileID: 3545209771406788281, guid: ff9ee5cb9d0ad457b90e8a842e8784b1,
       type: 3}
-    storyText: You're stopped by the Cane Man and so is Eizo as well.
+    storyText: On your way out, you're stopped by the Cane Man... and so is Eizo
+      as well.
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
-    durationSeconds: 4
+    durationSeconds: 5.6
   - artBackground: {fileID: 3545209771406788281, guid: ff9ee5cb9d0ad457b90e8a842e8784b1,
       type: 3}
-    storyText: But you are gonna have to watch your lies, so you don't tip either
+    storyText: But you are gonna have to watch your lies, so you don't tip EITHER
       of them off.
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
-    durationSeconds: 4
+    durationSeconds: 5.5
   onFinishedAction:
     m_PersistentCalls:
       m_Calls:
