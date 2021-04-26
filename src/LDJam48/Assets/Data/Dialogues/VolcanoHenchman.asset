@@ -63,7 +63,7 @@ MonoBehaviour:
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
     - text: "I\u2019m a Jello scientist, but yesterday I accidentally got Jello all
-        over my uniform so I had to send it to the dry cleaners."
+        over my uniform, so I had to send it to the dry cleaners."
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -82,8 +82,8 @@ MonoBehaviour:
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
-    - text: "I\u2019m the Jello delivery guy, seems you ran out of the lime flavor.
-        I was told to bring it right in."
+    - text: "I\u2019m the Jello delivery guy. It seems you had run out of the Lime
+        Jello mix. I was told to bring it right in."
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -96,7 +96,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: We did need another ton or 2 of Lime Jello for our <style="Pun">weekend
+        statement: We do need another couple tons of Lime Jello for our <style="Pun">weekend
           Jam.</style>
         statementEmotion:
           UseConstant: 0
@@ -160,8 +160,8 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: "I\u2019m the replacement for the minion that got shoved into the volcano
-        cause he made fun of the boss."
+    - text: "I\u2019m the replacement for the minion that got shoved into the lava
+        'for making fun of the boss."
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -171,7 +171,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: That's the <style="Emphasize">second time</style> this week.
+        statement: That's the <style="Emphasize">second time</style> this week!
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -204,15 +204,15 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: There is more fingers on my hand then number of people hired in
-          your position, and I know the back of my hand.
+        statement: There are more fingers on my hand than the number of people hired
+          in your position... and I know the back of my hand.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: The boss says he wants this plan done yesterday and so he hired a bunch
-        of new people, including me.
+    - text: The boss says he wants this project finished yesterday and so he hired
+        a bunch of new people, including me.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -231,7 +231,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Can't quite understand how hiring more guards or delivery people
+        statement: I can't quite understand how hiring more guards or delivery people
           would help speed things up.
         statementEmotion:
           UseConstant: 0
@@ -240,7 +240,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
-    statement: What were you tampering with over there?
+    statement: What were you tinkering with over there a few seconds ago?
     statementEmotion:
       UseConstant: 0
       ConstantValue: Default
@@ -254,8 +254,8 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 0}
     options:
-    - text: I was checking to make sure nothing was tampered with and I can confirm
-        <style="Emphasize">everything</style> is not tampered with.
+    - text: I was checking to make sure nothing was tampered with. I can confirm
+        <style="Emphasize">everything</style> looks good..
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -266,7 +266,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Can't be too careful.
+        statement: Quite right. You can never be too careful.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -274,14 +274,14 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Naturally you just <style="Emphasize">happened</style> to know
-          how all the things work.
+        statement: Naturally you just <style="Emphasize">happen</style> to know how
+          all the things work.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "Fixing the machine. No idea why it was so broken, hope you don\u2019t
+    - text: "Fixing the machine. No idea why it was so broken. I hope you don\u2019t
         have a <style=\"Emphasize\">security breach.</style>"
       spyExpression:
         UseConstant: 0
@@ -294,7 +294,7 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
         statement: At the rate things are breaking, <style="Emphasize">something</style>
-          suspicious is going on.
+          suspicious must be going on.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -302,15 +302,15 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: I hope for your sake <style="Emphasize">you're</style> not the
-          security breach.
+        statement: I hope for your sake, that <style="Emphasize">you're</style> not
+          the security breach.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "The temperature was off, and I had to adjust the thermostat. With how
-        hot it gets, it\u2019s like we are in the middle of a volcano."
+    - text: The temperature was off, and I had to adjust the thermostat. With how
+        hot it gets, it feels like we are in the middle of a volcano.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -336,7 +336,7 @@ MonoBehaviour:
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: Just my phone, there was a rare Lava Pokemon I had to catch.
+    - text: Just my phone. There was a rare Lava Pokemon I had to catch.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -423,13 +423,13 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: 'Your story''s starting to sound like a half eaten cracker. '
+        statement: 'Your story''s starting to sound like a half eaten biscuit. '
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: Do I look like a hall monitor? I have got more important things to do.
+    - text: Do I look like a hall monitor? I have more important things to do.
       spyExpression:
         UseConstant: 1
         ConstantValue: 
@@ -447,7 +447,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Absurd, your importance is that of a stale croissant.
+        statement: Absurd! Your importance is that of a stale croissant.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -455,7 +455,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
-    statement: What is with the spiffy suit chap?
+    statement: I say, what is with the spiffy suit, chap?
     statementEmotion:
       UseConstant: 0
       ConstantValue: Default
@@ -469,7 +469,7 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: Well with the lab coat at the cleaners, I looked for the next coat I
+    - text: Well, with the lab coat at the cleaners, I looked for the next coat I
         had and it was a suit coat.
       spyExpression:
         UseConstant: 0
@@ -531,7 +531,8 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Ambitious, but I think you look sharp.
+        statement: Ambitious. You look rather sharp. You remind me of myself at your
+          age.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -547,7 +548,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
-    statement: Back to work for you, Cheerio!
+    statement: Back to work for you. Cheerio!
     statementEmotion:
       UseConstant: 0
       ConstantValue: Default
