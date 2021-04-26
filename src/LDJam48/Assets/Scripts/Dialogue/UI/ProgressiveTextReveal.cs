@@ -128,6 +128,8 @@ public sealed class ProgressiveTextReveal : MonoBehaviour
             //This advances past markdown
             while (_cursor < fullText.Length && fullText[_cursor - 1] == '<')
                 _cursor = fullText.IndexOf('>', _cursor) + 2;
+            
+            yield return new WaitUntil(() => Time.timeScale > 0.1f);
             yield return new WaitForSeconds(secondsPerCharacter);
         }
 
