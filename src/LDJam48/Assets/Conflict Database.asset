@@ -28,6 +28,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: d3831e72a8e8d5442bf817d11fe17dbf, type: 2}
     - {fileID: 11400000, guid: d34aa316c85e941469e2f778e88d4ec8, type: 2}
     - {fileID: 11400000, guid: 9a323613f5fd0bb49a251cd5386b1992, type: 2}
+    - {fileID: 11400000, guid: 23e0872c4ded81746a7970096ce4caba, type: 2}
   - name: Lair State
     penalty: 3
     tags:
@@ -194,3 +195,13 @@ MonoBehaviour:
     tags:
     - {fileID: 11400000, guid: 4fb6bf6e8af75e945acb4d945e18dda6, type: 2}
     - {fileID: 11400000, guid: ce2aa32e5c79f694793970d7544d6991, type: 2}
+  - name: Stationed At Armory/Venix's Assistant
+    penalty: 3
+    tags:
+    - {fileID: 11400000, guid: 818cd788ca57db84ab8e70f237cfd11d, type: 2}
+    - {fileID: 11400000, guid: 23e0872c4ded81746a7970096ce4caba, type: 2}
+  - name: Stationed At Armory/Mechanic
+    penalty: 1
+    tags:
+    - {fileID: 11400000, guid: 818cd788ca57db84ab8e70f237cfd11d, type: 2}
+    - {fileID: 11400000, guid: 55a1a6b3d34246d49a2b695164e9e40a, type: 2}

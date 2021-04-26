@@ -47,9 +47,12 @@ MonoBehaviour:
         ConstantValue: 
         Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
       sprite: {fileID: 21300000, guid: 94cb49ec556b0124e97f641f81426c0f, type: 3}
-  startTags: []
-  learnedTags: []
+  coverBlownStatements: []
   maxSus: 10
   startingSus: 0
   suspicion: 0
   isPlayer: 0
+  startTags:
+  - {fileID: 11400000, guid: 30cd045069badd146abc133d2b352ae7, type: 2}
+  learnedTags:
+  - {fileID: 11400000, guid: 30cd045069badd146abc133d2b352ae7, type: 2}
