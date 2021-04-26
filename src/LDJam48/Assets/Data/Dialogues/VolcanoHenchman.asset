@@ -490,7 +490,7 @@ MonoBehaviour:
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
     - text: "Guards don\u2019t look scary. But you see one with a suit and think
-        \u201CNow that\u2019s someone dangerous\u201D."
+        \u201CNow that\u2019s someone dangerous\"."
       spyExpression:
         UseConstant: 0
         ConstantValue: 

@@ -36,7 +36,7 @@ MonoBehaviour:
     showStoryText: 1
     durationSeconds: 4
   - artBackground: {fileID: 0}
-    storyText: "But you are stopped by the Cane Man and so is Eiz\u014D as well."
+    storyText: But you are stopped by the Cane Man and so is Eizo as well.
     textColor: {r: 0, g: 0, b: 0, a: 0}
     showStoryText: 1
     durationSeconds: 4
