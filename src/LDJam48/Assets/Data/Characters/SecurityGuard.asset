@@ -47,9 +47,17 @@ MonoBehaviour:
         ConstantValue: 
         Variable: {fileID: 11400000, guid: 070b117adf2459a4588d7e7bf5befcd0, type: 2}
       sprite: {fileID: 21300000, guid: 95488d44ca770004c99bb311b17f73bd, type: 3}
-  startTags: []
-  learnedTags: []
+  coverBlownStatements:
+  - speakingCharacter: {fileID: 11400000}
+    statement: <style="Loud">Get bent spy!</style>
+    statementEmotion:
+      UseConstant: 0
+      ConstantValue: 
+      Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
+    onlyShowIfCharacterLikedAnswer: 0
   maxSus: 10
   startingSus: 3
   suspicion: 3
   isPlayer: 0
+  startTags: []
+  learnedTags: []

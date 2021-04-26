@@ -43,7 +43,6 @@ MonoBehaviour:
         Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
       tags:
       - {fileID: 11400000, guid: 9a323613f5fd0bb49a251cd5386b1992, type: 2}
-      - {fileID: 11400000, guid: 9d237b2d11bd0a240ad8142db8100b67, type: 2}
       - {fileID: 11400000, guid: b79b40da53159254f9c5e3287c7206aa, type: 2}
       - {fileID: 11400000, guid: 5612b4598b3a5c241969da9ebdd2b4ce, type: 2}
       - {fileID: 11400000, guid: 421bddcc3af285243a10317d43b7c20b, type: 2}

@@ -70,6 +70,16 @@ MonoBehaviour:
     tags:
     - {fileID: 11400000, guid: 5fddbca03a2230242980a89ca9717c7b, type: 2}
     - {fileID: 11400000, guid: ee1290f62d320e742aa2cff45c831f60, type: 2}
+  - name: Fashion
+    penalty: 3
+    tags:
+    - {fileID: 11400000, guid: 98d82324a10aad746aa962b32819920e, type: 2}
+    - {fileID: 11400000, guid: 3411dd6ee4e2ad34d877c950a1f43fe1, type: 2}
+  - name: Serum
+    penalty: 3
+    tags:
+    - {fileID: 11400000, guid: 6efc44999c253834ab23598a09a6f9dc, type: 2}
+    - {fileID: 11400000, guid: 54b6645f156076e4aab6a339a9ceae60, type: 2}
   - name: ---------------------------
     penalty: 0
     tags: []
@@ -174,13 +184,13 @@ MonoBehaviour:
     tags:
     - {fileID: 11400000, guid: d3831e72a8e8d5442bf817d11fe17dbf, type: 2}
     - {fileID: 11400000, guid: 3411dd6ee4e2ad34d877c950a1f43fe1, type: 2}
-  - name: Style
-    penalty: 3
-    tags:
-    - {fileID: 11400000, guid: 98d82324a10aad746aa962b32819920e, type: 2}
-    - {fileID: 11400000, guid: 3411dd6ee4e2ad34d877c950a1f43fe1, type: 2}
   - name: Guard/Don't have armor
     penalty: 3
     tags:
     - {fileID: 11400000, guid: d3831e72a8e8d5442bf817d11fe17dbf, type: 2}
     - {fileID: 11400000, guid: 2a321e4f012d5974c84882cac8b7ff37, type: 2}
+  - name: Smart/Hypnotized
+    penalty: 2
+    tags:
+    - {fileID: 11400000, guid: 4fb6bf6e8af75e945acb4d945e18dda6, type: 2}
+    - {fileID: 11400000, guid: ce2aa32e5c79f694793970d7544d6991, type: 2}
