@@ -136,7 +136,7 @@ MonoBehaviour:
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "Don't be absurd. I don\u2019t have any luggage."
+    - text: Don't be absurd. I don't have any luggage.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -160,8 +160,8 @@ MonoBehaviour:
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "<style=\"Loud\">Strange?!</style> You mean you don\u2019t have these
-        devices in Zinlandia?! <style=\"Emphasize\">How barbaric!</style>"
+    - text: <style="Loud">Strange?!</style> You mean you don't have these devices
+        in Zinlandia?! <style="Emphasize">How barbaric!</style>
       spyExpression:
         UseConstant: 0
         ConstantValue: 

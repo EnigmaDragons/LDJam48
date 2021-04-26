@@ -38,8 +38,8 @@ MonoBehaviour:
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
-    statement: "<style=\"Loud\">I am no intruder!</style> I\u2019m <style=\"Emphasize\">supposed</style>
-      to be here!"
+    statement: <style="Loud">I am no intruder!</style> I'm <style="Emphasize">supposed</style>
+      to be here!
     statementEmotion:
       UseConstant: 0
       ConstantValue: Default
@@ -62,8 +62,8 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: "I\u2019m a Jello scientist, but yesterday I accidentally got Jello all
-        over my uniform so I had to send it to the dry cleaners."
+    - text: I'm a Jello scientist, but yesterday I accidentally got Jello all over
+        my uniform so I had to send it to the dry cleaners.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -82,8 +82,8 @@ MonoBehaviour:
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
-    - text: "I\u2019m the Jello delivery guy, seems you ran out of the lime flavor.
-        I was told to bring it right in."
+    - text: I'm the Jello delivery guy, seems you ran out of the lime flavor. I was
+        told to bring it right in.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -146,7 +146,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
-    statement: "Why don\u2019t I recognize you?"
+    statement: Why don't I recognize you?
     statementEmotion:
       UseConstant: 0
       ConstantValue: Default
@@ -160,8 +160,8 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: "I\u2019m the replacement for the minion that got shoved into the volcano
-        cause he made fun of the boss."
+    - text: I'm the replacement for the minion that got shoved into the volcano cause
+        he made fun of the boss.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -281,8 +281,8 @@ MonoBehaviour:
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "Fixing the machine. No idea why it was so broken, hope you don\u2019t
-        have a <style=\"Emphasize\">security breach.</style>"
+    - text: Fixing the machine. No idea why it was so broken, hope you don't have
+        a <style="Emphasize">security breach.</style>
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -309,8 +309,8 @@ MonoBehaviour:
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "The temperature was off, and I had to adjust the thermostat. With how
-        hot it gets, it\u2019s like we are in the middle of a volcano."
+    - text: The temperature was off, and I had to adjust the thermostat. With how
+        hot it gets, it's like we are in the middle of a volcano.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -495,8 +495,8 @@ MonoBehaviour:
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "Guards don\u2019t look scary. But you see one with a suit and think
-        \u201CNow that\u2019s someone dangerous\"."
+    - text: "Guards don't look scary. But you see one with a suit and think \u201CNow
+        that's someone dangerous\"."
       spyExpression:
         UseConstant: 0
         ConstantValue: 
