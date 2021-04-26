@@ -23,13 +23,13 @@ MonoBehaviour:
     storyText: Every other weekend you save the world, and this is that other weekend.
     textColor: {r: 0, g: 0, b: 0, a: 1}
     durationSeconds: 4
-  - artBackground: {fileID: 4667574391697563776, guid: 626956314d2d09b44b887a7d0e7b3a36,
+  - artBackground: {fileID: 7688699568928860539, guid: a23d0639de6d84492b446e5882039ade,
       type: 3}
     storyText: The evil organization S.U.S. (Sinister Ultra Syndicate) has recently
       bought a volcano island and is buying large quantites of jello packets.
     textColor: {r: 0, g: 0, b: 0, a: 1}
     durationSeconds: 4
-  - artBackground: {fileID: 4667574391697563776, guid: 626956314d2d09b44b887a7d0e7b3a36,
+  - artBackground: {fileID: 7688699568928860539, guid: a23d0639de6d84492b446e5882039ade,
       type: 3}
     storyText: Your mission is to infiltrate their base, find out their dastardly
       scheme, and put a stop to it.
@@ -46,10 +46,10 @@ MonoBehaviour:
       question.
     textColor: {r: 0, g: 0, b: 0, a: 1}
     durationSeconds: 4
-  - artBackground: {fileID: 4667574391697563776, guid: 626956314d2d09b44b887a7d0e7b3a36,
+  - artBackground: {fileID: 5480023870415276281, guid: a33101cdbbfb14dff9051e4c316b337a,
       type: 3}
     storyText: You recognize the security guard as a member of S.U.S.
-    textColor: {r: 0, g: 0, b: 0, a: 1}
+    textColor: {r: 1, g: 1, b: 1, a: 1}
     durationSeconds: 4
   - artBackground: {fileID: 5480023870415276281, guid: a33101cdbbfb14dff9051e4c316b337a,
       type: 3}
