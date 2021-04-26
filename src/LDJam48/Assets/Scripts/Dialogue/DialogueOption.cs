@@ -13,7 +13,7 @@ public class DialogueOption
     [SerializeField] private FollowupDialogueData[] followups;
     public string Text => text;
     public TagObject[] Tags => tags.ToArray();
-    public FollowupDialogueData[] Followups => followups.ToArray();
+    public FollowupDialogueData[] Followups => followups != null ? followups.ToArray() : new FollowupDialogueData[0];
 
     public void Select()
     {

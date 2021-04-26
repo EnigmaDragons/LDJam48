@@ -80,14 +80,14 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Not a chance, the boss is busier than a bunny picking carrots.
+        statement: Not a chance. The boss is busier than a bunny picking carrots.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: I have been working on fixing the cameras, whoever sabotaged them was
-        <style="Emphasize">incredible and probably</style> attractive.
+    - text: I have been working on fixing the cameras. Whoever sabotaged them was
+        <style="Emphasize">incredible and probably very attractive.</style>
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -147,7 +147,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: <style="Loud">Idiotic,</style> you'd be <style="Emphasize">dead</style>
+        statement: <style="Loud">Idiotic!</style> You'd be <style="Emphasize">dead</style>
           if you found the spy.
         statementEmotion:
           UseConstant: 0
@@ -182,7 +182,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
-    statement: "Don\u2019t I recognize you from the airport?"
+    statement: Don't I recognize you from the airport?
     statementEmotion:
       UseConstant: 0
       ConstantValue: Default
@@ -196,7 +196,7 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: Yes, I headed here straight from the airport. Got a job to do.
+    - text: Yes, I headed here straight from the airport. I've got a job to do.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -229,7 +229,7 @@ MonoBehaviour:
           ConstantValue: 
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: Yes I was going for some volcano hiking when I stumbled into here.
+    - text: Yes I was going for some volcano hiking when I stumbled in here.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -262,7 +262,7 @@ MonoBehaviour:
           ConstantValue: 
           Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "<style=\"Loud\">Impossible,</style>\r\n I hate going to airports don\u2019t
+    - text: "<style=\"Loud\">Impossible!</style>\r I hate going to airports. Don't
         be <style=\"Emphasize\">absurd.</style>"
       spyExpression:
         UseConstant: 0
@@ -346,7 +346,7 @@ MonoBehaviour:
           ConstantValue: 
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "<style=\"Loud\">There\u2019s an evil scheme?!</style>"
+    - text: <style="Loud">There's an evil scheme?!</style>
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -357,7 +357,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: For someone who works here, your <style="Slow"><style="Loud">real</style></style>
+        statement: For someone who works here, you're <style="Slow"><style="Loud">real</style></style>
           oblivious.
         statementEmotion:
           UseConstant: 0
@@ -399,7 +399,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Right-o, it is in the pocket of our suit.
+        statement: Right-o! Simple as tea and crumpets.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -414,7 +414,7 @@ MonoBehaviour:
           ConstantValue: 
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "I don\u2019t get told the big schemes."
+    - text: They don't tell me the big schemes.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -459,7 +459,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
-    statement: Anyone could be the spy, even <style="Loud">you,</style> why should
+    statement: Anyone could be the spy, even <style="Loud">you.</style> Why should
       we not kill you?
     statementEmotion:
       UseConstant: 0
@@ -474,7 +474,7 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 0}
     options:
-    - text: "I don\u2019t recognize you Ezio, pretty sus?"
+    - text: I don't recognize you Ezio, pretty sus!
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -506,8 +506,8 @@ MonoBehaviour:
           ConstantValue: 
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "If you kill me there won\u2019t be anyone left to keep this facility
-        running, enjoy explaining <style=\"Emphasize\">that</style> to the boss!"
+    - text: If you kill me there won't be anyone left to keep this facility running.
+        Enjoy explaining <style="Emphasize">that</style> to the boss!
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -539,8 +539,8 @@ MonoBehaviour:
           ConstantValue: 
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: How do we know there is an intruder, what if the spy is actually someone
-        who works here!
+    - text: How do we know there is an intruder. What if the spy is actually someone
+        who works here?
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -615,8 +615,8 @@ MonoBehaviour:
           ConstantValue: 
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "I am vital to the plan, you can\u2019t kill me and finish getting these
-        volcano to overflow."
+    - text: I am vital to the plan. You can't kill me and finish getting this volcano
+        to overflow.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -645,7 +645,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Your vital organs are getting finished.
+        statement: Your vital organs are about to be finished.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
