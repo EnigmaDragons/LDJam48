@@ -30,7 +30,8 @@ MonoBehaviour:
     textColor: {r: 0, g: 0, b: 0, a: 0}
     showStoryText: 0
     durationSeconds: 0
-  - artBackground: {fileID: 0}
+  - artBackground: {fileID: 4049067330001791420, guid: e03d875c1a29e40efa6fe29637cbd61f,
+      type: 3}
     storyText: Once again you saved the world.
     textColor: {r: 0, g: 0, b: 0, a: 0}
     showStoryText: 0
