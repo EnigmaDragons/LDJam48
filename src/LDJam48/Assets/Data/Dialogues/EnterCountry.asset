@@ -297,31 +297,6 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: Are you kidding me? I <style="Emphasize">live</style> here!
-      spyExpression:
-        UseConstant: 0
-        ConstantValue: 
-        Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
-      tags:
-      - {fileID: 11400000, guid: 963b509ccb9cf354685ea434fc1f512e, type: 2}
-      followups:
-      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
-          type: 2}
-        statement: Yeah, yeah.
-        statementEmotion:
-          UseConstant: 0
-          ConstantValue: Default
-          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
-        onlyShowIfCharacterLikedAnswer: 1
-      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
-          type: 2}
-        statement: <style="Fast">Don't you lie to me,</style> or your in for a lotta
-          pain.
-        statementEmotion:
-          UseConstant: 0
-          ConstantValue: Default
-          Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
-        onlyShowIfCharacterLikedAnswer: 0
     - text: "A couple weeks ago I didn\u2019t even know Zinlandia existed."
       spyExpression:
         UseConstant: 0
@@ -372,6 +347,31 @@ MonoBehaviour:
           UseConstant: 0
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
+        onlyShowIfCharacterLikedAnswer: 0
+    - text: Are you kidding me? I <style="Emphasize">live</style> here!
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
+      tags:
+      - {fileID: 11400000, guid: 963b509ccb9cf354685ea434fc1f512e, type: 2}
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: Yeah, yeah.
+        statementEmotion:
+          UseConstant: 0
+          ConstantValue: Default
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
+          type: 2}
+        statement: <style="Fast">Don't you lie to me,</style> or your in for a lotta
+          pain.
+        statementEmotion:
+          UseConstant: 0
+          ConstantValue: Default
+          Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
