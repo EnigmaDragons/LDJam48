@@ -8,3 +8,42 @@ Mission 2 Cutscene: trying to stop S.U.S. from a take over the world scheme wher
 3 characters in scene 2
 Mission 3 Cutscene: gotta stop S.U.S. from taking over the galaxy, their base is a secret space base
 4 characters in scene 3
+
+Thoughts on underwater section
+
+scientist: you are lab assistant
+
+try this test serum
+I noticed orange is one of the ingredients and unfortunately I'm deathly allergic
+
+
+make a test batch
+I'm afraid I dont know the ingredients
+this mixing machine appears to be broken 
+
+
+why do you have that suit
+well your last assistant suffered a tragic accident so i figured it must have been his lab coat that did it.
+in addition to science i graduated with a business major 
+
+
+venix: you are personal assistant
+why did the alarm go off earlier as if someone was sneaking in
+
+
+henchman:
+
+whats your job here in the armory section
+
+mechanic, the door was jammed
+
+
+henchman + scientist:
+
+
+venix + scientist:
+are there any hiccups in the plan
+the serum doesnt work on people who are allergic to the ingredients
+
+
+henchman + venix:

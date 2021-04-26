@@ -27,6 +27,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 30cd045069badd146abc133d2b352ae7, type: 2}
     - {fileID: 11400000, guid: d3831e72a8e8d5442bf817d11fe17dbf, type: 2}
     - {fileID: 11400000, guid: d34aa316c85e941469e2f778e88d4ec8, type: 2}
+    - {fileID: 11400000, guid: 9a323613f5fd0bb49a251cd5386b1992, type: 2}
   - name: Lair State
     penalty: 3
     tags:
@@ -63,6 +64,7 @@ MonoBehaviour:
     tags:
     - {fileID: 11400000, guid: 421bddcc3af285243a10317d43b7c20b, type: 2}
     - {fileID: 11400000, guid: fef6ca99b8fc05b46aaffee19b0268cf, type: 2}
+    - {fileID: 11400000, guid: 2e883776eb4b15247a172698158cfc1b, type: 2}
   - name: Enemy In The Base
     penalty: 2
     tags:
@@ -156,13 +158,29 @@ MonoBehaviour:
     tags:
     - {fileID: 11400000, guid: 6f5d520e54e7108458f15f75843869c4, type: 2}
     - {fileID: 11400000, guid: 5056db8e2f68eaa4791c4f15d6756481, type: 2}
-  - name: Stylish/Mechanic
+  - name: Stylish/Low pay job
     penalty: 3
     tags:
     - {fileID: 11400000, guid: 55a1a6b3d34246d49a2b695164e9e40a, type: 2}
     - {fileID: 11400000, guid: 98d82324a10aad746aa962b32819920e, type: 2}
+    - {fileID: 11400000, guid: 9a323613f5fd0bb49a251cd5386b1992, type: 2}
   - name: Not Paid Lots/Scientist
     penalty: 2
     tags:
     - {fileID: 11400000, guid: 30cd045069badd146abc133d2b352ae7, type: 2}
     - {fileID: 11400000, guid: 9d237b2d11bd0a240ad8142db8100b67, type: 2}
+  - name: Sequrity guard/Unfashionable
+    penalty: 2
+    tags:
+    - {fileID: 11400000, guid: d3831e72a8e8d5442bf817d11fe17dbf, type: 2}
+    - {fileID: 11400000, guid: 3411dd6ee4e2ad34d877c950a1f43fe1, type: 2}
+  - name: Style
+    penalty: 3
+    tags:
+    - {fileID: 11400000, guid: 98d82324a10aad746aa962b32819920e, type: 2}
+    - {fileID: 11400000, guid: 3411dd6ee4e2ad34d877c950a1f43fe1, type: 2}
+  - name: Guard/Don't have armor
+    penalty: 3
+    tags:
+    - {fileID: 11400000, guid: d3831e72a8e8d5442bf817d11fe17dbf, type: 2}
+    - {fileID: 11400000, guid: 2a321e4f012d5974c84882cac8b7ff37, type: 2}
