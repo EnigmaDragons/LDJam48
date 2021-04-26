@@ -205,3 +205,23 @@ MonoBehaviour:
     tags:
     - {fileID: 11400000, guid: 818cd788ca57db84ab8e70f237cfd11d, type: 2}
     - {fileID: 11400000, guid: 55a1a6b3d34246d49a2b695164e9e40a, type: 2}
+  - name: Allergy
+    penalty: 3
+    tags:
+    - {fileID: 11400000, guid: 8fb47d6e851fee14ba53085daea67040, type: 2}
+    - {fileID: 11400000, guid: 7825ea5691312964c9fd7654cf8d2c9d, type: 2}
+  - name: MachineBroken
+    penalty: 3
+    tags:
+    - {fileID: 11400000, guid: 43cf5258b61cc6d429d5a1e2bfcef721, type: 2}
+    - {fileID: 11400000, guid: 02f8ff5a83bb13946b5449374bd62b51, type: 2}
+  - name: Tolerance
+    penalty: 3
+    tags:
+    - {fileID: 11400000, guid: ac4e09472eb08f44b9f330c86c41270a, type: 2}
+    - {fileID: 11400000, guid: 91b7c88c223faf44a931a4e87f74c9be, type: 2}
+  - name: Hypnotized/Guard
+    penalty: 2
+    tags:
+    - {fileID: 11400000, guid: 4fb6bf6e8af75e945acb4d945e18dda6, type: 2}
+    - {fileID: 11400000, guid: d3831e72a8e8d5442bf817d11fe17dbf, type: 2}

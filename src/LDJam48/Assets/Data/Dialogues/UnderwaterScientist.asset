@@ -52,6 +52,8 @@ MonoBehaviour:
         Variable: {fileID: 11400000, guid: e6609b2cb7b622c48b40a17c894b01c9, type: 2}
       tags:
       - {fileID: 11400000, guid: bdd80f0d09b96224b9ef75b676121320, type: 2}
+      - {fileID: 11400000, guid: 8fb47d6e851fee14ba53085daea67040, type: 2}
+      - {fileID: 11400000, guid: 91b7c88c223faf44a931a4e87f74c9be, type: 2}
       followups: []
     - text: <style="Slow">Yes right away master...</style>
       spyExpression:
@@ -60,6 +62,8 @@ MonoBehaviour:
         Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
       tags:
       - {fileID: 11400000, guid: 4fb6bf6e8af75e945acb4d945e18dda6, type: 2}
+      - {fileID: 11400000, guid: 7825ea5691312964c9fd7654cf8d2c9d, type: 2}
+      - {fileID: 11400000, guid: 91b7c88c223faf44a931a4e87f74c9be, type: 2}
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
           type: 2}
@@ -79,6 +83,8 @@ MonoBehaviour:
       tags:
       - {fileID: 11400000, guid: 54b6645f156076e4aab6a339a9ceae60, type: 2}
       - {fileID: 11400000, guid: ce2aa32e5c79f694793970d7544d6991, type: 2}
+      - {fileID: 11400000, guid: 7825ea5691312964c9fd7654cf8d2c9d, type: 2}
+      - {fileID: 11400000, guid: ac4e09472eb08f44b9f330c86c41270a, type: 2}
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
           type: 2}
@@ -112,6 +118,7 @@ MonoBehaviour:
         Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
       tags:
       - {fileID: 11400000, guid: 6efc44999c253834ab23598a09a6f9dc, type: 2}
+      - {fileID: 11400000, guid: 02f8ff5a83bb13946b5449374bd62b51, type: 2}
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
           type: 2}
@@ -145,6 +152,7 @@ MonoBehaviour:
         Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
       tags:
       - {fileID: 11400000, guid: ce2aa32e5c79f694793970d7544d6991, type: 2}
+      - {fileID: 11400000, guid: 43cf5258b61cc6d429d5a1e2bfcef721, type: 2}
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
           type: 2}
@@ -171,6 +179,7 @@ MonoBehaviour:
         Variable: {fileID: 0}
       tags:
       - {fileID: 11400000, guid: 4fb6bf6e8af75e945acb4d945e18dda6, type: 2}
+      - {fileID: 11400000, guid: 02f8ff5a83bb13946b5449374bd62b51, type: 2}
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
           type: 2}

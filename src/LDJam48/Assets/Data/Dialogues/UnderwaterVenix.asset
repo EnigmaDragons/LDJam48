@@ -21,7 +21,7 @@ MonoBehaviour:
   sequence:
   - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
       type: 2}
-    statement: Hey you! What are you doing here?!
+    statement: <style="Fast">Hey you! What are you doing here?!</style>
     statementEmotion:
       UseConstant: 0
       ConstantValue: 
@@ -35,8 +35,8 @@ MonoBehaviour:
       ConstantValue: 
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: you don't remember me? You hired me yesterday as a janitor! I've been
-        cleaning the mess your workers have left
+    - text: You don't remember me? You hired me yesterday as a janitor! I've been
+        cleaning the mess your workers have left.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -49,8 +49,9 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: I don't have time to remember all of you janitors, but you're
-          right, I'm working with a bunch of pigs here.
+        statement: "I don't have \r<style=\"Emphasize\">time</style> to remember
+          all of you janitors, but you're right, I'm working with a bunch of <style=\"Emphasize\">pigs</style>
+          here."
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -68,8 +69,8 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: What happened to the other beakers! I thought you had more than
-          enough
+        statement: What happened to the other beakers! I thought you had <style="Emphasize">more</style>
+          than enough.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -78,7 +79,7 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
           type: 2}
         statement: Well, working with dangerous materials is not that easy of a task,
-          something is about to break
+          something is bound to break.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -86,14 +87,14 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: Fine! Anyway!
+        statement: <style="Loud">Fine!</style> Anyway!
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
           Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
     - text: Guarding this place of course. You don't want O-O-half sabotaging your
-        plans again
+        plans again.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -106,8 +107,9 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: 'HA! Double O will never get here! We are 10000 feet underwater,
-          not even light can reach us! '
+        statement: '<style="Loud">HA!</style> Double O will never get here! We are
+          <style="Emphasize">10000</style> feet underwater, not even <style="Emphasize">light</style>
+          can reach us! '
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -115,7 +117,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
           type: 2}
-        statement: Do you remember what happened last tim...
+        statement: Do you remember what happened last t...
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -123,8 +125,9 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: Silence! I might have made a few mistakes before, but this time
-          my plan is perfect! You keep an eye on that pesky agent! Just in case.
+        statement: <style="Loud">Silence!</style> I might have made a few mistakes
+          before, but this time my plan is <style="Loud">perfect!</style> You keep
+          an eye out for that pesky agent! Just in case.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -146,7 +149,7 @@ MonoBehaviour:
       ConstantValue: 
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: 'What''s up with it? I thought it suits me well  '
+    - text: What's up with it? I thought it <style="Pun">suits</style> me well.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -164,8 +167,8 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: Ha! who are you trying to impress? That plant? Change back into
-          you work close after we finish talking
+        statement: <style="Loud">Ha!</style> who are you trying to impress? That
+          plant? Change back into you work close after we finish talking.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -181,7 +184,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: You be careful next time! those chemicals are not something you
+        statement: You be careful next time! Those chemicals are not something you
           wanna spill!
         statementEmotion:
           UseConstant: 0
@@ -190,8 +193,8 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: How do you even got an access to the lab! Don't lie to me, I see
-          you through
+        statement: How do you even got an access to the lab?! <style="Fast">Don't
+          lie to me!</style> I see through you.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -207,7 +210,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: Sounds fair, we don't keep much clothing here. The space is limited
+        statement: Sounds fair, we don't keep much clothing here. The space is <style="Emphasize">limited</style>
           as you can see
         statementEmotion:
           UseConstant: 0
@@ -216,8 +219,9 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: Right size of what?! Bullet proof west?! Do I look like a fool
-          to you?! You better think before you say nonsense like that!
+        statement: Right size of <style="Emphasize">what?!</style> <style="Loud">Bullet
+          proof vest?! Do I look like a fool to you?!</style> You better think before
+          you say nonsense like that!
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -225,11 +229,12 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
       type: 2}
-    statement: So how's the plan is going?
+    statement: Do you think I should order the countries to have a massive brawl
+      in the streets, I think that would be hilarious.
     statementEmotion:
       UseConstant: 0
       ConstantValue: 
-      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+      Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
@@ -239,73 +244,81 @@ MonoBehaviour:
       ConstantValue: 
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: What plan? There's plan?
+    - text: I think that would make a huge mess, sir.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
         Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
       tags:
-      - {fileID: 11400000, guid: 421bddcc3af285243a10317d43b7c20b, type: 2}
+      - {fileID: 11400000, guid: 9a323613f5fd0bb49a251cd5386b1992, type: 2}
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: Of course there's no plan. You just finish doing whatever you're
-          doing
+        statement: Oh, your right. I don't want to waste time having people clean
+          that up.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
-          Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
+          Variable: {fileID: 11400000, guid: e6609b2cb7b622c48b40a17c894b01c9, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: I'm starting to think you're not who you're claiming to be. The
-          guy like you should be aware of what we're about to do
-        statementEmotion:
-          UseConstant: 0
-          ConstantValue: 
-          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
-        onlyShowIfCharacterLikedAnswer: 0
-    - text: I don't think it's safe to talk about it here
-      spyExpression:
-        UseConstant: 0
-        ConstantValue: 
-        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
-      tags:
-      - {fileID: 11400000, guid: fef6ca99b8fc05b46aaffee19b0268cf, type: 2}
-      followups:
-      - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
-          type: 2}
-        statement: Yeah, just keep doing what you do and soon, the whole world will
-          be ours
-        statementEmotion:
-          UseConstant: 0
-          ConstantValue: 
-          Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
-        onlyShowIfCharacterLikedAnswer: 1
-      - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
-          type: 2}
-        statement: About what? Mopping the floors? Do you hove something to tell
-          me?
+        statement: <style="Loud">What are you a janitor?</style>
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
           Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-      - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
+    - text: Likely that would kill off the smartest scientific minds that could invent
+        you things.
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+      tags:
+      - {fileID: 11400000, guid: 30cd045069badd146abc133d2b352ae7, type: 2}
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: No, nothing
+        statement: They do tend to have weaker physiques, guess that's not a great
+          idea.
+        statementEmotion:
+          UseConstant: 0
+          ConstantValue: 
+          Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
+          type: 2}
+        statement: Why would <style="Emphasize">you</style> care minion?
+        statementEmotion:
+          UseConstant: 0
+          ConstantValue: 
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
+        onlyShowIfCharacterLikedAnswer: 0
+    - text: This would leave more hypnotized dead and more unhypnotized still living.
+        Sounds like a security risk.
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+      tags:
+      - {fileID: 11400000, guid: d3831e72a8e8d5442bf817d11fe17dbf, type: 2}
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
+          type: 2}
+        statement: Good point, good point.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
           Variable: {fileID: 11400000, guid: e6609b2cb7b622c48b40a17c894b01c9, type: 2}
-        onlyShowIfCharacterLikedAnswer: 0
+        onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: That's what I thought.
+        statement: <style="Loud">Don't tell me how to manage threats!</style>
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
-          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+          Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
       type: 2}
