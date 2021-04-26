@@ -5,7 +5,7 @@ using UnityEngine;
 public class CutsceneSegment
 {
     [SerializeField] private GameObject artBackground;
-    [SerializeField] private string storyText;
+    [SerializeField] public string storyText;
     [SerializeField] private Color textColor = new Color(0, 0, 0);
     [SerializeField] private bool showStoryText = true;
     [SerializeField] private float durationSeconds = 4f;

@@ -6,9 +6,9 @@ using UnityEngine;
 public class DialogueData
 {
     [SerializeField] private Character speakingCharacter;
-    [TextArea][SerializeField] private string statement;
+    [TextArea][SerializeField] public string statement;
     [SerializeField] private StringReference statementEmotion = new StringReference("Default");
-    [SerializeField] private DialogueOption[] options;
+    [SerializeField] public DialogueOption[] options;
 
     public bool IsDialogueOptions => string.IsNullOrWhiteSpace(statement) && options.Any();
     
