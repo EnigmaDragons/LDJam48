@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CaneManAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: WebGL
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 29
+      m_TextureCompression: 1
+      m_CompressionQuality: 30
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 19cca69665448b44587ba92a2a98b76b, type: 3}
+    - {fileID: 2800000, guid: a9b7a8dfb0d97da49bd9cdf047af6022, type: 3}
+    - {fileID: 2800000, guid: 8f0468529a8fc23469fb2a8025304977, type: 3}
+    - {fileID: 2800000, guid: dee1f4bee2179194f9943541da24cf21, type: 3}
+    - {fileID: 2800000, guid: 9196d317bd9815945b519778e530e3d6, type: 3}
+    - {fileID: 2800000, guid: a4956d059f9a35143aa431911930b09a, type: 3}
+    totalSpriteSurfaceArea: 21553152
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 8f0468529a8fc23469fb2a8025304977, type: 3}
+  - {fileID: 21300000, guid: a4956d059f9a35143aa431911930b09a, type: 3}
+  - {fileID: 21300000, guid: 19cca69665448b44587ba92a2a98b76b, type: 3}
+  - {fileID: 21300000, guid: 9196d317bd9815945b519778e530e3d6, type: 3}
+  - {fileID: 21300000, guid: dee1f4bee2179194f9943541da24cf21, type: 3}
+  - {fileID: 21300000, guid: a9b7a8dfb0d97da49bd9cdf047af6022, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - OldMan_Silhouette
+  - OldManSus
+  - OldMan
+  - OldManMad
+  - OldManJoy
+  - OldMan_Shocked
+  m_RenderDataMap: {}
+  m_Tag: CaneManAtlas
+  m_IsVariant: 0
