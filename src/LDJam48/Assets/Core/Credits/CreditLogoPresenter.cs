@@ -5,6 +5,7 @@ using UnityEngine;
 public class CreditLogoPresenter : MonoBehaviour
 {
     [SerializeField] private FloatReference delayBeforeFlyAway = new FloatReference(3f);
+    [SerializeField] private float yTarget = 32;
 
     private void Start()
     {
@@ -13,7 +14,7 @@ public class CreditLogoPresenter : MonoBehaviour
 
     private IEnumerator FlyAwayAfterDelay()
     {
-        gameObject.transform.DOLocalMoveY(32, 2f);
+        gameObject.transform.DOLocalMoveY(yTarget, 2f);
         yield return new WaitForSeconds(delayBeforeFlyAway);
         gameObject.transform.DOLocalMoveY(2160, 1.5f);
     }
