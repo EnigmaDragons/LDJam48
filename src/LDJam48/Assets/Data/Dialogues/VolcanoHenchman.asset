@@ -82,8 +82,8 @@ MonoBehaviour:
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
-    - text: "I\u2019m the Jello delivery guy, they ran out of the lime flavor. I
-        was told to bring it right in."
+    - text: "I\u2019m the Jello delivery guy, seems you ran out of the lime flavor.
+        I was told to bring it right in."
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -160,7 +160,7 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: "I\u2019m the replacement for the guy that got shoved into the volcano
+    - text: "I\u2019m the replacement for the minion that got shoved into the volcano
         cause he made fun of the boss."
       spyExpression:
         UseConstant: 0
@@ -211,8 +211,8 @@ MonoBehaviour:
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "The boss says he wants this plan done yesterday and so he hired a bunch
-        of new people; I\u2019m a new hire."
+    - text: The boss says he wants this plan done yesterday and so he hired a bunch
+        of new people, including me.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -281,8 +281,8 @@ MonoBehaviour:
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "Fixing the machine, of course. No idea why it was so broken, hope you
-        don\u2019t have a security breach."
+    - text: "Fixing the machine. No idea why it was so broken, hope you don\u2019t
+        have a <style=\"Emphasize\">security breach.</style>"
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -310,7 +310,7 @@ MonoBehaviour:
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
     - text: "The temperature was off, and I had to adjust the thermostat. With how
-        hot it gets, it\u2019s like we are in the middle of a volcano or something."
+        hot it gets, it\u2019s like we are in the middle of a volcano."
       spyExpression:
         UseConstant: 0
         ConstantValue: 

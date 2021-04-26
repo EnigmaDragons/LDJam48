@@ -474,7 +474,7 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 0}
     options:
-    - text: "I don\u2019t recognize you, pretty sus, are you the actual spy?"
+    - text: "I don\u2019t recognize you Ezio, pretty sus?"
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -539,7 +539,7 @@ MonoBehaviour:
           ConstantValue: 
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: How do we know there is an intruder what if the spy is actually someone
+    - text: How do we know there is an intruder, what if the spy is actually someone
         who works here!
       spyExpression:
         UseConstant: 0

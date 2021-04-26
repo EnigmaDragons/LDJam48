@@ -35,8 +35,8 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: "<style=\"Loud\">What do you mean <style=\"Emphasize\">new in Zinlandia</style>?!
-        I work at this airport as a mechanic and I\u2019m headed home for the day!</style>"
+    - text: <style="Loud">What do you mean <style="Emphasize">new in Zinlandia</style>?!
+        I work at this airport as a mechanic!</style>
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -416,7 +416,7 @@ MonoBehaviour:
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "I have never quite looked the same since the\u2026 <style=\"Quiet\">accident.</style>"
+    - text: "I have never quite looked the same since the\u2026 <style=\"Emphasize\">accident.</style>"
       spyExpression:
         UseConstant: 0
         ConstantValue: 
