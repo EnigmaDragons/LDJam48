@@ -13,7 +13,7 @@ public class CharacterSpeechBubble : MonoBehaviour
         Log.Info($"{character.CharacterName} speech bubble awake");
         speechBubble.Hide();
         scenePositions.Register(character, speechBubble);
-        if (speechBubbleIsToTheLeftOfTheCharacter)
+        if (!speechBubbleIsToTheLeftOfTheCharacter)
             speechBubble.ReversePanelFacing();
     }
 

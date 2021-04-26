@@ -109,7 +109,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -60.2, y: -45.3}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2232008906595196625
@@ -150,8 +150,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -204,7 +204,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -113.66873, y: -83.868286, z: -117.601746, w: 4.2818604}
+  m_margin: {x: -113.66873, y: -83.868286, z: -156.34627, w: 4.2818604}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -275,8 +275,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3fbf340ff676c724e90f3cd9ae96804e, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 09fe2da0703a8b54a9db211b1929c161, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -284,7 +284,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 100
 --- !u!1 &8717382160425752236
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,14 +386,11 @@ MonoBehaviour:
     UseConstant: 0
     ConstantValue: 1.1
     FloatVariable: {fileID: 11400000, guid: b8e6b31ac17334d489afe0fbca01978b, type: 2}
-  cooldown:
-    UseConstant: 1
-    ConstantValue: 0.15
-    FloatVariable: {fileID: 0}
   perCharacterSound:
     clip: {fileID: 8300000, guid: d86dfb4c9f18f4f2ebb0868f769b2580, type: 3}
     volume: 0.26
   sfx: {fileID: 11400000, guid: bfe56e3518f684c4387de97bd5db348d, type: 2}
+  reversedTextBoxOffset: {x: 75, y: 0}
   isRevealing: 0
   fullText: 
 --- !u!114 &6244348384472840160
