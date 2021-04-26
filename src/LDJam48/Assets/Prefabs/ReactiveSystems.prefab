@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameState: {fileID: 11400000, guid: 564bc3db6d1a6d2429d3d2b4d07a7993, type: 2}
+  delayBeforeFinishing: 2
 --- !u!114 &6601953045551528945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,6 +103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32fd926580a24c49b3645f915077641a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameState: {fileID: 11400000, guid: 564bc3db6d1a6d2429d3d2b4d07a7993, type: 2}
+  conversation: {fileID: 11400000, guid: aae2fc7d62b853d4bbc983d3df10f489, type: 2}
   navigator: {fileID: 11400000, guid: c3cd3edfa3cf5c94fbbf792f8728cebb, type: 2}
   delayBeforeScene: 1.8
 --- !u!114 &5958105542653191466
@@ -134,5 +137,5 @@ MonoBehaviour:
   gameState: {fileID: 11400000, guid: 564bc3db6d1a6d2429d3d2b4d07a7993, type: 2}
   player: {fileID: 11400000, guid: 95f47694e0b28ce48a808ae15f18f4d8, type: 2}
   calmMusic: {fileID: 11400000, guid: 61113d14fbcea2941957c081a00d35ee, type: 2}
-  tenseMusic: {fileID: 11400000, guid: d0139c70c7ef92346809d2946648b764, type: 2}
-  superTenseMusic: {fileID: 11400000, guid: 33d078ac971f13c44b5a02bf24d0f37d, type: 2}
+  tenseMusic: {fileID: 11400000, guid: 61113d14fbcea2941957c081a00d35ee, type: 2}
+  superTenseMusic: {fileID: 11400000, guid: 61113d14fbcea2941957c081a00d35ee, type: 2}

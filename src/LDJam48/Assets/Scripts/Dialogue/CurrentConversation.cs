@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -11,6 +12,8 @@ public class CurrentConversation : ScriptableObject
     private readonly Queue<FollowupDialogueData> _temporaryFollowups = new Queue<FollowupDialogueData>();
     private readonly Queue<string> _playerCharacterLines = new Queue<string>();
     
+    private Maybe<Action> _overrideEndConversationAction = Maybe<Action>.Missing();
+    
     public Conversation Current => conversation;
     private DialogueData CurrentSequence => Current.Sequence[sequenceIndex];
     private bool HasSequence => Current.Sequence.Length > sequenceIndex;
@@ -21,6 +24,7 @@ public class CurrentConversation : ScriptableObject
         _temporaryFollowups.Clear();
         sequenceIndex = -1;
         conversation = c;
+        _overrideEndConversationAction = Maybe<Action>.Missing();
     }
 
     public void ExecuteNext()
@@ -41,14 +45,28 @@ public class CurrentConversation : ScriptableObject
 
     private void Finish()
     {
-        conversation.OnFinished.Invoke();
+        
+        if (_overrideEndConversationAction.IsPresent)
+            _overrideEndConversationAction.Value.Invoke();
+        else
+            conversation.OnFinished.Invoke();
         Message.Publish(new AdvanceLocation());
     }
 
     public void Queue(FollowupDialogueData[] selectionFollowups)
     {
-        selectionFollowups.ForEachArr(s => _temporaryFollowups.Enqueue(s));
+        if (_overrideEndConversationAction.IsMissing)
+            selectionFollowups.ForEachArr(s => _temporaryFollowups.Enqueue(s));
     }
 
     public void QueuePlayerLine(string line) => _playerCharacterLines.Enqueue(line);
+
+    public void Override(FollowupDialogueData[] lines, Action onFinished)
+    {
+        _temporaryFollowups.Clear();
+        _playerCharacterLines.Clear();
+        Queue(lines);
+        sequenceIndex = 999;
+        _overrideEndConversationAction = onFinished;
+    }
 }

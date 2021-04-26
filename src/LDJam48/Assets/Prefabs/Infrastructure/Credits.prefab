@@ -580,7 +580,6 @@ GameObject:
   - component: {fileID: 6366982818610138046}
   - component: {fileID: 6366982818610138047}
   - component: {fileID: 6366982818610138040}
-  - component: {fileID: 6366982818610138041}
   - component: {fileID: 6555987001963839627}
   - component: {fileID: 7241816548170242580}
   - component: {fileID: 5274239641757036594}
@@ -677,52 +676,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &6366982818610138041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6366982818610138043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb17fb8065064e81b7ffb09ae636c579, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delayBeforeStart:
-    UseConstant: 1
-    ConstantValue: 4
-    FloatVariable: {fileID: 0}
-  delayBetween:
-    UseConstant: 1
-    ConstantValue: 3.6
-    FloatVariable: {fileID: 0}
-  allCredits: {fileID: 11400000, guid: b5523c593e2382c47930ec4337e3190f, type: 2}
-  creditPresenter: {fileID: 8642451061062772239, guid: fc872a9fb6802bd448450d0a77acbf6f,
-    type: 3}
-  creditParent: {fileID: 510218912395713258}
-  maxLifetimeOfCredit:
-    UseConstant: 1
-    ConstantValue: 5
-    FloatVariable: {fileID: 0}
-  onStart:
-    m_PersistentCalls:
-      m_Calls: []
-  onFinished:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: c3cd3edfa3cf5c94fbbf792f8728cebb, type: 2}
-        m_TargetAssemblyTypeName: Navigator, EnigmaDragons.Game
-        m_MethodName: NavigateToMainMenu
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &6555987001963839627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -826,6 +779,10 @@ MonoBehaviour:
     FloatVariable: {fileID: 0}
   victoryText: {fileID: 4643783841962896730}
   creditsObj: {fileID: 9187889328907828872}
+  player: {fileID: 11400000, guid: 95f47694e0b28ce48a808ae15f18f4d8, type: 2}
+  victoryFanfare: {fileID: 11400000, guid: 34a1fe74880a29a4aae78c2a47e9780c, type: 2}
+  creditsMusic: {fileID: 11400000, guid: bf22a25fc8bca7045b9ca6faa1ba5b32, type: 2}
+  victoryFanfareDuration: 10.6
 --- !u!1 &6366982818893784388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,7 +1036,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6846426344002451254
 RectTransform:
   m_ObjectHideFlags: 0

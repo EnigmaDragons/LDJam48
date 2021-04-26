@@ -12,4 +12,5 @@ public sealed class GameState
     // This is necessary to preserve backwards save compatibility.
     public TensionLevel TensionLevel { get; set; } = TensionLevel.Calm;
     public bool IsVictory { get; set; } = false;
+    public bool IsDefeat { get; set; } = false;
 }

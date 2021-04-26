@@ -9,7 +9,7 @@ public class LocationHandler : OnMessage<AdvanceLocation>
     
     protected override void Execute(AdvanceLocation msg)
     {
-        if (_finishTriggered)
+        if (_finishTriggered || gameState.IsDefeat)
             return;
         
         gameState.AdvanceLocationConversation();
