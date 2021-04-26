@@ -1,0 +1,207 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40b3369c6e0b478e910c4e672df48d79, type: 3}
+  m_Name: UnderwaterScientistVenix
+  m_EditorClassIdentifier: 
+  playerCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477, type: 2}
+  nonPlayerCharacters:
+  - {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a, type: 2}
+  - {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518, type: 2}
+  onFinished:
+    m_PersistentCalls:
+      m_Calls: []
+  sequence:
+  - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
+      type: 2}
+    statement: Is there any hiccups in the plan?
+    statementEmotion:
+      UseConstant: 0
+      ConstantValue: 
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+    options: []
+  - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
+      type: 2}
+    statement: He can fill you in.
+    statementEmotion:
+      UseConstant: 0
+      ConstantValue: 
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+    options: []
+  - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
+      type: 2}
+    statement: 
+    statementEmotion:
+      UseConstant: 0
+      ConstantValue: 
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+    options:
+    - text: People that are allergic to the ingredients are not getting hypnotized.
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+      tags:
+      - {fileID: 11400000, guid: 8fb47d6e851fee14ba53085daea67040, type: 2}
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
+          type: 2}
+        statement: What?! Are you saying we need like a <style="Emphasize">gluten</style>
+          free version or something?
+        statementEmotion:
+          UseConstant: 0
+          ConstantValue: 
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
+          type: 2}
+        statement: I think we should order the hypnotized to kill people with alergies
+          to the ingredients.
+        statementEmotion:
+          UseConstant: 0
+          ConstantValue: 
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
+          type: 2}
+        statement: What are you even talking about?!
+        statementEmotion:
+          UseConstant: 0
+          ConstantValue: 
+          Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
+        onlyShowIfCharacterLikedAnswer: 0
+    - text: The people currently hypnotized are building a tolerance that we have
+        to solve.
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+      tags:
+      - {fileID: 11400000, guid: ac4e09472eb08f44b9f330c86c41270a, type: 2}
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
+          type: 2}
+        statement: I'm working on a solution as quickly as possible
+        statementEmotion:
+          UseConstant: 0
+          ConstantValue: 
+          Variable: {fileID: 11400000, guid: e6609b2cb7b622c48b40a17c894b01c9, type: 2}
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
+          type: 2}
+        statement: <style="Loud">We don't know that!</style>
+        statementEmotion:
+          UseConstant: 0
+          ConstantValue: 
+          Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
+        onlyShowIfCharacterLikedAnswer: 0
+    - text: The centrifugal machine is broken, preventing us from making batches.
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+      tags:
+      - {fileID: 11400000, guid: 43cf5258b61cc6d429d5a1e2bfcef721, type: 2}
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
+          type: 2}
+        statement: I have already put in the request for the mechanic.
+        statementEmotion:
+          UseConstant: 0
+          ConstantValue: 
+          Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+        onlyShowIfCharacterLikedAnswer: 1
+      - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
+          type: 2}
+        statement: No, it's not!
+        statementEmotion:
+          UseConstant: 0
+          ConstantValue: 
+          Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
+        onlyShowIfCharacterLikedAnswer: 0
+    - text: <style="Slow">Everything is going according to plan.</style>
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+      tags:
+      - {fileID: 11400000, guid: 4fb6bf6e8af75e945acb4d945e18dda6, type: 2}
+      followups:
+      - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
+          type: 2}
+        statement: You're not hypnotized, don't talk like it.
+        statementEmotion:
+          UseConstant: 0
+          ConstantValue: 
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
+        onlyShowIfCharacterLikedAnswer: 0
+      - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
+          type: 2}
+        statement: You sound like those hypnotized world leaders.
+        statementEmotion:
+          UseConstant: 0
+          ConstantValue: 
+          Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
+        onlyShowIfCharacterLikedAnswer: 0
+  - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
+      type: 2}
+    statement: Do we have a solution if someone tries to hypnotize us?
+    statementEmotion:
+      UseConstant: 0
+      ConstantValue: 
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+    options: []
+  - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
+      type: 2}
+    statement: No, we hypothetically are just as vulnerable.
+    statementEmotion:
+      UseConstant: 0
+      ConstantValue: 
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+    options: []
+  - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
+      type: 2}
+    statement: "But the thing is we are hiding in an <style=\"Slow\">\r<style=\"Loud\">underwater
+      base!</style></style> No one's gonna get us, why would you ask?"
+    statementEmotion:
+      UseConstant: 0
+      ConstantValue: 
+      Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
+    options: []
+  - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
+      type: 2}
+    statement: 
+    statementEmotion:
+      UseConstant: 0
+      ConstantValue: 
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+    options:
+    - text: 
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 0}
+      tags: []
+      followups: []
+    - text: 
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 0}
+      tags: []
+      followups: []
+    - text: 
+      spyExpression:
+        UseConstant: 0
+        ConstantValue: 
+        Variable: {fileID: 0}
+      tags: []
+      followups: []
