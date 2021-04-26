@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb490e3e955a4ec693b795d6db6f38a4, type: 3}
   m_Name: ZinlandiaAirport
   m_EditorClassIdentifier: 
+  locationIcon: {fileID: 21300000, guid: 400d9dcf4d54c4647ae535211e8250c5, type: 3}
   obj: {fileID: 4766878235682075795, guid: 51b37d9cbc6a9f34fb5d7e8fc41a88f3, type: 3}
   conversations:
   - {fileID: 11400000, guid: 37ad0f8d53f5e6849a0f47e760c998a8, type: 2}
