@@ -21,7 +21,7 @@ MonoBehaviour:
   sequence:
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
-    statement: Hey buddy, you look new here, what's your gig?
+    statement: Hey buddy, you look new in Zinlandia, what's your gig?
     statementEmotion:
       UseConstant: 0
       ConstantValue: Default
@@ -35,8 +35,8 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: "What do you mean new here?! I work at this airport as a mechanic and
-        I\u2019m headed home for the day!"
+    - text: "What do you mean new in Zinlandia?! I work at this airport as a mechanic
+        and I\u2019m headed home for the day!"
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -54,8 +54,8 @@ MonoBehaviour:
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
-    - text: I am an ambassador who is here to give your country insane amounts of
-        foreign aid.
+    - text: I am an ambassador who is in Zinlandia to give your country insane amounts
+        of foreign aid.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -160,7 +160,8 @@ MonoBehaviour:
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "Strange?! You mean you don\u2019t have these devices here?! How barbaric!"
+    - text: "Strange?! You mean you don\u2019t have these devices in Zinlandia?!
+        How barbaric!"
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -178,7 +179,8 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Barbaric?! You work here, you are starting to piss me off!
+        statement: Barbaric?! You work in this airport, you are starting to piss
+          me off!
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -211,7 +213,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Hate to break it to you Buddy, but I'm not sure it's working.
+        statement: Hate to break it to you Buddy, but I'm not sure the suit is working.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -219,7 +221,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: An ambassador without charisma. If that's your jokes, it's good
+        statement: An ambassador without charisma. If that's your jokes, it is good
           you didn't become a comedian.
         statementEmotion:
           UseConstant: 0
@@ -301,7 +303,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: Yeah, yeah
+        statement: Yeah, yeah.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -315,7 +317,7 @@ MonoBehaviour:
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "A couple weeks ago I didn\u2019t even know this place existed."
+    - text: "A couple weeks ago I didn\u2019t even know Zinlandia existed."
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -515,7 +517,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
-    statement: You can go, but I got my eye on you, don't try nothin.
+    statement: You can go, but I got my eye on you.
     statementEmotion:
       UseConstant: 0
       ConstantValue: Default

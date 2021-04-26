@@ -28,7 +28,8 @@ MonoBehaviour:
   - artBackground: {fileID: 7688699568928860539, guid: a23d0639de6d84492b446e5882039ade,
       type: 3}
     storyText: The evil organization S.U.S. (Sinister Ultra Syndicate) has recently
-      bought a volcano island and is buying large quantites of jello packets.
+      bought a volcano island located in the contry Zinlandia and is buying large
+      quantites of jello packets.
     textColor: {r: 0, g: 0, b: 0, a: 1}
     showStoryText: 1
     durationSeconds: 4
@@ -41,7 +42,7 @@ MonoBehaviour:
     durationSeconds: 4
   - artBackground: {fileID: 2202170337963522669, guid: 5e34e4fafb3074abc8283c646be210f1,
       type: 3}
-    storyText: You fly into Zinlandia the country where the volcano is.
+    storyText: You fly into Zinlandia.
     textColor: {r: 1, g: 1, b: 1, a: 1}
     showStoryText: 1
     durationSeconds: 4
@@ -54,7 +55,7 @@ MonoBehaviour:
     durationSeconds: 4
   - artBackground: {fileID: 5480023870415276281, guid: a33101cdbbfb14dff9051e4c316b337a,
       type: 3}
-    storyText: You recognize the security guard as a member of S.U.S.
+    storyText: "You recognize the security guard as Eiz\u014D a member of S.U.S."
     textColor: {r: 1, g: 1, b: 1, a: 1}
     showStoryText: 1
     durationSeconds: 4

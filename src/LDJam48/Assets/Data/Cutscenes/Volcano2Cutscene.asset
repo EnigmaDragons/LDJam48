@@ -16,24 +16,36 @@ MonoBehaviour:
   - artBackground: {fileID: 0}
     storyText: It seems the Cane Man buys your story... for now.
     textColor: {r: 0, g: 0, b: 0, a: 0}
+    showStoryText: 1
+    durationSeconds: 4
   - artBackground: {fileID: 0}
     storyText: You finish sabotaging the monitoring system.
     textColor: {r: 0, g: 0, b: 0, a: 0}
+    showStoryText: 1
+    durationSeconds: 4
   - artBackground: {fileID: 0}
     storyText: And with the cameras out of the way your able to begin swapping the
       modified Jello with explosives.
     textColor: {r: 0, g: 0, b: 0, a: 0}
+    showStoryText: 1
+    durationSeconds: 4
   - artBackground: {fileID: 0}
-    storyText: All there is to do now, is make it out of the facility and detonate
+    storyText: All there is to do now, is make it out of the volcano and detonate
       the explosives.
     textColor: {r: 0, g: 0, b: 0, a: 0}
+    showStoryText: 1
+    durationSeconds: 4
   - artBackground: {fileID: 0}
     storyText: "But you are stopped by the Cane Man and so is Eiz\u014D as well."
     textColor: {r: 0, g: 0, b: 0, a: 0}
+    showStoryText: 1
+    durationSeconds: 4
   - artBackground: {fileID: 0}
     storyText: But you are gonna have to watch your lies, so you don't tip either
       of them off.
     textColor: {r: 0, g: 0, b: 0, a: 0}
+    showStoryText: 1
+    durationSeconds: 4
   onFinishedAction:
     m_PersistentCalls:
       m_Calls:

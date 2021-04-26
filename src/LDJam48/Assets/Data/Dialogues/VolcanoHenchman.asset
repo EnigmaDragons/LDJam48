@@ -201,8 +201,8 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: There is more fingers on my hand then number of people in your
-          role, and I know the back of my hand.
+        statement: There is more fingers on my hand then number of people hired in
+          your position, and I know the back of my hand.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
@@ -271,14 +271,14 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: Naturally you just happened to know how that thing works.
+        statement: Naturally you just happened to know how all the things work.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "Fixing it, of course. No idea why it was so broken, hope you don\u2019t
-        have a security breach."
+    - text: "Fixing the machine, of course. No idea why it was so broken, hope you
+        don\u2019t have a security breach."
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -324,8 +324,8 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
           type: 2}
-        statement: You know where the thermostat is in a restricted area and decided
-          that was the best use of your time, curious.
+        statement: You know where the thermostat is, in a restricted area, and decided
+          that was the best use of your time. Curious.
         statementEmotion:
           UseConstant: 0
           ConstantValue: Default
