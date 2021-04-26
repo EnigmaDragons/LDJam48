@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -617, y: -335}
-  m_SizeDelta: {x: 600, y: 300}
+  m_AnchoredPosition: {x: -149, y: 311}
+  m_SizeDelta: {x: 560, y: 360}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6382206781528621293
 CanvasRenderer:
@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 346896088870517345}
   - component: {fileID: 2005614211514504547}
   m_Layer: 5
-  m_Name: StoppedOnExit
+  m_Name: C3-05-StoppedOnExit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
