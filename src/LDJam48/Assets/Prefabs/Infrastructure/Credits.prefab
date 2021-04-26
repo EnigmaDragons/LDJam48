@@ -779,6 +779,10 @@ MonoBehaviour:
     FloatVariable: {fileID: 0}
   victoryText: {fileID: 4643783841962896730}
   creditsObj: {fileID: 9187889328907828872}
+  player: {fileID: 11400000, guid: 95f47694e0b28ce48a808ae15f18f4d8, type: 2}
+  victoryFanfare: {fileID: 11400000, guid: 34a1fe74880a29a4aae78c2a47e9780c, type: 2}
+  creditsMusic: {fileID: 11400000, guid: bf22a25fc8bca7045b9ca6faa1ba5b32, type: 2}
+  victoryFanfareDuration: 10.6
 --- !u!1 &6366982818893784388
 GameObject:
   m_ObjectHideFlags: 0
