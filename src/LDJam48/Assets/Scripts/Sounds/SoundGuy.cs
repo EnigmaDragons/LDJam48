@@ -9,7 +9,7 @@ public class SoundGuy : OnMessage<DialogueOptionResolved>
     
     protected override void Execute(DialogueOptionResolved msg)
     {
-        if (msg.PlayerSuspicionChange.Any(x => x.Value > 3))
+        if (msg.PlayerSuspicionChange.Any(x => x.Value > 3 || x.Key.IsSus()))
             sfx.Play(gainedMuchSus);
         else if (msg.PlayerSuspicionChange.Any(x => x.Value > 0))
             sfx.Play(gainedSus);

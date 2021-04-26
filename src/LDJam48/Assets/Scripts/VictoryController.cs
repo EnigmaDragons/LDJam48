@@ -9,7 +9,7 @@ public class VictoryController : MonoBehaviour
 
     private void Awake()
     {
-        var isVictory = gameState.WonGame;
+        var isVictory = gameState.IsVictory;
         if (isVictory)
         {
             victoryText.SetActive(true);
