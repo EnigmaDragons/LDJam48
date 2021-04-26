@@ -35,6 +35,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  calmMusic: {fileID: 11400000, guid: 69a1cf85e999bd245b9ba6e58a1c0c79, type: 2}
-  tenseMusic: {fileID: 11400000, guid: 69a1cf85e999bd245b9ba6e58a1c0c79, type: 2}
-  superTenseMusic: {fileID: 11400000, guid: 69a1cf85e999bd245b9ba6e58a1c0c79, type: 2}
+  calmMusic: {fileID: 11400000, guid: bdb80b7ed8bfac04c9237b4edff6856a, type: 2}
+  tenseMusic: {fileID: 11400000, guid: bdb80b7ed8bfac04c9237b4edff6856a, type: 2}
+  superTenseMusic: {fileID: 11400000, guid: bdb80b7ed8bfac04c9237b4edff6856a, type: 2}
