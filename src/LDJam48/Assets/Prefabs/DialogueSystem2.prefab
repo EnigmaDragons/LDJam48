@@ -749,11 +749,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 52
       objectReference: {fileID: 0}
-    - target: {fileID: 8194244654588015202, guid: 9db421749122d7443b805bcf512d507c,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 623
-      objectReference: {fileID: 0}
     - target: {fileID: 9086887190905662102, guid: 9db421749122d7443b805bcf512d507c,
         type: 3}
       propertyPath: playerSpawnPosition

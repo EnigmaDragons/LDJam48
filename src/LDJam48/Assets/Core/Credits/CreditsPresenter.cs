@@ -8,6 +8,7 @@ public class CreditsPresenter : MonoBehaviour
     [SerializeField] private FloatReference delayBetween = new FloatReference(2.4f);
     [SerializeField] private AllCredits allCredits;
     [SerializeField] private CreditPresenter creditPresenter;
+    [SerializeField] private GameObject creditParent;
     [SerializeField] private FloatReference maxLifetimeOfCredit;
     [SerializeField] private UnityEvent onStart;
     [SerializeField] private UnityEvent onFinished;
@@ -24,7 +25,7 @@ public class CreditsPresenter : MonoBehaviour
         
         for (var i = 0; i < allCredits.Credits.Length; i++)
         {
-            var presenter = Instantiate(creditPresenter, transform).Initialized(allCredits.Credits[i]);
+            var presenter = Instantiate(creditPresenter, creditParent.transform).Initialized(allCredits.Credits[i]);
             Destroy(presenter.gameObject, maxLifetimeOfCredit);
             yield return new WaitForSeconds(delayBetween);
         }
