@@ -17,16 +17,16 @@ MonoBehaviour:
   expressions:
     defaultExpression:
       expressionType:
-        UseConstant: 1
+        UseConstant: 0
         ConstantValue: 
-        Variable: {fileID: 0}
+        Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
       sprite: {fileID: 21300000, guid: 1004d0ca5a5b81642b33fa2be278bba5, type: 3}
     expressions:
     - expressionType:
         UseConstant: 0
         ConstantValue: 
         Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
-      sprite: {fileID: 21300000, guid: 82df7e58cd1bf6944b882f3a3075b10c, type: 3}
+      sprite: {fileID: 21300000, guid: 1004d0ca5a5b81642b33fa2be278bba5, type: 3}
     - expressionType:
         UseConstant: 0
         ConstantValue: 
