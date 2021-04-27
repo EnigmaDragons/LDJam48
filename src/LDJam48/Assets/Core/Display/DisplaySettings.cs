@@ -24,7 +24,11 @@ public sealed class DisplaySettings : ScriptableObject
         var newHash = $"{Mode}-{screenSize.x}x{screenSize.y}";
         if (newHash != old)
         {
+            #if UNITY_WEBGL
+            Screen.SetResolution(Screen.width, Screen.height, isFullscreen);
+            #else
             Screen.SetResolution(screenSize.x, screenSize.y, isFullscreen);
+            #endif 
             Debug.Log($"Changed Display/ Old: {old}. New: {newHash}");
         }
     }
