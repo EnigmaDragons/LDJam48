@@ -47,7 +47,14 @@ MonoBehaviour:
         ConstantValue: 
         Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
       sprite: {fileID: 21300000, guid: 94cb49ec556b0124e97f641f81426c0f, type: 3}
-  coverBlownStatements: []
+  coverBlownStatements:
+  - speakingCharacter: {fileID: 11400000}
+    statement: I deduced something was off about you spy.
+    statementEmotion:
+      UseConstant: 0
+      ConstantValue: 
+      Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
+    onlyShowIfCharacterLikedAnswer: 0
   maxSus: 10
   startingSus: 0
   suspicion: 0

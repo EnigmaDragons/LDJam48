@@ -21,7 +21,7 @@ MonoBehaviour:
   sequence:
   - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
       type: 2}
-    statement: Hey buddy, you look new in Zinlandia, what's your gig?
+    statement: Hey buddy, names Ezio. You look new in Zinlandia, what's your gig?
     statementEmotion:
       UseConstant: 0
       ConstantValue: Default
