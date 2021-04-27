@@ -357,7 +357,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 7fc050cb7ca6b9d428749a73e17c6e1c,
           type: 2}
-        statement: For someone who works here, you're <style="Slow"><style="Loud">real</style></style>
+        statement: For someone who works here, you're <style="Loud">real</style>
           oblivious.
         statementEmotion:
           UseConstant: 0
@@ -582,8 +582,7 @@ MonoBehaviour:
           ConstantValue: 
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: That would cost your boss a <style="Loud"><style="Emphasize">lot</style></style>
-        of money!
+    - text: That would cost your boss a <style="Emphasize">lot</style> of money!
       spyExpression:
         UseConstant: 0
         ConstantValue: 

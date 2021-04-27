@@ -35,8 +35,8 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: <style="Loud">What do you mean <style="Emphasize">new in Zinlandia</style>?!
-        I work at this airport as a mechanic!</style>
+    - text: <style="Loud">What do you mean</style> <style="Emphasize">new in Zinlandia</style>?!
+        <style="Loud">I work at this airport as a mechanic!</style>
       spyExpression:
         UseConstant: 0
         ConstantValue: 

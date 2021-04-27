@@ -50,7 +50,7 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
         statement: "I don't have \r<style=\"Emphasize\">time</style> to remember
-          all of you janitors, but you're right, I'm working with a bunch of <style=\"Emphasize\">pigs</style>
+          all of you janitors, but you're right, I'm working with a bunch of pigs
           here."
         statementEmotion:
           UseConstant: 0

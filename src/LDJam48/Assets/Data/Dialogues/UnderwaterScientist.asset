@@ -255,7 +255,7 @@ MonoBehaviour:
           ConstantValue: 
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: <style="Slow">I was told to put on <style="Pun">coat.</style></style>
+    - text: <style="Slow">I was told to put on coat.</style>
       spyExpression:
         UseConstant: 0
         ConstantValue: 
