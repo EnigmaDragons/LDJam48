@@ -22,7 +22,7 @@ MonoBehaviour:
     durationSeconds: 5
   - artBackground: {fileID: 2102278681904897193, guid: 679eba00c1e02435d899f3efe98d62cf,
       type: 3}
-    storyText: Soon everyone in the underwater base was under your control.
+    storyText: Soon, everyone in the underwater base was under your control.
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
     durationSeconds: 5
@@ -36,7 +36,13 @@ MonoBehaviour:
   - artBackground: {fileID: 4049067330001791420, guid: e03d875c1a29e40efa6fe29637cbd61f,
       type: 3}
     storyText: Once again you saved the world.
-    textColor: {r: 0, g: 0, b: 0, a: 0}
+    textColor: {r: 1, g: 1, b: 1, a: 1}
+    showStoryText: 1
+    durationSeconds: 5
+  - artBackground: {fileID: 4049067330001791420, guid: e03d875c1a29e40efa6fe29637cbd61f,
+      type: 3}
+    storyText: Just another ordinary weekend for a super spy like yourself.
+    textColor: {r: 1, g: 1, b: 1, a: 1}
     showStoryText: 1
     durationSeconds: 5
   onFinishedAction:
