@@ -109,7 +109,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 605, y: 332}
+  m_AnchoredPosition: {x: 160, y: 251}
   m_SizeDelta: {x: 600, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8965012231364444369
@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 8965012232640377846}
   - component: {fileID: 8965012232640377847}
   m_Layer: 5
-  m_Name: KilledEizo
+  m_Name: C4-01-KilledEizo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
