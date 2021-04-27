@@ -15,86 +15,101 @@ MonoBehaviour:
   segments:
   - artBackground: {fileID: 8965012232640377840, guid: 8bf228be71c33453b83aa20b3cdc77de,
       type: 3}
-    storyText: In a flash, The Cane Man shot Eizo. "He was obviously the spy"
+    storyText: In a flash, The Cane Man shoots Eizo. "He was obviously the spy"
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
     durationSeconds: 5
   - artBackground: {fileID: 7966358865446072126, guid: cb0fa119725a643479ed4f54cb73610b,
       type: 3}
-    storyText: '"Glad to be rid of that unpleasentness, ta ta for now"'
+    storyText: '"Glad to be rid of that unpleasantness. Ta-ta for now."'
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
-    durationSeconds: 4
+    durationSeconds: 5
   - artBackground: {fileID: 333002766857362500, guid: 404702480d57f4522bc331e91dcd18af,
       type: 3}
     storyText: Having narrowly avoided your own demise, you escape and detonate the
       explosives.
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
-    durationSeconds: 4
+    durationSeconds: 5
   - artBackground: {fileID: 446576765093513721, guid: 674ca6c166ed045089811bbb67703990,
       type: 3}
     storyText: A large TV screen comes to life, right outside the volcano.
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
-    durationSeconds: 4
+    durationSeconds: 5
   - artBackground: {fileID: 446576765093513721, guid: 674ca6c166ed045089811bbb67703990,
       type: 3}
-    storyText: '"HAHA You fell for my bait Double 0 and a half. You where distracted
-      stopping the dumbest plot I mean dumping Jello in a Volcano, really?"'
+    storyText: '"HAHA! You fell for my bait, Double 0 and a half."'
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
-    durationSeconds: 4
+    durationSeconds: 5
   - artBackground: {fileID: 446576765093513721, guid: 674ca6c166ed045089811bbb67703990,
       type: 3}
-    storyText: '"I, Venix have all but completed a scheme to take over the entire
-      world"'
+    storyText: '"You were distracted in trying to stop the dumbest plot... I mean,
+      dumping Jello into a volcano, really?!?"'
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
-    durationSeconds: 4
+    durationSeconds: 7
+  - artBackground: {fileID: 446576765093513721, guid: 674ca6c166ed045089811bbb67703990,
+      type: 3}
+    storyText: '"I, Venix, have all but completed a scheme to take over the entire
+      world!"'
+    textColor: {r: 1, g: 1, b: 1, a: 0}
+    showStoryText: 1
+    durationSeconds: 6
   - artBackground: {fileID: 4769483287830225300, guid: 599d469beae164f24973f7483d2e5d0e,
       type: 3}
-    storyText: '"Some clips play of world leaders swearing loyalty to fenix in what
-      seems to be a hypnotized state"'
+    storyText: The TV shows clips of hyponotized world leaders swearing loyalty to
+      Venix.
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
-    durationSeconds: 4
+    durationSeconds: 5
   - artBackground: {fileID: 727215581717638124, guid: 4a83695029230476fb4b75cd71296e02,
       type: 3}
-    storyText: The screen cuts off and your agency is calling you.
+    storyText: The screen abruptly cuts off, and your agency tablet lights up with
+      a new video call.
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
-    durationSeconds: 4
+    durationSeconds: 5
   - artBackground: {fileID: 2401397096358769421, guid: 6d57c6a3b881f40c5841e151f4d22ad4,
       type: 3}
-    storyText: They have located the secret Underwater base of Venix and are sending
-      you right away to stop whatever this plan is.
+    storyText: We have just located the the S.U.S. secret Underwater base.
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
-    durationSeconds: 4
+    durationSeconds: 5
   - artBackground: {fileID: 2401397096358769421, guid: 6d57c6a3b881f40c5841e151f4d22ad4,
       type: 3}
-    storyText: Thankfully Venix has no idea what you look like, just knows how many
-      of his schemes you have stopped in the past.
+    storyText: Infiltrate the Underwate base, discover the details of Venix' new
+      plot, and put a stop to it.
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
-    durationSeconds: 4
+    durationSeconds: 5.4
   - artBackground: {fileID: 2401397096358769421, guid: 6d57c6a3b881f40c5841e151f4d22ad4,
       type: 3}
-    storyText: You are gonna have to be clever with your lies.
+    storyText: Venix has no idea what you look like --he only knows how many schemes
+      you have foiled in the past.
     textColor: {r: 1, g: 1, b: 1, a: 0}
     showStoryText: 1
-    durationSeconds: 4
+    durationSeconds: 6
+  - artBackground: {fileID: 2401397096358769421, guid: 6d57c6a3b881f40c5841e151f4d22ad4,
+      type: 3}
+    storyText: You are going have to be clever with your lies, to outwit a supervillain
+      of Venix' caliber.
+    textColor: {r: 1, g: 1, b: 1, a: 0}
+    showStoryText: 1
+    durationSeconds: 5
   onFinishedAction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: c3cd3edfa3cf5c94fbbf792f8728cebb, type: 2}
-        m_TargetAssemblyTypeName: Navigator, EnigmaDragons.Game
-        m_MethodName: NavigateToCreditsScene
-        m_Mode: 1
+      - m_Target: {fileID: 11400000, guid: 87fb47d552cb06946b48a6dfceeab9a0, type: 2}
+        m_TargetAssemblyTypeName: Progression, EnigmaDragons.Game
+        m_MethodName: GoToLocation
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: 846503bbe9b15a74ab43ba88ad3a56ec,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: Location, EnigmaDragons.Game
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
