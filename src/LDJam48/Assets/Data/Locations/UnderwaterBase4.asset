@@ -21,11 +21,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 87fb47d552cb06946b48a6dfceeab9a0, type: 2}
         m_TargetAssemblyTypeName: Progression, EnigmaDragons.Game
-        m_MethodName: GoToVictory
-        m_Mode: 1
+        m_MethodName: BeginCutscene
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: d3029d08c444ae248a3ac77357f0b006,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: Cutscene, EnigmaDragons.Game
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
