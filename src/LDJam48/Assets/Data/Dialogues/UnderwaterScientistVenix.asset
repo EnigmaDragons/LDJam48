@@ -169,8 +169,8 @@ MonoBehaviour:
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
       type: 2}
-    statement: "But the thing is we are hiding in an \r<style=\"Loud\">underwater
-      base!</style> No one's gonna get us, why would you even ask?"
+    statement: But the thing is we are hiding in an <style="Loud">underwater base!</style>
+      No one's gonna get us, why would you even ask?
     statementEmotion:
       UseConstant: 0
       ConstantValue: 
