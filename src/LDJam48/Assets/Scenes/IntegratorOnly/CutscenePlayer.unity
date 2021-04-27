@@ -601,11 +601,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: CutscenePlayer
       objectReference: {fileID: 0}
-    - target: {fileID: 8190798203504576738, guid: 0cdb622543b0d3145972bc615a3b6b4f,
-        type: 3}
-      propertyPath: cutscene
-      value: 
-      objectReference: {fileID: 11400000, guid: 9759b9de7f45f1e43b0788055cd7ba8e,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cdb622543b0d3145972bc615a3b6b4f, type: 3}
