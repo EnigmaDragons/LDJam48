@@ -17,6 +17,7 @@ public sealed class Navigator : ScriptableObject
     {     
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
+#elif UNITY_WEBGL
 #else
         Application.Quit();
 #endif
