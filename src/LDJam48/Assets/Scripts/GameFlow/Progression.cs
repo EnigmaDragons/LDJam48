@@ -33,4 +33,9 @@ public class Progression : ScriptableObject
     }
     
     public void SkipCutscene() => Message.Publish(new SkipCutscene());
+    
+    public void ResetSuspicion()
+    {
+        allCharacters.ForEachArr(c => c.Flush());
+    }
 }
