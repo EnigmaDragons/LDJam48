@@ -225,3 +225,8 @@ MonoBehaviour:
     tags:
     - {fileID: 11400000, guid: 4fb6bf6e8af75e945acb4d945e18dda6, type: 2}
     - {fileID: 11400000, guid: d3831e72a8e8d5442bf817d11fe17dbf, type: 2}
+  - name: No Luggage/Foreign
+    penalty: 3
+    tags:
+    - {fileID: 11400000, guid: 8b1e568adbc489a49b4cfe9f7e3b7c02, type: 2}
+    - {fileID: 11400000, guid: 7bc577093202eff478cf35e4c823014c, type: 2}

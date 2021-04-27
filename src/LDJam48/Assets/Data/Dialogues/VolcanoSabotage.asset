@@ -262,8 +262,8 @@ MonoBehaviour:
           ConstantValue: 
           Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: "<style=\"Loud\">Impossible!</style>\r I hate going to airports. Don't
-        be <style=\"Emphasize\">absurd.</style>"
+    - text: <style="Loud">Impossible!</style> I hate going to airports. Don't be
+        <style="Emphasize">absurd.</style>
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -474,7 +474,7 @@ MonoBehaviour:
       ConstantValue: Default
       Variable: {fileID: 0}
     options:
-    - text: I don't recognize you Ezio, pretty sus!
+    - text: I don't recognize you Eizo, pretty sus!
       spyExpression:
         UseConstant: 0
         ConstantValue: 

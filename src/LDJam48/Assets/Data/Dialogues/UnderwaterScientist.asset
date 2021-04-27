@@ -74,7 +74,7 @@ MonoBehaviour:
           ConstantValue: 
           Variable: {fileID: 11400000, guid: 070b117adf2459a4588d7e7bf5befcd0, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
-    - text: I have been studying your hyno serum and there's a problem. People will
+    - text: I have been studying your hypno serum and there's a problem. People will
         build tolerance over time. We need to revise it first.
       spyExpression:
         UseConstant: 0

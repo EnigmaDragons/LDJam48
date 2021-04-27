@@ -548,7 +548,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 92732e066aa377042a0b03744b773b65,
       type: 2}
-    statement: Back to work for you, Cheerio!
+    statement: Back to work for you. Cheerio!
     statementEmotion:
       UseConstant: 0
       ConstantValue: Default
