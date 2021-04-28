@@ -28,14 +28,19 @@ public class Character : ScriptableObject, IEqualityComparer<Character>
 
     public Expression Expression(string type) => expressions[type];
     
-    public void AddSuspicion(int amount)
+    public int AddSuspicion(int amount)
     {
         if (amount == 0)
-            return;
+            return 0;
 
+        var before = suspicion;
         suspicion = Mathf.Clamp(suspicion + amount, 0, maxSus);
+        if (suspicion - before == 0)
+            return 0;
+        
         Log.Info($"{CharacterName} suspicion is now {suspicion}/{maxSus}. Change {amount}");
         ONSuspicionChange?.Invoke();
+        return suspicion - before;
     }
 
     public float GetSuspicionPercentage => suspicion / (float)maxSus;
