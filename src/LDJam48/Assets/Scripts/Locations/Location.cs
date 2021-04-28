@@ -13,7 +13,9 @@ public class Location : ScriptableObject
     [SerializeField] private IntroloopAudio calmMusic;
     [SerializeField] private IntroloopAudio tenseMusic;
     [SerializeField] private IntroloopAudio superTenseMusic;
+    [SerializeField] private bool isCheckpoint;
 
+    public bool IsCheckpoint => isCheckpoint;
     public Sprite LocationIcon => locationIcon;
     public GameObject Obj => obj;
     public Conversation[] Conversations => conversations;

@@ -35,3 +35,4 @@ MonoBehaviour:
   calmMusic: {fileID: 11400000, guid: bdb80b7ed8bfac04c9237b4edff6856a, type: 2}
   tenseMusic: {fileID: 11400000, guid: bdb80b7ed8bfac04c9237b4edff6856a, type: 2}
   superTenseMusic: {fileID: 11400000, guid: bdb80b7ed8bfac04c9237b4edff6856a, type: 2}
+  isCheckpoint: 1

@@ -11,13 +11,28 @@ public class Progression : ScriptableObject
     public void StartNewGame()
     {
         gameState.Init();
+        ResetCharacters();
+    }
+
+    private void ResetCharacters()
+    {
         allCharacters.ForEachArr(c => c.Flush());
     }
-    
+
     public void BeginCutscene(Cutscene c)
     {
         cutscene.Set(c);
         navigator.NavigateToCutscenePlayer();
+    }
+
+    public void RestartFromCheckpoint()
+    {
+        if (gameState.CheckpointLocation == null)
+            return;
+        
+        ResetCharacters();
+        gameState.SetLocation(gameState.CheckpointLocation);
+        navigator.NavigateToLocationScene();
     }
 
     public void GoToLocation(Location l)

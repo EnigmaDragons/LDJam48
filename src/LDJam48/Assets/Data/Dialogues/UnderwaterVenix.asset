@@ -230,7 +230,7 @@ MonoBehaviour:
   - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
       type: 2}
     statement: Do you think I should order the countries to have a massive brawl
-      in the streets, I think that would be hilarious.
+      in the streets? I think that would be hilarious.
     statementEmotion:
       UseConstant: 0
       ConstantValue: 

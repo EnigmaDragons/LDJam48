@@ -21,7 +21,7 @@ MonoBehaviour:
   sequence:
   - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
       type: 2}
-    statement: The Cane Man, we meet again, and you survived the volcano.
+    statement: The Cane Man, we meet again. It appears that you survived the volcano.
     statementEmotion:
       UseConstant: 0
       ConstantValue: 

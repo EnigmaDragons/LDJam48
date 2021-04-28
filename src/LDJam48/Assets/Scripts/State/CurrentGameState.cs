@@ -8,10 +8,12 @@ public sealed class CurrentGameState : ScriptableObject
     [SerializeField] private CurrentConversation conversation;
     [SerializeField] private PlayerState player;
     [SerializeField] private Location currentLocation;
+    [SerializeField] private Location checkpointLocation;
     [SerializeField] private int locationConversationIndex;
 
     public int LocationConversationIndex => locationConversationIndex;
     public Location CurrentLocation => currentLocation;
+    public Location CheckpointLocation => checkpointLocation;
     public void AdvanceLocationConversation() => locationConversationIndex++;
     public TensionLevel TensionLevel => gameState.TensionLevel;
     public bool IsVictory => gameState.IsVictory;
@@ -21,10 +23,18 @@ public sealed class CurrentGameState : ScriptableObject
     {
         locationConversationIndex = 0;
         currentLocation = l;
+        if (l.IsCheckpoint)
+            checkpointLocation = l;
     }
 
-    public void Init() => gameState = new GameState();
-    public void Init(GameState initialState) => gameState = initialState;
+    public void Init() => Init(new GameState());
+    public void Init(GameState initialState)
+    {
+        gameState = initialState;
+        currentLocation = null;
+        checkpointLocation = null;
+    }
+
     public void Subscribe(Action<GameStateChanged> onChange, object owner) => Message.Subscribe(onChange, owner);
     public void Unsubscribe(object owner) => Message.Unsubscribe(owner);
     

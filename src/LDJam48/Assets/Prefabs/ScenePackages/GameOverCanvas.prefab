@@ -684,7 +684,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 450, y: 262}
+  m_AnchoredPosition: {x: 440, y: 262}
   m_SizeDelta: {x: 900, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1595838801497214593
@@ -1106,7 +1106,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 450, y: -22}
+  m_AnchoredPosition: {x: 440, y: -22}
   m_SizeDelta: {x: 500, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5220786202391275546
@@ -1646,30 +1646,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 5545170471751772317}
-  text: Play Again
+  text: Retry From Checkpoint
   action:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 87fb47d552cb06946b48a6dfceeab9a0, type: 2}
         m_TargetAssemblyTypeName: Progression, EnigmaDragons.Game
-        m_MethodName: StartNewGame
+        m_MethodName: RestartFromCheckpoint
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 87fb47d552cb06946b48a6dfceeab9a0, type: 2}
-        m_TargetAssemblyTypeName: Progression, EnigmaDragons.Game
-        m_MethodName: BeginCutscene
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: f360fba71a889eb4aa1b18e6ea4a385d,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Cutscene, EnigmaDragons.Game
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1745,6 +1732,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431017465817375021, guid: 1130155e1418d414e85cb9a699491a30,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 6431017465817375021, guid: 1130155e1418d414e85cb9a699491a30,
         type: 3}
@@ -1878,6 +1870,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431017465817375021, guid: 1130155e1418d414e85cb9a699491a30,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 6431017465817375021, guid: 1130155e1418d414e85cb9a699491a30,
         type: 3}

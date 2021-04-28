@@ -22,7 +22,7 @@ MonoBehaviour:
   sequence:
   - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
       type: 2}
-    statement: Is there any hiccups in the plan?
+    statement: Are there any hiccups in the plan?
     statementEmotion:
       UseConstant: 0
       ConstantValue: 
