@@ -19,54 +19,54 @@ MonoBehaviour:
       Double O and a Half
     textColor: {r: 1, g: 1, b: 1, a: 1}
     showStoryText: 1
-    durationSeconds: 5.2
+    durationSeconds: 6.2
   - artBackground: {fileID: 2448115664457130381, guid: 39203f6a61bca4f50a2f0388f28d73ba,
       type: 3}
     storyText: Every other weekend, you save the world. This is that weekend.
     textColor: {r: 1, g: 1, b: 1, a: 1}
     showStoryText: 1
-    durationSeconds: 4.3
+    durationSeconds: 5.3
   - artBackground: {fileID: 7688699568928860539, guid: a23d0639de6d84492b446e5882039ade,
       type: 3}
     storyText: The evil organization S.U.S. (Sinister Ultra Syndicate) recently bought
       a volcano island and is buying large quantites of Jello packets.
     textColor: {r: 0, g: 0, b: 0, a: 1}
     showStoryText: 1
-    durationSeconds: 6.8
+    durationSeconds: 8.2
   - artBackground: {fileID: 7688699568928860539, guid: a23d0639de6d84492b446e5882039ade,
       type: 3}
     storyText: Your mission is to infiltrate their lair, discover their dastardly
       scheme, and put a stop to it.
     textColor: {r: 0, g: 0, b: 0, a: 1}
     showStoryText: 1
-    durationSeconds: 5.3
+    durationSeconds: 6.3
   - artBackground: {fileID: 2202170337963522669, guid: 5e34e4fafb3074abc8283c646be210f1,
       type: 3}
     storyText: You fly to Zinlandia, a small third-world country, where the volcano
       island is located.
     textColor: {r: 1, g: 1, b: 1, a: 1}
     showStoryText: 1
-    durationSeconds: 5.4
+    durationSeconds: 6
   - artBackground: {fileID: 4516152737117826139, guid: 17e46534e4b8f40f9a84a318cb01a2c9,
       type: 3}
     storyText: Everything is going well until you are stopped by airport security
       for additional questioning.
     textColor: {r: 1, g: 1, b: 1, a: 1}
     showStoryText: 1
-    durationSeconds: 5.4
+    durationSeconds: 6
   - artBackground: {fileID: 5480023870415276281, guid: a33101cdbbfb14dff9051e4c316b337a,
       type: 3}
     storyText: From your dossier, you recognize the security guard as a member of
       S.U.S.
     textColor: {r: 1, g: 1, b: 1, a: 1}
     showStoryText: 1
-    durationSeconds: 5
+    durationSeconds: 6
   - artBackground: {fileID: 5480023870415276281, guid: a33101cdbbfb14dff9051e4c316b337a,
       type: 3}
     storyText: Get ready to come up with a clever cover story to avoid raising suspicion!
     textColor: {r: 1, g: 1, b: 1, a: 1}
     showStoryText: 1
-    durationSeconds: 5
+    durationSeconds: 5.8
   onFinishedAction:
     m_PersistentCalls:
       m_Calls:
