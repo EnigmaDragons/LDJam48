@@ -30,6 +30,7 @@ public class Progression : ScriptableObject
         if (gameState.CheckpointLocation == null)
             return;
         
+        gameState.UpdateState(g => g.IsDefeat = false);
         ResetCharacters();
         gameState.SetLocation(gameState.CheckpointLocation);
         navigator.NavigateToLocationScene();
