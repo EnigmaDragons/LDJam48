@@ -36,7 +36,7 @@ MonoBehaviour:
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
     - text: You don't remember me? You hired me yesterday as a janitor! I've been
-        cleaning the mess your workers have left.
+        cleaning up the mess your workers made.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -49,14 +49,14 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: i don't have time to remember all of you janitors, but you're
-          right, I'm working with a bunch of pigs here.
+        statement: i don't have time to remember all you janitors, but you're right,
+          I'm working with a bunch of pigs here.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
           Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
-    - text: I'm heading to the storage room. Need to grab more beakers for experiments
+    - text: I'm heading to the storage room. I need to grab more beakers for experiments.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -78,8 +78,8 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 60bb249e6448d7d4aba6607b8019b477,
           type: 2}
-        statement: Well, working with dangerous materials is not that easy of a task,
-          something is bound to break.
+        statement: Working with dangerous materials is not that easy of a task. Some
+          are bound to break.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -93,8 +93,8 @@ MonoBehaviour:
           ConstantValue: 
           Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
-    - text: Guarding this place of course. You don't want O-O-half sabotaging your
-        plans again.
+    - text: Guarding this base, of course. You don't want Double 0 and a Half sabotaging
+        your plans again.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -107,9 +107,9 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: '<style="Loud">HA!</style> Double O will never get here! We are
-          <style="Emphasize">10000</style> feet underwater, not even <style="Emphasize">light</style>
-          can reach us! '
+        statement: '<style="Loud">HA!</style> Double 0 and a Half will never get
+          here! We are <style="Emphasize">10000</style> feet underwater, not even
+          <style="Emphasize">light</style> can reach us! '
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -135,7 +135,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
   - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
       type: 2}
-    statement: What's with the suit?
+    statement: I say, what's with the suit?
     statementEmotion:
       UseConstant: 0
       ConstantValue: 
@@ -149,7 +149,7 @@ MonoBehaviour:
       ConstantValue: 
       Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
     options:
-    - text: What's up with it? I thought it <style="Pun">suits</style> me well.
+    - text: What's up with it? I think it <style="Pun">suits</style> me well.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -168,13 +168,13 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
         statement: <style="Loud">Ha!</style> who are you trying to impress? That
-          plant? Change back into you work close after we finish talking.
+          plant? Change back into you work clothes after we finish talking.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
           Variable: {fileID: 11400000, guid: d0d03c219bf579341b08c8849e01d6da, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: I spilled some chemicals onto my coat, had to change.
+    - text: I spilled some chemicals onto my lab coat and had to change.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -193,14 +193,15 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: How do you even got an access to the lab?! <style="Fast">Don't
-          lie to me!</style> I see through you.
+        statement: How did you even get access to the lab?! <style="Fast">Don't lie
+          to me!</style> I see through you.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
           Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: They didn't have a right size for me, so I grabbed what fits
+    - text: They didn't have the right size for me, so I grabbed the closest outfit
+        that fits
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -210,7 +211,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: Sounds fair, we don't keep much clothing here. The space is <style="Emphasize">limited</style>
+        statement: Sounds fair. We don't keep much clothing here. The space is <style="Emphasize">limited</style>
           as you can see
         statementEmotion:
           UseConstant: 0
@@ -254,7 +255,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: Oh, your right. I don't want to waste time having people clean
+        statement: Oh, you're right. I don't want to waste time having people clean
           that up.
         statementEmotion:
           UseConstant: 0
@@ -263,7 +264,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: <style="Loud">What are you a janitor?</style>
+        statement: <style="Loud">What are you, a janitor?</style>
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -280,7 +281,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: They do tend to have weaker physiques, guess that's not a great
+        statement: They do tend to have weaker physiques. Guess that's not a great
           idea.
         statementEmotion:
           UseConstant: 0
@@ -295,7 +296,7 @@ MonoBehaviour:
           ConstantValue: 
           Variable: {fileID: 11400000, guid: 632dd2960d95d6848851b74ba0011d59, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: This would leave more hypnotized dead and more unhypnotized still living.
+    - text: That would leave more hypnotized dead and more unhypnotized still living.
         Sounds like a security risk.
       spyExpression:
         UseConstant: 0
@@ -322,8 +323,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
       type: 2}
-    statement: Alright, get back to work then, and don't do anything weird, I'm watching
-      you
+    statement: Alright, get back to work then. And don't do anything weird.
     statementEmotion:
       UseConstant: 0
       ConstantValue: 
