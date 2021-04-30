@@ -63,7 +63,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
           type: 2}
-        statement: I think we should order the hypnotized to kill people with alergies
+        statement: I think we should order the hypnotized to kill people with allergies
           to the ingredients.
         statementEmotion:
           UseConstant: 0
@@ -78,7 +78,7 @@ MonoBehaviour:
           ConstantValue: 
           Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
         onlyShowIfCharacterLikedAnswer: 0
-    - text: The people currently hypnotized are building a tolerance that we have
+    - text: The people currently hypnotized are building up a tolerance that we have
         to solve.
       spyExpression:
         UseConstant: 0
@@ -89,7 +89,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
           type: 2}
-        statement: I'm working on a solution as quickly as possible
+        statement: I'm working on a solution as quickly as possible.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -113,7 +113,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
           type: 2}
-        statement: I have already put in the request for the mechanic.
+        statement: I have already filed a repair request with the mechanic.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -161,7 +161,7 @@ MonoBehaviour:
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
       type: 2}
-    statement: No, we hypothetically are just as vulnerable.
+    statement: No. Hypothetically, we are just as vulnerable.
     statementEmotion:
       UseConstant: 0
       ConstantValue: 
@@ -169,8 +169,8 @@ MonoBehaviour:
     options: []
   - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
       type: 2}
-    statement: But the thing is we are hiding in an <style="Loud">underwater base!</style>
-      No one's gonna get us, why would you even ask?
+    statement: But the thing is, we are hiding in an <style="Loud">underwater base!</style>
+      No one's gonna get us. Why would you even ask?
     statementEmotion:
       UseConstant: 0
       ConstantValue: 
@@ -211,13 +211,13 @@ MonoBehaviour:
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
         statement: Those <style="Emphasize">idiots</style> loading the water polluter
-          spilled some!
+          must have spilled some!
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
           Variable: {fileID: 11400000, guid: d0d6df43d9a8f774dbb41daf190a626b, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
-    - text: I had some ideas for how to make us resistant.
+    - text: I have some ideas for how to make us immune.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -228,8 +228,8 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: Excellent, you should get to work on that, then we can can make
-          Hypno Grenades!
+        statement: Excellent. You should get to work on that, and then we can can
+          make Hypno Grenades!
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -262,7 +262,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: Good thinking minion.
+        statement: Good thinking, minion.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -279,7 +279,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
       - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
           type: 2}
-        statement: I thinking running, would be the move.
+        statement: I think running would be the right move.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -303,7 +303,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: Nah, your just an idiot.
+        statement: Nah, you're just an idiot.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -319,7 +319,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
       type: 2}
-    statement: To be extra safe, we should have everyone go to the DNA check machine,
+    statement: To be extra safe, we should run everyone through the DNA check machine,
       to make sure Double-0 hasn't infiltrated us somehow.
     statementEmotion:
       UseConstant: 0
@@ -345,7 +345,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: It doesn't matter, no way Double-0 would be here by now.
+        statement: It doesn't matter. No way Double-0 would be here by now.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -353,7 +353,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: The only way you know that is you spilled the coffee!
+        statement: The only way you know that is because you spilled the coffee!
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -372,7 +372,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 2dd26c43de20a094980c894d50d7ac0a,
           type: 2}
-        statement: That's quite the breakthrough, we have to get our hands on that
+        statement: That's quite the breakthrough! We have to get our hands on that
           machine.
         statementEmotion:
           UseConstant: 0
@@ -381,8 +381,8 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 1
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: That's some <style="Emphasize">strangely</style> relavant information
-          to know.
+        statement: That's a <style="Emphasize">strangely</style> relevant fact  to
+          know.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -397,7 +397,8 @@ MonoBehaviour:
           ConstantValue: 
           Variable: {fileID: 11400000, guid: dea50603872554341945e65d67a948b5, type: 2}
         onlyShowIfCharacterLikedAnswer: 1
-    - text: One of the guards discharged their gun in it, and it's still being fixed.
+    - text: One of the guards discharged their gun inside the machine, and it's still
+        being fixed.
       spyExpression:
         UseConstant: 0
         ConstantValue: 
@@ -407,7 +408,7 @@ MonoBehaviour:
       followups:
       - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
           type: 2}
-        statement: I'm surrounded by idiots. Not you of course scientist.
+        statement: I'm surrounded by idiots. Not you, of course, Alexei.
         statementEmotion:
           UseConstant: 0
           ConstantValue: 
@@ -423,7 +424,7 @@ MonoBehaviour:
         onlyShowIfCharacterLikedAnswer: 0
   - speakingCharacter: {fileID: 11400000, guid: 17008e72f3df4cd4a83d031ad64f1518,
       type: 2}
-    statement: Get out of here both of you, I want to enjoy some villainous tunes.
+    statement: Get out of here both of you. I want to enjoy some villainous tunes.
     statementEmotion:
       UseConstant: 0
       ConstantValue: 

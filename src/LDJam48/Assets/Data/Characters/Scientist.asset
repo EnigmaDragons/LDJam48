@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8249138620646b59f0e5500ebe20276, type: 3}
   m_Name: Scientist
   m_EditorClassIdentifier: 
-  CharacterName: Scientist
+  CharacterName: Alexei
   Prefab: {fileID: 2969575370987135367, guid: d24f90433554c2e48877fb7e4f1e20c9, type: 3}
   expressions:
     defaultExpression:
